@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/overview.html 
+keywords: keystone, dark, site, staas, security, deployment, collector, encryption, access 
+summary: Keystone提供一種_私有_部署模式（也稱為_暗站_），以滿足您的業務和安全需求。 
+---
+= 了解Keystone （私人模式）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone提供一種_私有_部署模式（也稱為_暗站_），以滿足您的業務和安全需求。此模式適用於連線受限的組織。
+
+NetApp提供專門的Keystone STaaS 部署，適用於網路連線有限或沒有網路連線的環境（也稱為暗站）。這些是安全或隔離的環境，其中外部通訊由於安全、合規性或操作要求而受到限制。
+
+對於NetApp Keystone來說，為暗站提供服務意味著以尊重這些環境限制的方式提供Keystone靈活儲存訂閱服務。這涉及：
+
+* *本地部署*： Keystone可以在隔離環境中獨立配置，確保無需網際網路連線或外部人員進行設定存取。
+* *離線操作*：所有儲存管理功能（包括健康檢查和計費）均可離線操作。
+* *安全性和合規性*： Keystone確保部署滿足暗網的安全性和合規性要求，其中可能包括進階加密、安全存取控制和詳細的稽核功能。
+* *協助與支援*： NetApp提供全天候全球支持，並為每個帳戶指派一名專門的Keystone成功經理來提供協助和故障排除。
+
+
+
+NOTE: Keystone Collector 可以配置為不受連線限制，也稱為_標準_模式。要了解更多信息，請參閱link:../installation/installation-overview.html["了解Keystone Collector"]。
+
+
+
+== 私人模式的Keystone Collector
+
+Keystone Collector 負責定期從儲存系統收集使用情況數據，並將指標匯出到離線使用情況報告器和本機文件儲存。生成的文件以加密和純文字格式創建，經過驗證檢查後由用戶手動轉發給NetApp 。收到後，NetApp 的Keystone計費平台會驗證和處理這些文件，並將其整合到計費和訂閱管理系統中以計算每月的費用。
+
+image:dark-sites-diagram-computer-system.png["電腦系統圖"]
+
+伺服器上的Keystone Collector 服務負責定期收集使用資料、處理這些資訊並在伺服器本地產生使用檔案。健康服務進行系統健康檢查，並旨在與客戶使用的健康監測系統進行互動。用戶可以離線存取這些報告，以便進行驗證並協助解決問題。
+
+image:dark-sites-customer-premise.png["客戶前提"]

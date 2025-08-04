@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-services.html 
+keywords: storage, service, service definition, keystone STaaS services, 
+summary: Keystone STaaS 服務支援ONTAP和StorageGRID。 
+---
+= Keystone支援的存儲
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 服務支援使用ONTAP 的檔案和區塊儲存、使用StorageGRID的物件儲存以及Cloud Volumes ONTAP。
+
+Keystone STaaS 為您的儲存提供標準和可選服務。
+
+* Keystone STaaS 標準服務*：標準服務包含在基本訂閱內，不單獨收費。
+
+* Keystone STaaS 附加服務*：這些是可選的、收費的服務，在標準Keystone STaaS 訂閱服務的基礎上提供額外的實用程式和好處。
+
+Keystone STaaS服務可以同時使用。例如，雲端儲存訂閱可以具有與檔案、區塊和物件儲存訂閱相同的術語。可以在現有儲存訂閱的服務期限內的任何時間包含雲端服務。但是，如果您不打算續訂現有的文件、區塊和物件訂閱，則在訂閱的最後 90 天內無法新增雲端儲存訂閱。
+
+
+
+== 文件、區塊和物件儲存服務
+
+適用於ONTAP檔案和區塊儲存以及StorageGRID物件儲存的Keystone STaaS 服務支援多種功能和協議，如下表所述：
+
+|===
+| 儲存 | 平台 | 協定 | 支援的功能 
+
+
+ a| 
+文件儲存
+ a| 
+ONTAP
+ a| 
+NFS 和 CIFS
+ a| 
+支援的ONTAP功能：
+
+* FlexVol
+* FlexGroup
+* 快照副本
+* SnapMirror （非同步）
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/雲端分層
+* SnapRestore
+* FlexClone
+* SnapCenter （包含許可證，但不屬於Keystone服務的一部分，並且不保證管理）
+* 自主勒索軟體防護^1^
+
+
+
+
+ a| 
+區塊儲存
+ a| 
+ONTAP
+ a| 
+FC 和 iSCSI
+ a| 
+支援的ONTAP功能：
+
+* FlexVol
+* FlexGroup
+* 快照副本
+* SnapMirror （非同步）
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/雲端分層
+* SnapRestore
+* FlexClone
+* SnapCenter （包含許可證，但不屬於Keystone服務的一部分，並且不保證管理）
+
+
+
+
+ a| 
+物件儲存
+ a| 
+StorageGRID
+ a| 
+S3
+ a| 
+支援跨多個站點的多種資訊生命週期管理 (ILM) 策略^2^
+
+|===
+
+NOTE: ^1^ 有關ONTAP中的勒索軟體防護的信息，請參閱 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護"^]。  ^2^ 每個站點都需要單獨訂閱。
+
+
+
+== 雲端儲存服務
+
+Keystone STaaS 提供雲端儲存服務。  Keystone STaaS 支援 Amazon Web Services (AWS)、Microsoft Azure 和 Google Cloud Platform 上的Cloud Volumes ONTAP資料管理功能。
+
+
+NOTE: NetApp不提供Cloud Volumes ONTAP所需的基於超標量的運算、儲存和網路服務作為Keystone STaaS 訂閱的一部分；這些訂閱需要直接從超標量雲端服務供應商處採購。

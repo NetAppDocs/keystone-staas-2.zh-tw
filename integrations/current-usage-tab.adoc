@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: integrations/current-usage-tab.html 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions 
+summary: 若要了解您的訂閱使用情況，您可以查看承諾容量、已消耗容量、可用容量等。 
+---
+= 查看Keystone訂閱的目前消耗量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過查看承諾容量、已消耗容量和可用容量等詳細資訊來深入了解訂閱使用情況，並顯示目前消耗狀態並按效能服務等級分類。
+
+若要透過BlueXP或Digital Advisor查看訂閱的目前消費狀態，請依照下列步驟操作：
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.步驟
+. 從BlueXP左側導覽功能表中，選擇 *儲存 > Keystone > 訂閱*。
+. 在表格的*訂閱號*欄位中選擇訂閱號，查看目前消費狀況。
++
+您將被重定向到“*當前消耗*”選項卡。
+
++
+image:bxp-current-consumption-graph.png["圖形格式的電流消耗詳情"]
+
++
+對於選定的訂閱，您可以使用「*檢視方式*」下拉式選單中的「*表格*」或「*圖形*」選項，以表格或圖形格式檢視消費詳情。在圖形視圖中，您可以看到每個效能服務等級的目前消耗，包括已使用容量、已配置容量、承諾容量限制和突發容量限制。
+
++
+在表格視圖中，您可以看到諸如消耗的最大容量和剩餘到期天數等詳細資訊。作為監控訂閱使用情況的一部分，您可以查看效能服務等級名稱、消費狀態、已提交和已使用容量、已設定和突發容量、可用容量和磁碟區。您可以使用列選擇器自訂表格image:column-selector.png["列選擇器圖示"]圖示.
+
++
+image:bxp-current-consumption-table.png["表格形式的電流消耗詳情"]
+
+
+
+--
+.Digital Advisor
+--
+.步驟
+. 從Digital Advisor左側導覽窗格中，前往 *常規 > Keystone訂閱 > 目前消耗*。
+. 從*訂閱*下拉清單中選擇或搜尋所需的訂閱號碼。
++
+image:aiq-ks-dtls-4.png["目前消耗選項卡"]
+
++
+對於所選訂閱，您可以查看詳細信息，例如訂閱的開始和結束日期以及計費週期（例如每月或每年）。作為訂閱使用的一部分，您可以查看效能服務等級名稱、已提交、已消耗、可用容量以及當前和累積的突發使用量（以 TiB 為單位）。反白顯示記錄較高消耗的特定效能服務等級。您也可以查看針對您的磁碟區產生的警告和警報。
+
++
+除了當前消耗之外，您可能還想查看歷史使用數據進行比較。點擊*查看歷史資料*按鈕，導覽至*消費趨勢*選項卡，查看相同訂閱的歷史資料。
+
+
+
+--
+====
+有關Keystone儲存服務和相關效能服務等級的信息，請參閱link:../concepts/service-levels.html["Keystone中的效能服務級別"]。
+
+*相關資訊*
+
+* link:../integrations/dashboard-overview.html["了解Keystone儀表板"]
+* link:../integrations/subscriptions-tab.html["查看您的訂閱詳情"]
+* link:../integrations/consumption-tab.html["查看消費趨勢"]
+* link:../integrations/subscription-timeline.html["查看您的訂閱時間表"]
+* link:../integrations/assets-tab.html["查看您的Keystone訂閱資產"]
+* link:../integrations/assets.html["查看Keystone訂閱中的資產"]
+* link:../integrations/volumes-objects-tab.html["查看捲和物件的詳細信息"]
+

@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: concepts/qos.html 
+keywords: PSL and QoS, service level quality of service 
+summary: Keystone使用儲存 QoS 來確保應用程式獲得一致且可預測的效能。 
+---
+= Keystone中的儲存 QoS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone使用儲存服務品質 (QoS) 來確保應用程式獲得一致且可預測的效能。如果沒有 QoS，某些工作負載（例如啟動多個系統的工作負載）可能會在一段時間內消耗大部分或全部資源，並影響其他工作負載。
+
+有關 QoS 的信息，請參閱 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["透過QoS概述保證吞吐量"^]。
+
+
+
+== 自適應QoS
+
+Keystone服務使用自適應 QoS (AQoS) 根據磁碟區大小動態維持 IOPS/TiB 比率。有關 AQoS 策略的信息，請參閱 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["關於自適應 QoS"^]。
+
+Keystone為您提供了 AQoS 策略，您可以在叢集投入生產後進行設定。您應該確保所有磁碟區都與系統中已建立且可用的正確 AQoS 策略相關聯。
+
+如果ONTAP磁碟區未套用 AQoS 策略，則該磁碟區不符合。沒有 QoS 策略的磁碟區是系統提供任何可用輸入輸出操作的優先順序清單中的最後一個。但是，如果有任何輸入輸出操作可用，則磁碟區可能會消耗所有可用的 IO。
+
+
+NOTE: 如果您尚未對您的磁碟區套用 AQoS 策略，則這些磁碟區將根據您的訂閱以最高服務等級進行測量和收費。這可能會導致意外爆炸。
+
+
+
+== 自適應 QoS 設定
+
+自適應 QoS (AQoS) 設定隨服務等級而變化。
+
+|===
+
+
+| *政策名稱* | *極端* | *優質的* | *表現* | *標準* | *價值* 
+
+
+| *預期 IOPS/TiB* | 6,144 | 2,048 | 1,024 | 256 | 64 
+
+
+| 預期 IOPS 分配 5+| 分配空間 
+
+
+| *峰值 IOPS/TiB* | 12,288 | 4,096 | 2,048 | 512 | 128 
+
+
+| 峰值 IOPS 分配 5+| 已使用空間 
+
+
+| 區塊大小 5+| 32K 
+|===
+
+
+== 自適應QoS策略組的配置
+
+您可以設定自適應 QoS (AQoS) 策略來自動將吞吐量上限或下限縮放到磁碟區大小。並非所有Keystone服務等級都與預設ONTAP QoS 策略保持一致。您可以為它們建立自訂 QoS 策略。要配置策略，您應該注意以下幾點：
+
+* *策略群組名稱*：AQoS 策略群組的名稱。例如，  `Keystone_extreme` 。
+* *VServer*：VServer 或儲存 VM（儲存虛擬機器）的名稱。
+* *預期 IOPS/TiB*：當有足夠的系統 IOPS 可用時，系統嘗試提供的每個磁碟區每個分配的 TiB 的最小 IOPS 數。
+* *峰值 IOPS/TiB*：系統允許磁碟區在透過注入延遲限制 IOPS 之前達到的每個磁碟區每使用 TiB 的最大 IOPS 數。
+* *預期 IOPS 分配*：此參數控製卷可用的預期 IOPS 是否基於磁碟區的分配大小或使用大小。在Keystone中，這是基於分配的空間。
+* *峰值 IOPS 分配*：此參數控製卷可用的峰值 IOPS 是否基於磁碟區的分配大小或已使用大小。在Keystone中，這是基於已使用的空間。
+* *絕對最小 IOPS*：如果磁碟區大小非常小，則應用於磁碟區的最低預期 IOPS 數將導致不可接受的 IOPS 數。此值預設為 1,000 `Extreme` ，500 `Premium` ，以及 250 `Performance` ，以及 75 `Standard`和 `Value`服務水平。
++
+
+NOTE: 這不是 IOPS 密度（例如，75 IOPS/TiB），而是絕對最小 IOPS 數。
+
+
+
+有關 IO 密度的信息，請參閱link:../concepts/metrics.html["Keystone服務中所使用的指標與定義"]。有關 AQoS 策略群組的詳細信息，請參閱 https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html["使用自適應 QoS 策略群組"^]。
+
+
+
+== 自適應QoS策略的設置
+
+以下章節介紹了每個服務等級的自適應 QoS (AQoS) 策略的設定。此處提供的每個服務等級的最小和最大磁碟區大小可讓磁碟區實現最佳 IOP 和延遲值。在這些指導原則之外創建太多卷可能會對這些卷的性能產生負面影響。
+
+
+
+=== 極限服務等級設定
+
+Extreme 服務等級的設定與指令：
+
+* 範例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
+....
+* 建議的最小卷大小：100GiB、0.1TiB
+* 建議最大磁碟區大小：10TiB
+
+
+
+
+=== 進階服務等級的設定
+
+高級服務等級的設定和命令：
+
+* 範例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
+....
+* 建議最小磁碟區大小：500GiB、0.5TiB
+* 建議最大磁碟區大小：50TiB
+
+
+
+
+=== 效能服務等級設定
+
+效能服務等級的設定和命令：
+
+* 範例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
+....
+* 建議最小磁碟區大小：500GiB、0.5TiB
+* 建議最大捲大小：80TiB
+
+
+
+
+=== 標準服務等級的設定
+
+標準服務等級的設定和命令：
+
+* 範例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
+....
+* 建議的最小卷大小：1TiB
+* 建議最大磁碟區大小：100TiB
+
+
+
+
+=== 價值服務等級的設置
+
+Value 服務等級的設定與指令：
+
+* 範例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
+....
+* 建議的最小卷大小：1TiB
+* 建議最大磁碟區大小：100TiB
+
+
+
+
+== 區塊大小計算
+
+在使用這些設定計算區塊大小之前，請注意以下幾點：
+
+* IOPS/TiB = MBps/TiB 除以（區塊大小 * 1024）
+* 塊大小以 KB/IO 為單位
+* TiB = 1024GiB； GiB = 1024MiB； MiB = 1024KiB； KiB = 1024 位元組；根據基數 2
+* TB = 1000GB；GB = 1000MB；MB = 1000KB；KB = 1000Bytes；以 10 為基數
+
+
+.樣本區塊大小計算
+例如，計算服務等級的吞吐量 `Extreme`服務水準：
+
+* 最大 IOPS：12,288
+* 每個 I/O 的區塊大小：32KB
+* 最大吞吐量 = (12288 * 32 * 1024) / (1024*1024) = 384MBps/TiB
+
+
+如果某個磁碟區有 700GiB 的邏輯使用數據，則可用吞吐量將為：
+
+`Maximum throughput = 384 * 0.7 = 268.8MBps`

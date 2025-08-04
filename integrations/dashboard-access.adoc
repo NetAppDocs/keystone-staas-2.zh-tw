@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: integrations/dashboard-access.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions 
+summary: 身為NetApp Keystone STaaS 訂閱者，您可以透過NetApp BlueXP或Digital Advisor存取Keystone儀表板 
+---
+= 開始使用Keystone儀表板
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+訂閱NetApp Keystone服務後，您可以透過NetApp BlueXP或Digital Advisor存取Keystone儀表板。
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+若要登入BlueXP，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊BlueXP 。詳細了解link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["登入BlueXP"^] 。
+
+.步驟
+. 登入BlueXP。
+. 從BlueXP左側導覽功能表中，選擇 *儲存 > Keystone*。
++
+Keystone儀表板出現。
+
++
+image:discover-subscriptions-1.png["Keystone儀表板頁面"]
+
++
+
+NOTE: 如果您的登入憑證未連結到任何Keystone訂閱，請聯絡NetApp Keystone支援。
+
+
+
+--
+.Digital Advisor
+--
+透過Digital Advisor儀表板，您可以查看Keystone訂閱的詳細資訊。若要登入Digital Advisor，您可以使用NetApp支援網站憑證。
+
+.步驟
+. 開啟 Web 瀏覽器，然後前往link:https://activeiq.netapp.com/?source=onlinedocs["Digital Advisor"^]登入頁面。
+. 提供您的使用者名稱和密碼，然後按一下「登入」。
++
+您可以在Digital Advisor儀表板中的 * Keystone訂閱 * 小部件上查看您的訂閱和使用情況的詳細信息，並查看您購買的Keystone服務的容量使用情況摘要。要了解有關 * Keystone訂閱 * 小部件的更多信息，請參閱link:../integrations/keystone-aiq.html["Digital Advisor中的Keystone儀表板"]。
+
+
+
+--
+====
+*相關資訊*
+
+* link:../integrations/keystone-bluexp.html["BlueXP中的Keystone儀表板"]
+* link:..//integrations/keystone-aiq.html["Digital Advisor中的Keystone儀表板"]
+* link:../integrations/subscriptions-tab.html["查看您的訂閱詳情"]
+

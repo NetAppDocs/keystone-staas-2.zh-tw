@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-ransomware.html 
+keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
+summary: NetApp透過勒索軟體復原保證計劃，保證在發生勒索軟體攻擊時從SnapLock Compliance卷中恢復 Snapshot 數據 
+---
+= 勒索軟體恢復保證
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp透過勒索軟體復原保證計畫保證在發生勒索軟體攻擊時從SnapLock Compliance磁碟區中恢復 Snapshot 資料。  NetApp勒索軟體復原保證服務需要支援勒索軟體復原保證計劃，並且應與相關的Keystone訂單分開購買。
+
+
+
+== 服務等級
+
+在適用的訂閱期限內，所有支援Keystone訂閱的硬體都需要勒索軟體復原保證服務。
+
+
+
+== 服務積分
+
+
+NOTE: SLA 和擔保可根據提名提供。
+
+如果按照最佳實踐部署了SnapLock Compliance ，並且NetApp專業服務在購買勒索軟體恢復保證服務時對其進行了配置或驗證，則當受SnapLock保護的資料無法恢復時， NetApp會發放服務積分。這些學分的標準如下：
+
+* 服務信用可以應用於未來的發票。信用額度上限為承諾合約價值 (CCV) 的 10%，並按每個訂閱支付。
+* 在相關Keystone訂單的有效訂閱期間內提供積分。
+* 對於按月計費的訂閱，信用額度將在接下來的 12 個月內劃分，並可用於任何未來的Keystone發票，直到訂閱期結束。如果訂閱在 12 個月內結束，則可以續約以繼續使用積分，或者可以將積分應用於其他NetApp發票。
+* 對於年度訂閱，信用額度將應用於下一個Keystone發票（如果有）。如果沒有未來的Keystone發票，則這些信用額度可以應用於其他NetApp發票。
+

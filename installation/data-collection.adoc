@@ -1,0 +1,365 @@
+---
+sidebar: sidebar 
+permalink: installation/data-collection.html 
+keywords: type of data collected by Keystone collector 
+summary: Keystone收集ONTAP和StorageGRID訂閱的設定、狀態和使用資訊。它還可以收集ONTAP性能數據。 
+---
+= Keystone收集的用戶資料類型
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone從Keystone ONTAP和Keystone StorageGRID訂閱收集配置、狀態和使用信息，以及從託管Keystone Collector 的虛擬機器 (VM) 收集遙測資料。如果在Keystone Collector 中啟用此選項，它只能收集ONTAP的效能資料。
+
+
+
+== ONTAP資料收集
+
+.<strong>為ONTAP收集的使用情況資料：了解詳情</strong>
+[%collapsible]
+====
+以下列表是針對ONTAP收集的容量消耗資料的代表性樣本：
+
+* 叢集
++
+** 集群UUID
+** 叢集名稱
+** 序號
+** 位置（基於ONTAP集群中的值輸入）
+** 聯絡人
+** 版本
+
+
+* 節點
++
+** 序號
+** 節點名稱
+
+
+* 卷
++
+** 聚合名稱
+** 卷名
+** 卷實例UUID
+** IsCloneVolume 標誌
+** IsFlexGroupConstituent 標誌
+** IsSpaceEnforcementLogical 標誌
+** IsSpaceReportingLogical 標誌
+** Afs 所使用的邏輯空間
+** 快照空間百分比
+** PerformanceTierInactiveUserData
+** 效能層級非活動用戶資料百分比
+** QoSAdaptivePolicyGroup名稱
+** QoS策略群組名稱
+** 尺寸
+** 用過的
+** 物理已使用
+** 快照使用的大小
+** 類型
+** 音量樣式擴充
+** 虛擬伺服器名稱
+** IsVsRoot 標誌
+
+
+* 虛擬伺服器
++
+** 虛擬伺服器名稱
+** 虛擬伺服器UUID
+** 亞型
+
+
+* 儲存聚合
++
+** 儲存類型
+** 聚合名稱
+** 聚合 UUID
+
+
+* 聚合物件存儲
++
+** 物件儲存名稱
+** 物件儲存UUID
+** 提供者類型
+** 聚合名稱
+
+
+* 複製卷
++
+** FlexClone
+** 尺寸
+** 用過的
+** 虛擬伺服器
+** 類型
+** 父親卷
+** 父伺服器
+** 是成分
+** 分割估計
+** 狀態
+** FlexCloneUsedPercent
+
+
+* 儲存 LUN
++
+** LUN UUID
+** LUN 名稱
+** 尺寸
+** 用過的
+** IsReserved 標誌
+** IsRequested 標誌
+** 邏輯單元名稱
+** QoS策略UUID
+** QoS策略名稱
+** 卷UUID
+** 卷名
+** SVMUUID
+** SVM 名稱
+
+
+* 儲存磁碟區
++
+** 卷實例UUID
+** 卷名
+** SVM名稱
+** SVMUUID
+** QoS策略UUID
+** QoS策略名稱
+** 容量層級足跡
+** 性能層足跡
+** 總足跡
+** 分層策略
+** IsProtected 標誌
+** IsDestination 標誌
+** 用過的
+** 物理已使用
+** 複製父UUID
+** Afs 所使用的邏輯空間
+
+
+* QoS 策略組
++
+** 政策組
+** QoS策略UUID
+** 最大吞吐量
+** 最小吞吐量
+** 最大吞吐量IOPS
+** 最大吞吐量MBps
+** 最小吞吐量IOPS
+** 最小吞吐量MBps
+** IsShared 標誌
+
+
+* ONTAP自適應 QoS 策略群組
++
+** QoS策略名稱
+** QoS策略UUID
+** 峰值IOPS
+** PeakIOPS分配
+** 絕對最小IOPS
+** 預期IOPS
+** 預期IOPS分配
+** 區塊大小
+
+
+* 足跡
++
+** 虛擬伺服器
+** 體積
+** 總足跡
+** VolumeBlocksFootprintBin0
+** VolumeBlocksFootprintBin1
+
+
+* MetroCluster集群
++
+** 集群UUID
+** 叢集名稱
+** 遠端集群UUID
+** 遠端叢集使用者名稱
+** 本地配置狀態
+** 遠端配置狀態
+** 模式
+
+
+* 收集器可觀察性指標
++
+** 收集時間
+** 已查詢Active IQ Unified Manager API 端點
+** 回應時間
+** 記錄數
+** AIQUM實例IP
+** 收集器實例 ID
+
+
+
+
+====
+.<strong>為ONTAP收集的效能數據：了解詳情</strong>
+[%collapsible]
+====
+以下列表是為ONTAP收集的效能資料的代表性範例：
+
+* 叢集名稱
+* 集群 UUID
+* 物件 ID
+* 卷名
+* 卷實例 UUID
+* 虛擬伺服器
+* 虛擬伺服器UUID
+* 節點串行
+* ONTAP版本
+* AIQUM 版本
+* 總計的
+* 聚合UUID
+* 資源鍵
+* 時間戳
+* 每TB IOPS
+* 延遲
+* 讀取延遲
+* 寫入MBps
+* QoS最小吞吐量延遲
+* QoSNBladeLatency
+* 已使用淨空
+* 快取未命中率
+* 其他延遲
+* QoS聚合延遲
+* 每秒輸入/輸出次數
+* QoS網路延遲
+* 可用操作
+* 寫入延遲
+* QoS雲延遲
+* QoS叢集互連延遲
+* 其他MBps
+* QoS延遲
+* QoS刀片延遲
+* 使用率
+* 讀取IOPS
+* 兆位元/秒
+* 其他IOPS
+* QoS策略組延遲
+* 讀取MBps
+* QoS同步SnapMirror延遲
+* 寫入IOPS
+
+
+====
+.<strong>因限制私人資料存取而移除的項目清單：了解詳情</strong>
+[%collapsible]
+====
+當在Keystone Collector 上啟用「*刪除私人資料*」選項時， ONTAP的以下使用資訊將會被消除。預設情況下啟用此選項。
+
+* 叢集名稱
+* 集群位置
+* 集群聯絡人
+* 節點名稱
+* 聚合名稱
+* 卷名
+* QoSAdaptivePolicyGroup名稱
+* QoS策略群組名稱
+* 虛擬伺服器名稱
+* 儲存 LUN 名稱
+* 聚合名稱
+* 邏輯單元名稱
+* SVM 名稱
+* AIQUM實例IP
+* FlexClone
+* 遠端叢集名稱
+
+
+====
+
+
+== StorageGRID資料收集
+
+.<strong>為StorageGRID所收集的使用量資料：了解詳情</strong>
+[%collapsible]
+====
+以下列表是 `Logical Data`為StorageGRID收集：
+
+* StorageGRIDID
+* 帳戶 ID
+* 帳戶名稱
+* 帳戶配額位元組數
+* 儲存桶名稱
+* 桶對象計數
+* 桶數據位元組數
+
+
+以下列表是 `Physical Data`為StorageGRID收集：
+
+* StorageGRIDID
+* 節點ID
+* 網站 ID
+* 網站名稱
+* 實例
+* StorageGRID儲存利用率位元組數
+* StorageGRID儲存利用率元資料位元組
+
+
+====
+.<strong>因限制私人資料存取而移除的項目清單：了解詳情</strong>
+[%collapsible]
+====
+當在Keystone Collector 上啟用「*刪除私人資料*」選項時， StorageGRID的以下使用資訊將會被消除。預設情況下啟用此選項。
+
+* 帳戶名稱
+* 儲存桶名稱
+* 網站名稱
+* 實例/節點名稱
+
+
+====
+
+
+== 遙測數據收集
+
+.<strong>從Keystone Collector VM 收集的遙測資料：了解詳情</strong>
+[%collapsible]
+====
+以下列表是針對Keystone系統收集的遙測資料的代表性樣本：
+
+* 系統資訊
++
+** 作業系統名稱
+** 作業系統版本
+** 作業系統 ID
+** 系統主機名
+** 系統預設IP位址
+
+
+* 系統資源使用情況
++
+** 系統正常運作時間
+** CPU 核心數
+** 系統負載（1分鐘、5分鐘、15分鐘）
+** 總記憶體
+** 釋放記憶體
+** 可用記憶體
+** 共享記憶體
+** 緩衝記憶體
+** 快取記憶體
+** 總掉期
+** 免費掉期
+** 快取交換
+** 磁碟檔案系統名稱
+** 磁碟大小
+** 使用的磁碟
+** 磁碟可用
+** 磁碟使用率
+** 磁碟掛載點
+
+
+* 已安裝的軟體包
+* 收集器配置
+* 服務日誌
++
+** 來自Keystone服務的服務日誌
+
+
+
+
+====

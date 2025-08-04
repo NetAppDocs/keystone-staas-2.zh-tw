@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-consumption-billing.html 
+keywords: burst consumption billing 
+summary: Keystone STaaS 計費是基於突發容量，也就是您在訂閱的承諾容量之上消耗的容量。 
+---
+= 根據突發消費計費
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 計費是基於_突發容量_，也就是您在訂閱的承諾容量之上消耗的容量。
+
+您的突發限制在您的Keystone協定中確定和指定。這比承諾產能高出20%。
+
+承諾容量是購買訂閱時承諾給您的容量。承諾容量和突發容量是按照效能服務等級來衡量的。已消耗容量是您的工作負載實際使用的容量。
+
+當消耗的容量大於某一性能服務等級的承諾容量時，將記錄突發消耗並相應收費。通常，它比承諾容量高出 20%。超出突發容量的使用情況表示為「超出突發限制」。
+
+每個消費記錄產生後都會發生此過程。因此，突發消耗反映了您在已承諾容量之外的過度消耗容量的數量和期限。要了解更多信息，請參閱link:../integrations/consumption-tab.html["查看Keystone訂閱的消費趨勢"]。
+
+有關Keystone支援的不同容量的信息，請參閱link:../concepts/supported-storage-capacity.html["Keystone支援的儲存容量"]。

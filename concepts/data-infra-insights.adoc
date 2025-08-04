@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-infra-insights.html 
+keywords: add-on services, add-on, data infrastructure insights, DII, deployment of DII 
+summary: Data Infrastructure Insights透過監控、故障排除和最佳化公有雲和私有資料中心的儲存來提高Keystone STaaS 的效率。 
+---
+= 了解Data Infrastructure Insights
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetAppData Infrastructure Insights(DII，以前稱為Cloud Insights) 是Keystone STaaS 的附加產品。該服務與Keystone STaaS 的整合增強了 Keystone 提供的跨公有雲和私有資料中心的儲存資源的監控、故障排除和最佳化能力。
+
+要了解有關Data Infrastructure Insights的更多信息，請參閱link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insights文檔"^]。
+
+DII 適用於新訂閱和現有訂閱。它可以作為承諾容量的附加元件整合到Keystone訂閱中。當 DII 整合到Keystone訂閱中時，它將為訂閱中的每個基本效能服務等級提供相應的效能服務等級。例如，Extreme 映射到 DII Extreme，Premium 映射到 DII Premium，Performance 映射到 DII Performance。這些對應可確保 DII 效能服務等級與您的Keystone訂閱的基本效能服務等級保持一致。
+
+Digital Advisor儀表板上的 * Keystone Subscriptions* 小工具內 DII 效能服務等級視圖：
+
+image:keystone-widget-dii.png["顯示 DII 服務等級的Keystone Subscriptions 小工具的螢幕截圖"]
+
+
+
+== 為Keystone部署 DII
+
+客戶可以透過兩種方式為Keystone整合 DII：作為監控其他非 Keystone 環境的現有實例的一部分，或作為新實例的一部分。設立 DII 是客戶的責任。如果需要在複雜環境中設定 DII 的協助，客戶團隊可以參與link:https://www.netapp.com/services/["NetApp專業服務"^]。
+
+若要設定 DII，請參閱link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html["Data Infrastructure Insights入門"^]。
+
+請注意以下事項：
+
+* 如果客戶要啟動新的 DII 實例，建議從link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html#starting-your-data-infrastructure-insights-free-trial["DII 免費試用"^]。若要了解此功能和所需的啟動清單，請參閱link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_feature_tutorials.html["功能教學"^]。
+* 每個站點都需要一個採集單元。若要安裝採集單元，請參閱link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_getting_started_with_cloud_insights.html#install-an-acquisition-unit["安裝採集單元"^]。如果客戶已經設定了 DII 實例和採集單元，他們可以繼續配置資料收集器。
+* 對於部署的每個儲存硬件，客戶必須在採集單元上配置資料收集器。若要設定資料收集器，請參閱link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_configure_data_collectors.html["配置資料收集器"^]。  Keystone儲存所需的資料收集器（基於底層硬體）如下：
++
+|===
+| 儲存硬體 | 數據收集器 
+
+
+| ONTAP系統 | NetApp ONTAP資料管理軟體 
+
+
+| StorageGRID | NetAppStorageGRID 
+
+
+| Cloud Volumes ONTAP | NetApp Cloud Volumes ONTAP 
+|===
++
+配置完成後，DII 實例將開始監控作為Keystone的一部分部署的NetApp儲存資源。
+
+
+
+
+NOTE: 雖然 DII 為已部署的硬體提供了廣泛的監控功能，但它不提供有關您的Keystone訂閱的見解，例如訂閱使用情況或效能服務等級的詳細資訊。有關訂閱的見解，請參閱link:../integrations/keystone-aiq.html["Keystone儀表板和報告"]。
+
+
+
+== 計費和計量
+
+以下概述了 DII 附加服務的計費和計量細節：
+
+* 此服務的衡量方式與您的主要訂閱相同。例如，如果您的主要訂閱包括 100 TiB 的 Extreme 服務和 100 TiB 的 Premium 服務，兩者均按邏輯使用量進行衡量，則附加服務 DII Extreme 100 TiB 和 DII Premium 100 TiB 也是按邏輯使用量進行衡量。如果您的主要訂閱是按配置來衡量的，那麼附加服務也會以相同的方式以相同的容量進行衡量。附加服務將遵循與您的主訂閱相同的測量方法。
++
+image:current-consumption-dii.png["顯示服務等級計量的目前消耗標籤的螢幕截圖"]
+
+* 本服務與您的Keystone訂閱一起衡量並開立同一張發票。如果您在啟動Keystone訂閱之前為Keystone設定 DII，則計費仍從Keystone訂閱啟用日期或現有訂閱的修改日期開始。
+* 除標準Keystone發票外，此服務還根據 DII 效能服務等級的承諾容量和突發使用情況進行計量和開立發票。此附加服務的計量遵循與底層Keystone訂閱效能服務等級相同的方法，可以是邏輯的、配置的或實體的。
+* 該服務隨與其連結的Keystone訂閱而結束。續費時，您可以選擇是否續費附加服務。如果您不續訂Keystone訂閱，受監控的硬體將會退役，並且附加服務將自動終止。
+
+
+
+
+== 支援和用戶訪問
+
+如果客戶啟用「允許NetApp存取您的Data Infrastructure Insights環境」選項，則經批准的NetApp支援團隊成員可以存取客戶的 DII 實例。為此，請前往*幫助>支援*，然後啟用該選項。
+
+image:dii-support-permission.png["螢幕截圖演示了客戶如何啟用該選項"]
+
+客戶可以使用「使用者管理」畫面向內部或外部使用者提供存取權限image:dii-user-option.png["使用者按鈕"]選項。
+
+image:dii-user-access.png["顯示新增使用者選項的螢幕截圖"]

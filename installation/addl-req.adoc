@@ -1,0 +1,125 @@
+---
+sidebar: sidebar 
+permalink: installation/addl-req.html 
+keywords: keystone unified manager prerequisites, aiqum config keystone 
+summary: 在開始使用Keystone之前，您需要確保ONTAP叢集和StorageGRID系統符合一些要求。 
+---
+= ONTAP和StorageGRID的要求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+在開始使用Keystone之前，您需要確保ONTAP叢集和StorageGRID系統符合一些要求。
+
+[role="tabbed-block"]
+====
+.ONTAP
+--
+.軟體版本
+. ONTAP 9.8 或更高版本
+. Active IQ Unified Manager （Unified Manager）9.10 或更高版本
+
+
+.開始之前
+如果您打算僅透過ONTAP收集使用情況數據，請符合以下要求：
+
+. 確保已配置ONTAP 9.8 或更高版本。有關配置新集群的信息，請參閱以下連結：
++
+** https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["使用 System Manager 在新叢集上設定ONTAP"]
+** https://docs.netapp.com/us-en/ontap/software_setup/task_create_the_cluster_on_the_first_node.html["使用 CLI 設定集群"]
+
+
+. 建立具有特定角色的ONTAP登入帳戶。要了解更多信息，請參閱 https://docs.netapp.com/us-en/ontap/authentication/create-svm-user-accounts-task.html#cluster-and-svm-administrators["了解如何建立ONTAP登入帳戶"]。
++
+** *網頁使用者介面*
++
+... 使用您的預設憑證登入ONTAP系統管理員。要了解更多信息，請參閱 https://docs.netapp.com/us-en/ontap/concept_administration_overview.html["使用系統管理員進行叢集管理"]。
+... 建立具有「readonly」角色和「http」應用程式類型的ONTAP用戶，並透過導航至 *Cluster > Settings > Security > Users* 啟用密碼驗證。
+
+
+** *命令列介面*
++
+... 使用您的預設憑證登入ONTAP CLI。要了解更多信息，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用 CLI 進行叢集管理"]。
+... 建立具有“readonly”角色和“http”應用程式類型的ONTAP用戶，並啟用密碼驗證。要了解有關身份驗證的更多信息，請參閱 https://docs.netapp.com/us-en/ontap/authentication/enable-password-account-access-task.html["啟用ONTAP帳戶密碼訪問"]。
+
+
+
+
+
+
+如果您打算透過Active IQ Unified Manager收集使用情況數據，請符合以下要求：
+
+. 確保已設定 Unified Manager 9.10 或更高版本。有關安裝 Unified Manager 的信息，請參閱以下連結：
++
+** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在 VMware vSphere 系統上安裝 Unified Manager"^]
+** https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["在 Linux 系統上安裝 Unified Manager"^]
+
+
+. 確保ONTAP叢集已新增至 Unified Manager。有關新增叢集的信息，請參閱 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_clusters.html["新增集群"^]。
+. 建立具有特定角色的 Unified Manager 使用者以收集使用情況和效能資料。執行以下步驟。有關使用者角色的信息，請參閱 https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_roles.html["使用者角色的定義"^]。
++
+.. 使用安裝期間產生的預設應用程式管理員使用者憑證登入 Unified Manager Web UI。看 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["存取 Unified Manager Web UI"^]。
+.. 使用以下方式為Keystone Collector 建立服務帳戶 `Operator`使用者角色。 Keystone Collector 服務 API 使用此服務帳戶與 Unified Manager 通訊並收集使用量資料。看 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["新增用戶"^]。
+.. 創建一個 `Database`用戶帳戶， `Report Schema`角色。效能資料收集需要此使用者。看 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["建立資料庫用戶"^]。
++
+
+NOTE: 在全新安裝 Unified Manager 期間，MySQL 的預設連接埠 3306 僅限於本機，這會阻止收集Keystone ONTAP的效能資料。可以修改此配置，並且可以使用 `Control access to MySQL port 3306`Unified Manager 維護控制台上的選項。有關信息，請參閱link:https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_additional_menu_options.html["附加選單選項"^]。
+
+
+
+. 在 Unified Manager 中啟用 API 閘道。 Keystone Collector 利用 API 閘道功能與ONTAP叢集進行通訊。您可以從 Web UI 啟用 API 網關，也可以透過 Unified Manager CLI 執行一些指令來啟用 API 閘道。
++
+.Web 使用者介面
+若要從 Unified Manager Web UI 啟用 API 網關，請登入 Unified Manager Web UI 並啟用 API 閘道。有關信息，請參閱 https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_api_gateway.html["啟用 API 網關"^]。
+
++
+.命令列介面
+若要透過 Unified Manager CLI 啟用 API Gateway，請依照下列步驟操作：
+
++
+.. 在 Unified Manager 伺服器上，開始 SSH 會話並登入 Unified Manager CLI。
+`um cli login -u _<umadmin>_`有關 CLI 命令的信息，請參閱 https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_supported_unified_manager_cli_commands.html["支援的 Unified Manager CLI 命令"^]。
+.. 驗證 API 網關是否已啟用。
+`um option list api.gateway.enabled`一個 `true`值表示API網關已啟用。
+.. 如果傳回的值是 `false`，運行此命令：
+`um option set api.gateway.enabled=true`
+.. 重新啟動 Unified Manager 伺服器：
++
+*** Linux： https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/task_restart_unified_manager.html["重新啟動 Unified Manager"^] 。
+*** VMware vSphere： https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/task_restart_unified_manager_virtual_machine.html["重新啟動 Unified Manager 虛擬機"^] 。
+
+
+
+
+
+
+--
+.StorageGRID
+--
+在StorageGRID上安裝Keystone Collector 需要以下設定。
+
+* StorageGRID `11.6.0`或更高版本應安裝。有關升級StorageGRID 的信息，請參閱link:https://docs.netapp.com/us-en/storagegrid-116/upgrade/index.html["升級StorageGRID軟體：概述"^]。
+* 應該建立一個StorageGRID本機管理員使用者帳戶來收集使用量資料。  Keystone Collector 服務使用此服務帳戶透過管理員節點 API 與StorageGRID通訊。
++
+.步驟
+.. 登入網格管理器。看 https://docs.netapp.com/us-en/storagegrid-116/admin/signing-in-to-grid-manager.html["Sign in入網格管理器"^]。
+.. 使用以下方式建立本機管理員群組 `Access mode: Read-only`。看 https://docs.netapp.com/us-en/storagegrid-116/admin/managing-admin-groups.html#create-an-admin-group["建立管理員群組"^]。
+.. 新增以下權限：
++
+*** 租戶帳戶
+*** 維護
+*** 指標查詢
+
+
+.. 建立Keystone服務帳戶使用者並將其與管理員群組關聯。看 https://docs.netapp.com/us-en/storagegrid-116/admin/managing-users.html["管理用戶"]。
+
+
+
+
+--
+====

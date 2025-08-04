@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: integrations/options.html 
+keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor 
+summary: 作為NetApp Keystone STaaS 訂閱者，您可以搜尋和過濾資料、產生訂閱和使用情況報告、檢查時間戳記以及查看警報。 
+---
+= 搜尋Keystone數據、產生報告並查看警報
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以搜尋和過濾資料、產生訂閱和使用情況報告以及查看警報以隨時了解儲存環境。
+
+
+
+== 從BlueXP搜尋和過濾數據
+
+在BlueXP中，您可以根據標籤中表格中可用的列參數搜尋和篩選Keystone資料。例如，在 *Subscriptions* 標籤下的 *Subscriptions* 子選項卡中，您可以透過在搜尋框中輸入Keystone版本來過濾資料。同樣，在「*Assets*」標籤下的「*Volumes in clusters*」標籤中，您可以透過在搜尋方塊中輸入磁碟區名稱來篩選磁碟區。
+
+您可以使用可用的進階過濾選項來優化搜尋。例如，在「*訂閱*」子標籤中，您可以按Keystone版本、計費週期、最高容量和訂閱到期天數過濾資料；在「叢集中的磁碟區*」標籤中，您可以按磁碟區名稱、叢集名稱、QoS 合規性、磁碟區類型等進行篩選。可以同時套用多個篩選器來精確縮小搜尋結果。image:bxp-filter-search.png["進階過濾選項"]
+
+
+
+== 從BlueXP或Digital Advisor產生報告
+
+您可以使用下載按鈕產生並查看Keystone數據報告image:bluexp-download-report-2.png["BlueXP中的報告下載圖示 2"]可在BlueXP或Digital Advisor內的選項卡中使用。這些標籤可讓您為訂閱、歷史使用情況、突發使用情況、效能、資產、磁碟區和物件產生報表。
+
+詳細資訊以 CSV 格式生成，您可以儲存以供將來使用和比較。
+
+
+
+== 從Digital Advisor產生綜合報告
+
+在Digital Advisor中，您可以產生並查看您的訂閱、歷史使用情況、突發使用情況、效能、資產以及磁碟區和物件的綜合報告。為此，請從Digital Advisor中的報告功能中選擇 * Keystone Subscriptions* 作為報告類型。您可以在客戶、叢集、監視清單或訂閱層級產生這些報告。
+
+image:report-generation.png["建立報告"]
+
+該報告以 Excel 格式生成，每種類型的信息（例如訂閱詳細資訊或使用歷史記錄）都顯示在單獨的工作表上。這些工作表根據 * Keystone訂閱* 頁面上的選項卡命名，以方便查看。您可以儲存該報告以供將來使用。
+
+要了解有關生成報告的更多信息，請參閱link:https://docs.netapp.com/us-en/active-iq/task_generate_reports.html["產生自訂報告"^]。
+
+
+
+== 查看Digital Advisor的警報
+
+在Digital Advisor中， Keystone儀表板提供警報通知，讓您了解儲存環境中發生的問題。這些通知可能會以資訊警報或警告的形式出現。例如，如果您管理的叢集中有一些磁碟區沒有附加自適應 QoS (AQoS) 策略，您會看到警告訊息。選擇警告訊息以查看「*捲和物件*」標籤中的不合規磁碟區清單。
+
+
+NOTE: 如果您訂閱了單一效能服務等級或費率計劃，您將無法看到不合規磁碟區的警報。
+
+image:alert-aiq-3.png["警報"]
+
+有關 AQoS 策略的信息，請參閱link:../concepts/qos.html["自適應QoS"]。
+
+有關這些訊息的更多信息，請聯繫NetApp Keystone支援。有關提出服務請求的信息，請參閱link:../concepts/gssc.html#generating-service-requests["產生服務請求"]。

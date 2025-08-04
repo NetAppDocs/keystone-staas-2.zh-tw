@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-bluexp.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
+summary: 作為NetApp Keystone STaaS 訂閱者，您可以從NetApp BlueXP取得訂閱概覽。 
+---
+= BlueXP中的Keystone儀表板
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「概覽」標籤快速確定存在風險的工作負載、查看訂閱的容量和到期狀態、識別未解決的警報以及查看容量使用率最高的訂閱。您也可以查看不同版本Keystone的訂閱狀態，以反白顯示需要您注意的任何問題。
+
+若要查看「*概覽*」選項卡，請從BlueXP左側導覽功能表中前往「*儲存 > Keystone > 概覽*」。
+
+image:bxp-dashboard-overview-1.png["概覽標籤的螢幕截圖"]
+
+「概覽」標籤提供以下見解：
+
+* *摘要*：顯示訂閱、 ONTAP叢集、 StorageGRID節點和ONTAP節點的總數。每個類別都有一個「檢視」按鈕，可輕鬆導覽至「訂閱」或「資產」標籤上的詳細部分。
+* *即將到期*：6 個月內到期的訂閱數量。按一下「*檢視*」可在「*訂閱*」標籤中查看這些訂閱。
+* *未解決的請求*：未解決的服務請求總數。
+* *容量使用情況*：超出突發容量、使用突發容量和未充分利用的訂閱的容量消耗狀態。每個類別都包含一個「檢視」按鈕，用於導覽至套用了相關篩選器的「訂閱」標籤。
+* *容量使用率最高的前 5 個訂閱*：顯示容量利用率百分比最高的前 5 個Keystone訂閱的表格。您可以點擊「訂閱」列中的訂閱號碼來取得詳細資訊。
+
+
+*相關資訊*
+
+* link:../integrations/dashboard-overview.html["了解Keystone儀表板"]
+* link:../integrations/dashboard-access.html["開始使用Keystone儀表板"]
+* link:..//integrations/keystone-aiq.html["Digital Advisor中的Keystone儀表板"]
+* link:../integrations/subscriptions-tab.html["查看您的訂閱詳情"]
+* link:../integrations/current-usage-tab.html["查看您目前的消費詳情"]
+* link:../integrations/consumption-tab.html["查看消費趨勢"]
+

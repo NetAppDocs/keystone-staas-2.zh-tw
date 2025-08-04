@@ -1,0 +1,74 @@
+---
+indexpage:
+  title: Keystone文檔
+  summary: NetApp Keystone是一種按需付費的儲存即服務產品，只需一次訂閱即可提供本機和雲端資料儲存服務，並且能夠在雲端之間重新分配儲存支出。
+  keywords: Keystone STaaS
+  lead: NetApp Keystone是一種靈活的按使用量付費的訂閱式服務，可為那些更傾向於營運支出而非資本支出或租賃的客戶提供無縫的混合雲體驗。它使您能夠消除管理資源的
+    IT 負擔並避免冗長的採購週期，從而加快價值實現時間。瀏覽此庫中的文件以了解有關NetApp Keystone儲存即服務 (STaaS) 產品的更多資訊。
+  tiles:
+  - title: 開始
+    links:
+    - title: 什麼是NetApp Keystone？
+      url: "/concepts/overview.html"
+    - title: 安裝Keystone Collector
+      url: "/installation/vapp-installation.html"
+    - title: 安裝 ITOM Collector
+      url: "/installation/itom-prereqs.html"
+    - title: 以私人模式安裝Keystone Collector
+      url: "/dark-sites/overview.html"
+  - title: BlueXP和Digital Advisor中的Keystone儀表板
+    links:
+    - title: 了解Keystone儀表板
+      url: "/integrations/dashboard-overview.html"
+    - title: 造訪Keystone儀表板
+      url: "/integrations/dashboard-access.html"
+    - title: 查看訂閱洞察
+      url: "/integrations/subscriptions-tab.html"
+    - title: 查看資產
+      url: "/integrations/assets-tab.html"
+    - title: 搜尋數據並產生報告
+      url: "/integrations/options.html"
+  - title: Keystone支援的服務
+    links:
+    - title: Keystone績效服務水平
+      url: "/concepts/service-levels.html"
+    - title: 服務品質（QoS）
+      url: "/concepts/qos.html"
+    - title: 測量單位有哪些？
+      url: "/concepts/metrics.html"
+    - title: 支援的基本儲存是什麼？
+      url: "/concepts/supported-storage-services.html"
+    - title: 我可以將我的支出從本地重新分配到雲端嗎？
+      url: "/concepts/capacity-requirements.html#capacity-adjustments"
+  - title: Keystone定價和計費
+    links:
+    - title: 了解Keystone定價
+      url: "/concepts/pricing.html"
+    - title: 我的帳單明細
+      url: "/concepts/billing-schedules.html"
+    - title: 根據承諾容量計費
+      url: "/concepts/committed-capacity-billing.html"
+    - title: 根據消耗容量進行計量
+      url: "/concepts/consumed-capacity-billing.html"
+    - title: 如果我消耗的容量超過了承諾的容量，會發生什麼事？
+      url: "/concepts/burst-consumption-billing.html"
+  - title: 使用Keystone服務做更多事情
+    links:
+    - title: 了解您的支援團隊
+      url: "/concepts/gssc.html"
+    - title: 我該如何處理冷數據或較少使用的數據？
+      url: "/concepts/data-tiering.html"
+    - title: 我如何保護我的Keystone資料？
+      url: "/concepts/adp.html"
+    - title: 監控、排除故障和增強存儲
+      url: "/concepts/data-infra-insights.html"
+    - title: 美國公民支持
+      url: "/concepts/usps.html"
+  - title: 了解更多
+    links:
+    - title: Active IQDigital Advisor
+      url: https://docs.netapp.com/us-en/active-iq/index.html
+    - title: BlueXP
+      url: https://docs.netapp.com/us-en/cloud-manager-family/
+    - title: Active IQ Unified Manager
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/

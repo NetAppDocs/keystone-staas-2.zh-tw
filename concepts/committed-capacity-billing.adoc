@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concepts/committed-capacity-billing.html 
+keywords: Billing based on committed capacity, committed capacity billing 
+summary: 承諾容量是購買訂閱時為特定服務等級承諾的容量。 
+---
+= 根據承諾容量計費
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+承諾容量是購買訂閱時為特定性能服務等級承諾的容量。
+
+承諾容量可以是您和NetApp或合作夥伴所接受的單一訂閱中各種效能服務等級的總容量。每個Keystone訂單上都會註明此容量，並且會計費，無論實際容量消耗是多少。
+
+有關Keystone支援的不同容量的信息，請參閱link:../concepts/supported-storage-capacity.html["Keystone支援的儲存容量"]。

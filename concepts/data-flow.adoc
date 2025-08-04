@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-flow.html 
+keywords: data flow 
+summary: Keystone STaaS 系統中的資料流經Keystone Collector 和 AIOPs 解決方案工具（相關的監控系統）。 
+---
+= Keystone資料流
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 系統中的資料流經Keystone Collector 和 ITOM 監控解決方案（即相關的監控系統）。
+
+
+
+== Keystone Collector 資料流
+
+Keystone Collector 向儲存控制器發起 REST API 調用，並定期獲取控制器的使用情況詳細信息，如下流程圖所示：
+
+image:data-collector-flow.png["顯示收集器組件內的資料流"]
+
+.傳奇
+. NetApp Keystone Collector 啟動與Keystone雲端的連線。
+. 客戶操作的防火牆允許連線。
+. Keystone Collector 直接與儲存控制器的管理連線建立 REST API 連線或透過Active IQ Unified Manager建立隧道來收集使用情況和效能資料。
+. 這些資料透過 HTTPS 安全地傳送到Keystone雲端元件。
+
+
+
+
+== 監控資料流
+
+持續監控儲存基礎架構的健康狀況是Keystone服務最重要的功能之一。對於監控和報告， Keystone使用 ITOM 監控解決方案。下圖描述了 ITOM 監控解決方案如何保護對客戶位置的遠端存取。客戶可以選擇啟用遠端會話功能，這使得Keystone支援團隊可以連接到受監控的裝置進行故障排除。
+
+image:monitoring-flow-2.png["資料流"]
+
+.傳奇
+. ITOM 監控解決方案閘道向雲端入口網站發起 TLS 會話。
+. 客戶操作的防火牆允許連線。
+. 雲端的ITOM監控解決方案伺服器接受連線。
+. 雲端入口網站和本機網關之間建立 TLS 會話。
+. NetApp控制器使用 SNMP/Syslog 協定傳送警報或回應對本機閘道的 API 請求。
+. 本機網關使用先前建立的 TLS 會話將這些警報傳送到其雲端入口網站。
+
+
+
+
+== 合規標準
+
+Keystone ITOM 監控解決方案符合歐盟一般資料保護規範 (GDPR) 和加州消費者隱私法案 (CCPA)。它還提供了一個link:https://www.logicmonitor.com/legal/data-processing-addendum["資料保護附錄（DPA）"^]記錄這些承諾。  ITOM 監控解決方案不會收集或儲存任何個人資料。

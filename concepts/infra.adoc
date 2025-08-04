@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concepts/infra.html 
+keywords: keystone infrastructure, infra 
+summary: Keystone基礎設施、設計、技術選擇和組件產品均完全由NetApp負責。 
+---
+= Keystone基礎設施
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp全權負責Keystone的基礎設施、設計、技術選擇和元件，適用於NetApp和客戶營運的環境。
+
+NetApp保留採取以下措施的權利：
+
+* 選擇、替換或重新利用產品。
+* 在適當的時候使用新技術更新產品。
+* 增加或減少產品容量以滿足服務要求。
+* 修改架構、技術和/或產品以滿足服務要求。
+
+
+Keystone基礎設施包括多個元件，例如：
+
+* Keystone基礎設施，包括NetApp儲存系統。
+* 管理和操作服務的工具，例如 ITOM 監控解決方案、 BlueXP、 Active IQ和Active IQ Unified Manager。
+
+
+
+
+== 儲存平台
+
+企業應用程式需要儲存平台來支援快速配置工作流程、保持持續可用性、以低延遲維持高工作負載、提供更高的效能並支援與主要雲端供應商的整合。 NetApp有多種產品和技術可以支援這些要求。對於Keystone服務， NetApp使用AFF、 ASA、 FAS和StorageGRID系統。
+
+
+
+== 監控工具
+
+在Keystone客戶所經營的服務中，儲存基礎架構和監控工具將安裝在您的站點。儲存基礎設施包括支援您初始訂單所需的儲存硬件，並提供以後訂購更多儲存的功能。
+
+除了儲存設備外，還提供了兩種監控工具用於儲存和消耗監控。
+
+* Keystone IT 營運管理 (ITOM) 監控解決方案：基於雲端的 SaaS 應用程序，用於監控您的Keystone環境。它與NetApp儲存平台內建集成，可收集環境資料並監控Keystone基礎架構的運算、網路和儲存組件。此監控功能可擴展到內部設定、資料中心、雲端環境或這些環境的任意組合。該服務是透過使用安裝在您的網站並與雲端入口網站通訊的本機 ITOM 收集器來啟用的。
+* Keystone資料收集器： Keystone資料收集器收集資料並將其提供給Keystone計費平台進行進一步處理。此應用程式與Active IQ Unified Manager捆綁在一起。它每隔五分鐘從ONTAP和StorageGRID控制器收集資料。資料經過處理，並透過AutoSupport機制將元資料傳送到集中式Active IQ資料湖，用於產生計費資料。  Active IQ資料湖處理計費資料並將其傳送給Zuora進行計費。
+
+
+image:data-collector-flow.png["收集器資料流"]
+
+您可以透過BlueXP或Digital Advisor查看Keystone訂閱的訂閱和消費詳情。要了解有關Keystone報告的更多信息，請參閱link:../integrations/dashboard-overview.html["Keystone儀表板概述"]。

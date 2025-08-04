@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/configure-collector.html 
+keywords: configure, keystone, collector, private mode, darksite mode, tui utility 
+summary: 完成一些設定任務，以使Keystone Collector 能夠在沒有網路存取的環境中收集使用數據，也稱為_暗站_或_私人模式_。 
+---
+= 以私有模式配置Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成一些設定任務，以使Keystone Collector 能夠在沒有網路存取的環境中收集使用數據，也稱為_暗站_或_私人模式_。這是一次性活動，用於啟動所需元件並將其與您的儲存環境關聯起來。配置完成後， Keystone Collector 將監控由Active IQ Unified Manager管理的所有ONTAP叢集。
+
+
+NOTE: Keystone Collector 為您提供了Keystone Collector 管理終端使用者介面 (TUI) 公用程式來執行設定和監控活動。您可以使用各種鍵盤控制（例如 Enter 和箭頭鍵）來選擇選項並瀏覽此 TUI。
+
+.步驟
+. 啟動Keystone Collector 管理 TUI 公用程式：
++
+`keystone-collector-tui`
+
+. 前往*配置>進階*。
+. 切換*暗站模式*選項。
++
+image:dark-site-mode-1.png["暗站模式"]
+
+. 選擇*儲存*。
+. 到*配置> KS-Collector*來配置Keystone Collector。
+. 切換*使用系統啟動 KS 收集器*欄位。
+. 切換「收集ONTAP使用情況」欄位。新增Active IQ Unified Manager （Unified Manager）伺服器和使用者帳戶的詳細資訊。
+. *可選*：如果訂閱需要資料分層，請切換*使用分層費率計劃*欄位。
+. 根據購買的訂閱類型，更新*使用類型*。
++
+
+NOTE: 在配置之前，請先確認與NetApp訂閱相關的使用類型。
+
++
+image:dark-site-usage-type-1.png["使用類型選項"]
+
+. 選擇*儲存*。
+. 前往*配置> KS-Collector*以產生Keystone Collector 金鑰對。
+. 轉到*加密金鑰管理員*並按 Enter。
++
+image:dark-site-encryption-key-manager-1.png["加密金鑰管理員選項"]
+
+. 選擇*產生收集器金鑰對*並按 Enter。
++
+image:dark-site-generate-collector-keypair-1.png["產生收集器金鑰對選項"]
+
+. 透過返回 TUI 主畫面並驗證 *服務狀態* 訊息，確保Keystone Collector 處於健康狀態。系統應顯示服務處於*整體：健康*狀態。等待最多 10 分鐘，如果在此期間後整體狀態仍然不健康，請查看先前的設定步驟並聯絡NetApp支援團隊。
++
+image:dark-site-overall-healthy-2.png["服務狀態"]
+
+. 選擇主畫面上的「退出到 Shell」選項退出Keystone Collector 管理 TUI。
+. 檢索產生的公鑰：
++
+`~/collector-public.pem`
+
+. 將此文件透過電子郵件發送至 ng-keystone-secure-site-upload@netapp.com（用於安全的非 USPS 網站）或 ng-keystone-secure-site-usps-upload@netapp.com（用於安全的 USPS 網站）。
+
+
+
+
+== 匯出使用情況報告
+
+您應該在每個月末向NetApp發送每月使用情況摘要報告。您可以手動產生此報告。
+
+請依照下列步驟產生使用情況報告：
+
+. 前往Keystone Collector TUI 主畫面上的 *匯出使用情況*。
+. 收集文件並將其發送至 ng-keystone-secure-site-upload@netapp.com（用於安全的非 USPS 網站）或發送至 ng-keystone-secure-site-usps-upload@netapp.com（用於安全的 USPS 網站）。
++
+Keystone Collector 會產生一個明文文件和一個加密文件，需要手動將其傳送給NetApp。清晰的文件報告包含以下可供客戶驗證的詳細資訊。
+
++
+image:dark-site-clear-file-report-1.png["清除文件報告"]
+
+
+
+
+
+== 升級ONTAP
+
+Keystone Collector 支援透過 TUI 進行ONTAP升級。
+
+請依照以下步驟升級ONTAP：
+
+. 前往*維護> ONTAP升級 Web 伺服器*。
+. 將ONTAP升級映像檔複製到 */opt/netapp/ontap-upgrade/*，然後選擇 *Start Webserver* 啟動 Web 伺服器。
++
+image:dark-site-start-webserver-1.png["啟動 Web 伺服器選項"]
+
+. 前往 `http://<collector-ip>:8000`使用網頁瀏覽器取得升級協助。
+
+
+
+
+== 重啟Keystone收集器
+
+您可以透過 TUI 重新啟動Keystone Collector 服務。在 TUI 中前往 *維護 > 重新啟動收集器* 服務。這將重新啟動所有收集器服務，並且可以從 TUI 主螢幕監控它們的狀態。
+
+image:dark-site-restart-collector-services-1.png["重新啟動收集器服務選項"]

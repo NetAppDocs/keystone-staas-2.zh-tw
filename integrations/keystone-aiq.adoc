@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-aiq.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, dashboard overview, manage subscriptions, monitor 
+summary: 作為NetApp Keystone STaaS 訂閱者，您可以從Digital Advisor儀表板取得訂閱概覽。 
+---
+= Digital Advisor中的Keystone儀表板
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+作為NetApp Keystone STaaS 訂閱者，您可以在Digital Advisor儀表板的 * Keystone訂閱 * 小工具上查看您的訂閱概覽。
+
+您可以透過輸入客戶或追蹤清單名稱的前三個字元或Keystone訂閱號碼來搜尋特定的Keystone訂閱。有關如何按關注列表搜尋Keystone STaaS 訂閱的信息，請參閱link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["使用Keystone關注列表進行搜索"]。
+
+Digital Advisor提供統一的儀表板，透過「切換到舊/新儀表板」按鈕深入了解您各個層級的訂閱資料和使用資訊。
+
+.預設（舊）儀表板
+您可以查看您的客戶名稱和訂閱號碼、帳戶名稱、訂閱的開始和結束日期以及按照您訂閱的效能服務等級的容量使用量圖表。可以看到消費資料的採集時間戳，以UTC時間表示。
+
+image:old-db-3.png["舊儀表板"]
+
+.替代（新）儀表板
+您可以根據訂閱查看容量使用情況的明細，以及需要立即關注或採取行動的警告和警報。資訊會根據您的訂閱和使用狀態選擇性地顯示。您可以查看此資訊：
+
+* *容量使用情況*：無使用、消耗量超過承諾容量的 80%、突發使用量、超出突發容量的消耗量等消耗資料。
+* *警報*：如果各種場景適用於您，您會看到警報。
++
+** *即將到期*：如果您的訂閱在 90 天內到期。
+** *QoS 警告*：您有未指派 AQoS 策略的磁碟區。
++
+
+TIP: 按一下「*訂閱*」連結以在「*訂閱*」標籤中查看已過濾訂閱的清單。
+
+
+
+
+
+image:new-db-4.png["新儀表板"]
+
+您可以點擊「查看所有訂閱」以在「Keystone訂閱」頁面上查看卷的使用詳情和警報。
+
+訂閱的詳細資訊、每個效能服務等級的使用情況圖表以及磁碟區詳細資訊顯示在 * Keystone訂閱 * 螢幕上的不同標籤中。
+
+
+NOTE: Keystone訂閱中的容量消耗以 TiB 為單位顯示在儀表板和報告中，並四捨五入到小數點後兩位。如果使用量少於 0.01 TiB，則數值顯示為 0 或無使用量。這些螢幕上的資料以 UTC 時間（伺服器時區）顯示。當您輸入日期進行查詢時，它會自動被視為 UTC 時間。要了解有關使用情況指標的更多信息，請參閱link:../concepts/metrics.html#metrics-measurement["指標測量"]。有關Keystone中使用的不同容量的信息，請參閱link:../concepts/supported-storage-capacity.html["支援的儲存容量"]。
+
+
+
+== 按Keystone關注列表搜索
+
+關注列表是Digital Advisor中的一項功能。有關信息，請參閱 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解監視列表"^]。有關建立監視清單的信息，請參閱 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["建立關注列表"^]。
+
+您可以為客戶或訂閱號碼建立關注列表，並在Digital Advisor螢幕上使用訂閱號或關注列表名稱的前三個字元搜尋Keystone訂閱。當您按關注清單名稱搜尋時，您可以在 * Keystone Subscriptions* 小工具上的 *Subscription* 下拉清單中查看客戶及其訂閱。
+
+
+NOTE: 透過關注清單搜尋可以檢索舊儀表板上的訂閱清單。如果關注清單包含訂閱號碼，則Digital Advisor儀表板上只會顯示 * Keystone Subscriptions* 小工具。
+
+image:watchlist.png["監視清單螢幕"]
+
+*相關資訊*
+
+* link:../integrations/dashboard-access.html["開始使用Keystone儀表板"]
+* link:../integrations/keystone-bluexp.html["BlueXP中的Keystone儀表板"]
+* link:../integrations/subscriptions-tab.html["查看您的訂閱詳情"]
+* link:../integrations/current-usage-tab.html["查看您目前的消費詳情"]
+* link:../integrations/consumption-tab.html["查看消費趨勢"]
+

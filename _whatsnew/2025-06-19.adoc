@@ -1,0 +1,18 @@
+= BlueXP中的Keystone儀表板
+:allow-uri-read: 
+
+
+
+
+=== BlueXP中的Keystone儀表板
+
+現在您可以直接從BlueXP存取Keystone儀表板。透過此集成，您可以從一個地方監控、管理和追蹤所有Keystone訂閱以及其他NetApp服務。
+
+使用BlueXP中的Keystone儀表板，您可以：
+
+* 在一個地方查看所有訂閱詳細資訊、容量使用情況和資產。
+* 輕鬆管理訂閱並隨著需求的變化請求更改。
+* 隨時了解有關您的儲存環境的最新資訊。
+
+
+首先，前往BlueXP左側導覽功能表中的 *儲存 > Keystone *。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Keystone儀表板概述"]。

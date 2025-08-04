@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: rest-api/generate-tokens.html 
+keywords: Refresh token, Digital Advisor portal,access 
+summary: 產生刷新令牌以取得新的存取令牌。它驗證 API 請求並保持有效一周或直到被替換為止。您可以透過控制台或 API 呼叫取得存取令牌。 
+---
+= 產生刷新和存取令牌
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+刷新令牌用於以程式設計方式取得一組新的存取令牌，其有效期為一週或直到用於取得一組新的令牌為止。
+
+使用Digital Advisor入口網站產生刷新令牌的步驟如下：
+
+. 登入 https://aiq.netapp.com/api["Digital Advisor門戶"]使用NetApp憑證並選擇*產生令牌*。
++
+image:rest-api-aiq-portal.png["使用Digital Advisor入口網站產生刷新令牌的步驟"]
+
++
+
+NOTE: 對於首次使用的用戶，如果「產生令牌」選項不可用，請選擇「註冊」提交授權請求。填寫註冊表以啟用該功能。
+
+. 系統產生一個存取令牌和一個刷新令牌。將刷新令牌保存在受信任的平台上。
++
+
+NOTE: 該入口網站為您提供了多種方法來保存集合中的一個或兩個令牌。您可以將它們複製到剪貼簿、下載為文字檔案或以純文字形式查看它們。
+
++
+image:rest-api-token-types.png["代幣類型"]
+
+
+
+
+
+== 使用Digital Advisor REST API 產生存取令牌
+
+存取令牌用於驗證Digital Advisor API 請求。它可以直接透過控制台與刷新令牌一起生成，或使用以下 API 呼叫：
+
+*要求：*
+
+[cols="41%,59%"]
+|===
+
+
+| *方法* | 郵政 
+
+
+| *端點* | `https://api.activeiq.netapp.com/v1/tokens/accessToken` 
+
+
+| *標題*  a| 
+* 接受：應用程式/json
+* 內容類型：application/json
+
+
+
+
+| *請求正文*  a| 
+{ “refresh_token”："<刷新令牌>" }
+
+|===
+
+NOTE: 您應該具有Digital Advisor的管理權限才能存取此端點。
+
+*回覆:*
+
+API 以 JSON 格式傳回存取權杖和刷新令牌作為回應。
+
+[listing]
+----
+{
+"refresh_token": "string",
+"access_token": "string"
+}
+----
+*狀態代碼*：200 – 請求成功
+
+*Curl 範例*：
+
+[source, curl]
+----
+curl -X 'POST' \ 'https://api.activeiq.netapp.com/v1/tokens/accessToken' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d ' { "refresh_token": "<refresh-token>" }'
+----
+
+
+== 執行 API 呼叫
+
+成功產生存取權杖後，可以執行授權的Digital AdvisorAPI 呼叫以取得所需資訊。

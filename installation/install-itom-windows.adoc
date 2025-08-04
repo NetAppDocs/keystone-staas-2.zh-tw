@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: installation/install-itom-windows.html 
+keywords: Windows installation Keystone, ITOM Collector installation 
+summary: 在基於 Windows 的系統上安裝 ITOM Collector。 
+---
+= 在 Windows 系統上安裝 ITOM Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過下載 ITOM Collector 安裝檔案、執行 InstallShield 精靈並輸入所需的監控憑證，在 Windows 系統上安裝 ITOM Collector。
+
+
+NOTE: Keystone支援團隊提供了一個動態連結來下載 ITOM Collector 安裝文件，該文件將在兩小時後過期。
+
+您可以根據需要在 Linux 系統上安裝它。若要在 Linux 系統上安裝 ITOM Collector，請參閱link:../installation/install-itom-linux.html["在 Linux 系統上安裝 ITOM Collector"]。
+
+請依照下列步驟在 Windows 伺服器上安裝 ITOM 收集器軟體：
+
+.開始之前
+確保在 Windows 伺服器的本機安全性原則設定中的本機原則/使用者權限指派下授予 ITOM Collector 服務*作為服務登入*。
+
+.步驟
+. 將 ITOM 收集器安裝檔案下載到您的 Windows 伺服器。
+. 開啟安裝檔案以啟動 InstallShield 精靈。
+. 接受最終使用者授權協議 (EULA)。  InstallShield 精靈會擷取必要的二進位檔案並提示您輸入憑證。
+. 輸入 ITOM Collector 將在其下運行的帳戶的憑證：
++
+** 如果 ITOM Collector 沒有監控其他 Windows 伺服器，請使用本機系統。
+** 如果 ITOM Collector 正在監控同一網域中的其他 Windows 伺服器，請使用具有本機管理員權限的網域帳戶。
+** 如果 ITOM Collector 正在監控不屬於相同網域的其他 Windows 伺服器，請使用本機管理員帳戶並使用本機管理員憑證連線到每個資源。您可以選擇設定密碼以使其不會過期，以減少 ITOM Collector 與其監控資源之間的驗證問題。
+
+
+. 選擇收集器尺寸。預設值是根據安裝檔建議的大小。除非您有特殊要求，否則請按照建議的尺寸進行。
+. 選擇“下一步”開始安裝。您可以使用已填滿的資料夾或選擇其他資料夾。狀態方塊顯示安裝進度，然後出現 InstallShield Wizard 完成對話方塊。
+
+
+.下一步是什麼？
+安裝成功後，請聯絡Keystone支援團隊透過 ITOM 支援入口網站驗證 ITOM Collector 是否安裝成功。驗證後， Keystone支援團隊將遠端配置 ITOM Collector，包括進一步的設備發現和監控設置，並在配置完成後發送確認。如有任何疑問或需要更多信息，請聯繫 keystone.services@netapp.com。

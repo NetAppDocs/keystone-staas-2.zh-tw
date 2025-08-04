@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: installation/configuration.html 
+keywords: configuration keystone collector 
+summary: 完成設定以使Keystone Collector 能夠收集儲存環境中的使用資料。 
+---
+= 配置Keystone收集器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您需要完成一些設定任務才能讓Keystone Collector 能夠收集儲存環境中的使用資料。這是一次性活動，用於啟動所需元件並將其與您的儲存環境關聯起來。
+
+[NOTE]
+====
+* Keystone Collector 為您提供了Keystone Collector 管理終端使用者介面 (TUI) 公用程式來執行設定和監控活動。您可以使用各種鍵盤控制（例如 Enter 和箭頭鍵）來選擇選項並瀏覽此 TUI。
+* Keystone Collector 可以為無法存取網際網路的組織進行配置，也稱為_暗站_或_私人模式_。要了解更多信息，請參閱link:../dark-sites/overview.html["Keystone處於私人模式"]。
+
+
+====
+.步驟
+. 啟動Keystone Collector 管理 TUI 公用程式：
+`$ keystone-collector-tui`
+. 前往**配置> KS-Collector**打開Keystone Collector 配置畫面，查看可用的更新選項。
+. 更新所需的選項。
++
+.<strong>適用於ONTAP</strong>
+[%collapsible]
+====
+** *收集ONTAP使用情況*：此選項可收集ONTAP的使用資料。新增Active IQ Unified Manager （Unified Manager）伺服器和服務帳戶的詳細資訊。
+** *收集ONTAP效能資料*：此選項可收集ONTAP的效能資料。預設情況下，此功能是禁用的。如果您的環境需要出於 SLA 目的進行效能監控，請啟用此選項。提供 Unified Manager 資料庫使用者帳戶詳細資訊。有關建立資料庫使用者的信息，請參閱link:../installation/addl-req.html["建立 Unified Manager 用戶"]。
+** *刪除私人數據*：此選項刪除客戶的特定私人數據，預設為啟用。有關啟用此選項後哪些數據將從指標中排除的信息，請參閱link:../installation/configuration.html#limit-collection-of-private-data["限制收集私人數據"]。
+
+
+====
++
+.對於StorageGRID
+[%collapsible]
+====
+** *收集StorageGRID使用情況*：此選項可以收集節點使用情況的詳細資訊。新增StorageGRID節點位址和使用者詳細資料。
+** *刪除私人數據*：此選項刪除客戶的特定私人數據，預設為啟用。有關啟用此選項後哪些數據將從指標中排除的信息，請參閱link:../installation/configuration.html#limit-collection-of-private-data["限制收集私人數據"]。
+
+
+====
+. 切換**使用系統啟動 KS-Collector**欄位。
+. 點選**儲存**。image:tui-1.png["tui螢幕"]
+. 透過返回 TUI 主畫面並驗證**服務狀態**訊息，確保Keystone Collector 處於健康狀態。系統應顯示服務處於**整體：健康**狀態。image:tui-2.png["tui螢幕"]
+. 選擇主畫面上的「退出到 Shell」選項退出Keystone Collector 管理 TUI。
+
+
+
+
+== 在Keystone Collector 上設定 HTTP 代理
+
+收集器軟體支援使用 HTTP 代理與互聯網通訊。這可以在 TUI 中進行配置。
+
+.步驟
+. 如果已關閉，請重新啟動Keystone Collector 管理 TUI 公用程式：
+`$ keystone-collector-tui`
+. 切換到**HTTP 代理**字段，並添加 HTTP 代理伺服器、連接埠和憑證的詳細資訊（如果需要驗證）。
+. 點選**儲存**。image:tui-3.png["tui螢幕"]
+
+
+
+
+== 限制收集私人數據
+
+Keystone Collector 收集執行訂閱計量所需的有限配置、狀態和效能資訊。有一個選項可以透過封鎖上傳內容中的敏感資訊來進一步限制收集的資訊。這不會影響帳單計算。但是，限制資訊可能會影響報告資訊的可用性，因為一些使用者可以輕鬆識別的元素（例如磁碟區名稱）被 UUID 取代。
+
+限制特定客戶資料的收集是Keystone Collector TUI 畫面上的可設定選項。此選項“*刪除私人資料*”預設為啟用。
+
+image:tui-4.png["tui螢幕"]
+
+有關在ONTAP和StorageGRID中限制私有資料存取而刪除的項目的信息，請參閱link:../installation/data-collection.html["限制私人資料存取而刪除的項目列表"]。
+
+
+
+== 信任自訂根 CA
+
+根據公共根憑證授權單位 (CA) 驗證憑證是Keystone Collector 安全功能的一部分。但是，如果需要，您可以將Keystone Collector 設定為信任自訂根 CA。
+
+如果您在系統防火牆中使用 SSL/TLS 檢查，則會導致基於網際網路的流量使用您的自訂 CA 憑證重新加密。在接受根憑證並允許連線之前，需要設定設定以驗證來源是否為受信任的 CA。請依照以下步驟操作：
+
+.步驟
+. 準備CA證書。它應該是_base64 編碼的 X.509_ 檔案格式。
++
+
+NOTE: 支援的檔案副檔名是 `.pem`， `.crt` ， `.cert` 。確保證書採用以下格式之一。
+
+. 將憑證複製到Keystone Collector 伺服器。記下文件複製的位置。
+. 在伺服器上開啟終端並執行管理 TUI 實用程式。
+`$ keystone-collector-tui`
+. 前往*配置>進階*。
+. 啟用選項*啟用自訂根憑證*。
+. 對於 *選擇自訂根憑證路徑：*，選擇 `- Unset -`
+. 按 Enter 鍵。彈出選擇證書路徑的對話方塊。
+. 從檔案系統瀏覽器中選擇根憑證或輸入精確的路徑。
+. 按 Enter 鍵。您將返回*進階*螢幕。
+. 選擇*儲存*。配置已套用。
+
+
+image:kc-custom-ca.png["用於 CA 定制的 TUI 螢幕"]
+
+
+
+== 建立效能服務級別
+
+您可以使用Keystone Collector 管理 TUI 公用程式建立效能服務等級 (PSL)。透過 TUI 建立 PSL 會自動選擇為每個服務等級設定的預設值，從而減少透過Active IQ Unified Manager建立 PSL 時手動設定這些值時可能發生的錯誤的可能性。
+
+要了解有關 PSL 的更多信息，請參閱link:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html["性能服務水平"^]。
+
+要了解有關服務等級的更多信息，請參閱link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystone的服務級別"^]。
+
+.步驟
+. 啟動Keystone Collector 管理 TUI 公用程式：
+`$ keystone-collector-tui`
+. 前往*配置>AIQUM*以開啟 AIQUM 畫面。
+. 啟用選項*建立 AIQUM 效能設定檔*。
+. 輸入Active IQ Unified Manager伺服器和使用者帳戶的詳細資訊。這些詳細資訊是創建 PSL 所必需的，並且不會被儲存。
++
+image:qos-account-details-1.png["TUI 畫面用於輸入 AIQUM 伺服器和服務帳戶的詳細信息"]
+
+. 對於“選擇Keystone版本”，選擇 `-unset-`。
+. 按 Enter 鍵。跳出選擇Keystone版本的對話框。
+. 反白 *STaaS* 以指定Keystone STaaS 的Keystone版本，然後按 Enter。
++
+image:qos-STaaS-selection-2.png["用於指定Keystone版本的 TUI 螢幕"]
+
++
+
+NOTE: 您可以反白Keystone訂閱服務版本 1 的 *KFS* 選項。 Keystone訂閱服務與Keystone STaaS 在組成服務等級、服務產品和計費原則方面有所不同。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Keystone訂閱服務 | 版本 1"^]。
+
+. 所有支援的Keystone服務等級將顯示在指定Keystone版本的 *選擇Keystone服務等級* 選項中。從清單中啟用所需的服務等級。
++
+image:qos-STaaS-selection-3.png["TUI 螢幕顯示所有支援的Keystone服務級別"]
+
++
+
+NOTE: 您可以同時選擇多個服務等級來建立 PSL。
+
+. 選擇“*儲存*”並按 Enter。將建立效能服務等級。
++
+您可以在Active IQ Unified Manager中的 *效能服務等級* 頁面上查看已建立的 PSL，例如 STaaS 的 Premium-KS-STaaS 或 KFS 的 Extreme KFS。如果建立的 PSL 無法滿足您的要求，那麼您可以修改 PSL 以滿足您的需求。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/task_create_and_edit_psls.html["建立和編輯效能服務級別"^]。
+
++
+image:qos-performance-sl.png["顯示已建立的 AQoS 策略的 UI 螢幕截圖"]
+
+
+
+
+TIP: 如果所選服務等級的 PSL 已存在於指定的Active IQ Unified Manger 伺服器上，則無法再次建立它。如果您嘗試這樣做，您將收到一條錯誤訊息。image:qos-failed-policy-1.png["TUI 螢幕顯示策略建立錯誤訊息"]

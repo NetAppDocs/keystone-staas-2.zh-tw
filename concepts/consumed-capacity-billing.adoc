@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concepts/consumed-capacity-billing.html 
+keywords: consumed capacity billing, billing and consumed capacity 
+summary: 已消耗容量是您的工作負載在使用服務期間實際使用的容量。 
+---
+= 根據消耗容量進行計量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 會根據您在使用服務期間消耗的容量進行計量。已消耗容量是您的工作負載實際使用的容量。
+
+作為Keystone服務部署的一部分， NetApp持續監控並衡量服務的消耗。系統至少每五分鐘產生一次消費記錄，詳細列出您訂閱的當前消耗容量。這些記錄在計費期間內匯總以產生發票和使用情況報告。
+
+有關Keystone支援的不同容量的信息，請參閱link:../concepts/supported-storage-capacity.html["Keystone支援的儲存容量"]。

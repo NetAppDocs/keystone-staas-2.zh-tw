@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: concepts/gssc.html 
+keywords: Keystone support, service request, support ticket 
+summary: 如果您需要協助，請聯絡NetApp Keystone支援團隊。 
+---
+= 取得有關Keystone的協助
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone支援團隊和Keystone成功經理 (KSM) 負責為您的Keystone訂閱提供服務。如果您需要協助，可以聯絡Keystone支援團隊。
+
+
+
+== NetApp Keystone支持
+
+NetApp為NetApp Keystone客戶提供遠端營運服務。這些服務涵蓋了儲存管理活動的一系列操作原則。這些服務包括資產和配置管理、容量和效能管理、變更管理、事件、事故和問題管理、服務請求履行和報告。  NetApp依要求顯示控制狀態和支持證據。
+
+
+
+== 附加資訊
+
+NetApp使用 ITOM 監控解決方案主動監控並連線至NetApp Keystone環境進行故障排除。
+
+
+NOTE: 在合作夥伴營運模式中，租戶和子租戶的服務請求被分配給合作夥伴的服務台。合作夥伴的支援工具可能與 ITOM 解決方案整合。
+
+有關Keystone服務的更多信息，請參閱：
+
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp產品文檔https://docs.netapp.com["https://docs.netapp.com"^]
+
+
+
+
+== Keystone支援監控
+
+NetApp Keystone支援監控您的產品和訂閱服務的健康狀況、提供遠端支援並與您的Keystone成功經理合作。
+
+.Keystone成功經理
+Keystone成功經理 (KSM) 與您密切合作，為您提供Keystone服務，並向您提供每週或每月的帳單和營運報告。您的NetApp Keystone協定中指定了這些責任。
+
+
+
+== 產生服務請求
+
+在入職期間，如果您獲得了存取和使用 Netapp Keystone ServiceNow 的憑證，您可以使用該入口網站針對與您的Keystone訂閱相關的問題產生服務要求：
+
+https://netappgssc.service-now.com/csm[]
+
+在提出服務請求之前，請確保您已準備好系統詳細資訊、日誌和相關資訊。當您提出服務請求時， Keystone支援團隊會收到支援票並存取資訊以進行故障排除。您可以關注您的 ServiceNow 票證以了解狀態和解決方案。
+
+有關添加支援包的信息，請參閱link:../installation/monitor-health.html["產生並收集支援包"]。
+
+如果您有需要升級的未結帳案例/票據，請發送電子郵件至以下地址之一：keystone.services@netapp.com keystone.escalations@netapp.com

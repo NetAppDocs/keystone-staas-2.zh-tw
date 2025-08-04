@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules.html 
+keywords: billing schedules, schedule for payment 
+summary: Keystone STaaS 訂閱每月或按年計費。 
+---
+= 計費時間表
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 訂閱每月或按年計費。
+
+
+
+== 每月帳單
+
+發票每月發送一次。對於使用服務的月份，發票將在下個月發送。例如，您在一月份使用的服務的發票在二月初交付。該發票包括承諾容量的費用以及（如果適用）任何突發使用的費用。
+
+
+
+== 年度計費
+
+每個訂閱年度開始時都會產生一張發票，用於支付承諾容量的最低付款。它是在訂閱開始日期生成的。每個訂閱季度末都會發送另一張發票，匯總該季度累積的任何突發使用所產生的適用費用。如果在訂閱期間承諾容量發生變化，則會在同一天發送發票，其中包含該訂閱年度剩餘時間的按比例分配的最低付款。計費從承諾容量變更生效日起計算。

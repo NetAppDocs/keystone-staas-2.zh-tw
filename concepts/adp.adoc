@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: concepts/adp.html 
+keywords: data protection advanced 
+summary: 使用進階資料保護附加服務，確保對關鍵任務工作負載進行有效的資料保護。 
+---
+= 了解進階資料保護
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過Keystone STaaS 訂閱來訂閱進階資料保護附加服務。此附加服務使用NetApp MetroCluster技術來確保對您的關鍵任務工作負載進行有效的資料保護，恢復點目標 (RPO) 為 0。
+
+
+NOTE: Keystone STaaS 檔案和區塊儲存標準服務利用NetApp技術（例如SnapMirror、 SnapVault和 Snapshot）提供預設資料保護服務。
+
+有關標準和雲端服務的信息，請參閱link:../concepts/supported-storage-services.html["Keystone STaaS 服務"]。
+
+Keystone進階資料保護服務可以將資料同步鏡像到輔助站點。如果主站點發生災難，輔助站點可以接管，而不會遺失任何資料。此功能利用link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"]兩個站點之間的配置以實現資料保護。您只能將進階資料保護附加服務用於檔案和區塊儲存服務。作為此附加服務的一部分， `Advanced Data-Protect`效能服務等級已指派給您的訂閱。
+
+有關如何查看MetroCluster配置中的消耗的信息，請參閱link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["進階資料保護參考圖表"]。
+
+附加費用適用於您的訂閱中的所有容量，包括來源資料、鏡像副本和非鏡像資料。
+
+請注意以下事項：
+
+* 本服務使用關聯儲存上 100% 的承諾容量作為承諾容量。
+* 費用適用於主站點和輔助站點，涵蓋來源叢集和目標叢集。
+* 費用僅適用於您的文件和區塊儲存服務。
+
+
+支援以下MetroCluster場景：
+
+image:mcc-1.png["Keystone支援的MetroCluster配置"]

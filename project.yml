@@ -1,0 +1,203 @@
+---
+settings:
+  name: Keystone
+  downlevel: true
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - version-number: '2.0'
+    url: "/keystone-staas-2"
+  - version-number: '3.0'
+    url: "/keystone-staas"
+  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
+sidebar:
+  entries:
+  - title: Keystone文檔
+    url: "/index.html"
+  - title: 發行說明
+    entries:
+    - title: Keystone STaaS 的新功能
+      url: "/whats-new.html"
+    - title: 已修復的問題
+      url: "/release-notes/fixed-issues.html"
+    - title: 已知問題
+      url: "/release-notes/known-issues.html"
+    - title: 已知限制
+      url: "/release-notes/known-limitations.html"
+  - title: 開始
+    entries:
+    - title: 了解Keystone STaaS
+      url: "/concepts/overview.html"
+    - title: Keystone基礎設施
+      url: "/concepts/infra.html"
+    - title: Keystone收集器
+      url: "/installation/installation-overview.html"
+    - title: 成分
+      url: "/concepts/components.html"
+    - title: 資料流
+      url: "/concepts/data-flow.html"
+    - title: 營運模式
+      url: "/concepts/operational-models.html"
+  - title: 設定和配置Keystone
+    entries:
+    - title: 要求
+      entries:
+      - title: 虛擬基礎設施
+        url: "/installation/vapp-prereqs.html"
+      - title: Linux
+        url: "/installation/linux-prereqs.html"
+      - title: ONTAP和StorageGRID
+        url: "/installation/addl-req.html"
+    - title: 安裝Keystone Collector
+      entries:
+      - title: 在 VMware vSphere 上部署
+        url: "/installation/vapp-installation.html"
+      - title: 在 Linux 上安裝
+        url: "/installation/linux-installation.html"
+      - title: Keystone軟體的自動驗證
+        url: "/installation/validation.html"
+    - title: 配置Keystone收集器
+      url: "/installation/configuration.html"
+    - title: 安裝 ITOM Collector
+      entries:
+      - title: 準備安裝
+        url: "/installation/itom-prereqs.html"
+      - title: 在 Linux 上安裝
+        url: "/installation/install-itom-linux.html"
+      - title: 在 Windows 上安裝
+        url: "/installation/install-itom-windows.html"
+    - title: 配置AutoSupport
+      url: "/installation/asup-config.html"
+    - title: 監控和升級
+      entries:
+      - title: 監控Keystone Collector 的健康狀況
+        url: "/installation/monitor-health.html"
+      - title: 升級Keystone收集器
+        url: "/installation/upgrade.html"
+    - title: Keystone Collector 安全性
+      url: "/installation/security.html"
+    - title: 為計費而收集的數據
+      url: "/installation/data-collection.html"
+    - title: Keystone處於私人模式
+      entries:
+      - title: 概況
+        url: "/dark-sites/overview.html"
+      - title: 準備安裝
+        url: "/dark-sites/requirements.html"
+      - title: 安裝Keystone Collector
+        url: "/dark-sites/install-collector.html"
+      - title: 配置Keystone收集器
+        url: "/dark-sites/configure-collector.html"
+      - title: 監控Keystone Collector 的健康狀況
+        url: "/dark-sites/monitor.html"
+  - title: 管理與監控Keystone訂閱
+    entries:
+    - title: 了解Keystone儀表板
+      entries:
+      - title: 了解Keystone儀表板
+        url: "/integrations/dashboard-overview.html"
+      - title: 開始使用Keystone儀表板
+        url: "/integrations/dashboard-access.html"
+      - title: BlueXP中的Keystone儀表板
+        url: "/integrations/keystone-bluexp.html"
+      - title: Digital Advisor中的Keystone儀表板
+        url: "/integrations/keystone-aiq.html"
+      - title: 搜尋數據、產生報告和查看警報
+        url: "/integrations/options.html"
+    - title: 查看訂閱洞察
+      entries:
+      - title: 查看您的訂閱詳情
+        url: "/integrations/subscriptions-tab.html"
+      - title: 查看您目前的消費詳情
+        url: "/integrations/current-usage-tab.html"
+      - title: 查看消費趨勢
+        url: "/integrations/consumption-tab.html"
+      - title: 查看您的訂閱時間表
+        url: "/integrations/subscription-timeline.html"
+    - title: 查看資產
+      entries:
+      - title: 查看與訂閱相關的資產
+        url: "/integrations/assets-tab.html"
+      - title: 查看多個訂閱中的資產
+        url: "/integrations/assets.html"
+    - title: 修改您的訂閱
+      url: "/integrations/modify-subscription.html"
+    - title: 查看您的服務請求
+      url: "/integrations/administration-tab.html"
+    - title: 查看捲和物件儲存詳細信息
+      url: "/integrations/volumes-objects-tab.html"
+    - title: 查看績效指標
+      url: "/integrations/performance-tab.html"
+  - title: 概念
+    entries:
+    - title: Keystone STaaS 服務
+      entries:
+      - title: 指標和定義
+        url: "/concepts/metrics.html"
+      - title: 儲存服務品質
+        url: "/concepts/qos.html"
+      - title: 支援的存儲
+        url: "/concepts/supported-storage-services.html"
+      - title: 支援的容量
+        url: "/concepts/supported-storage-capacity.html"
+      - title: 績效服務水準
+        url: "/concepts/service-levels.html"
+      - title: 性能服務等級的容量要求
+        url: "/concepts/capacity-requirements.html"
+    - title: 附加服務
+      entries:
+      - title: 進階資料保護
+        url: "/concepts/adp.html"
+      - title: Data Infrastructure Insights
+        url: "/concepts/data-infra-insights.html"
+      - title: 資料分層
+        url: "/concepts/data-tiering.html"
+      - title: 不可退回、非揮發性組件，且符合SnapLock規範
+        url: "/concepts/nrnvc.html"
+      - title: 美國保護支援 (USPS)
+        url: "/concepts/usps.html"
+    - title: Keystone STaaS SLO
+      entries:
+      - title: 可用性
+        url: "/concepts/sla-availability.html"
+      - title: 表現
+        url: "/concepts/sla-performance.html"
+      - title: 永續性
+        url: "/concepts/sla-sustainability.html"
+      - title: 勒索軟體恢復保證
+        url: "/concepts/sla-ransomware.html"
+    - title: 計費
+      entries:
+      - title: Keystone定價
+        url: "/concepts/pricing.html"
+      - title: 根據承諾容量計費
+        url: "/concepts/committed-capacity-billing.html"
+      - title: 根據消耗容量進行計量
+        url: "/concepts/consumed-capacity-billing.html"
+      - title: 根據突發消費計費
+        url: "/concepts/burst-consumption-billing.html"
+      - title: Keystone計費的其他場景
+        url: "/concepts/misc-volume-billing.html"
+      - title: 計費時間表
+        url: "/concepts/billing-schedules.html"
+  - title: 透過Digital Advisor REST API 存取Keystone
+    entries:
+    - title: 開始使用Digital Advisor REST API 檢索Keystone數據
+      url: "/rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html"
+    - title: 產生刷新和存取令牌
+      url: "/rest-api/generate-tokens.html"
+    - title: 使用Digital Advisor REST API 取得所有客戶列表
+      url: "/rest-api/get-customer-list.html"
+    - title: 使用Digital Advisor REST API 取得客戶訂閱
+      url: "/rest-api/get-customer-subscriptions.html"
+    - title: 使用Digital Advisor REST API 取得客戶消費詳情
+      url: "/rest-api/get-customer-consumption.html"
+  - title: Keystone訂閱服務版本 1
+    url: "/subscription-services-v1.html"
+  - title: 取得有關Keystone的協助
+    url: "/concepts/gssc.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"

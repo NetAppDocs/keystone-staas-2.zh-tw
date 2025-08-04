@@ -1,0 +1,316 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: NetApp在Keystone STaaS 服務的每個版本中都為您提供了新的和增強的功能。 
+---
+= Keystone STaaS 的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解Keystone STaaS 服務的最新功能和增強功能。
+
+
+
+== 2025年8月5日
+
+
+
+=== 查看實例層級消耗數據
+
+您可以透過BlueXP中的Keystone儀表板查看每個效能服務等級實例的目前消耗和歷史資料。如果您擁有Keystone版本 3 (v3) 訂閱，此功能適用於具有多個執行個體的效能服務等級。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["查看Keystone訂閱的消耗量"]。
+
+
+
+== 2025年6月30日
+
+
+
+=== Keystone版本 3 (v3) 發布
+
+現在您可以訂閱Keystone版本 3 (v3)，這是NetApp Keystone STaaS 產品的最新版本。此版本引入了多項增強功能，包括簡化的效能服務等級、額外的突發容量選項和靈活的計費頻率。這些改進簡化了儲存解決方案的管理、最佳化和擴充。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["v3 的Keystone STaaS 服務"]。
+
+
+
+== 2025年6月19日
+
+
+
+=== BlueXP中的Keystone儀表板
+
+現在您可以直接從BlueXP存取Keystone儀表板。透過此集成，您可以從一個地方監控、管理和追蹤所有Keystone訂閱以及其他NetApp服務。
+
+使用BlueXP中的Keystone儀表板，您可以：
+
+* 在一個地方查看所有訂閱詳細資訊、容量使用情況和資產。
+* 輕鬆管理訂閱並隨著需求的變化請求更改。
+* 隨時了解有關您的儲存環境的最新資訊。
+
+
+首先，前往BlueXP左側導覽功能表中的 *儲存 > Keystone *。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Keystone儀表板概述"]。
+
+
+
+== 2025年1月8日
+
+
+
+=== 增加每日累計資料使用量檢視選項
+
+現在，您可以透過點擊顯示發票資料的欄，以圖表或表格形式查看每月或每季計費期間的每日累積突發資料使用情況。要了解更多信息，請參閱link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["查看每日累計突發資料使用量"]。
+
+
+
+== 2024年12月12日
+
+
+
+=== 重新命名“邏輯使用”列
+
+*Volumes & Objects* 中的 *Volume Details* 標籤中的 *Logical Used* 資料列現已重新命名為 * Keystone Logical Used*。
+
+
+
+=== 增強資產選項卡
+
+* Keystone Subscriptions* 畫面中的 *Assets* 選項卡現在有兩個新的子選項卡：* ONTAP* 和 * StorageGRID*。這些子選項卡根據您的訂閱提供ONTAP 的詳細集群層級見解和StorageGRID的網格層級資訊。要了解更多信息，請參閱link:./integrations/assets-tab.html["資產選項卡"^]。
+
+
+
+=== 新的隱藏/顯示列選項
+
+*Volumes & Objects* 中的 *Volume Details* 選項卡現在包含 *Hide/Show Columns* 選項。此選項使您能夠選擇或取消選擇列，以根據您的喜好自訂磁碟區的表格清單。要了解更多信息，請參閱link:./integrations/volumes-objects-tab.html["體積和物件選項卡"^]。
+
+
+
+== 2024年11月21日
+
+
+
+=== 增強型發票應計突發
+
+如果您選擇了按季度計費，現在可以透過「已開立發票的累計突發」選項按季度查看累計突發使用資料。要了解更多信息，請參閱link:./integrations/consumption-tab.html#view-accrued-burst["查看已開票的累計突發"^]。
+
+
+
+=== 「卷宗詳細資料」標籤中的新列
+
+為了提高計算邏輯使用情況的清晰度，在「*磁碟區和物件*」標籤中的「*磁碟區詳細資料*」標籤中新增了兩個新欄位：
+
+* *邏輯 AFS*：顯示磁碟區的活動檔案系統所使用的邏輯容量。
+* *實體快照*：顯示快照所使用的實體空間。
+
+
+這些列更清楚地顯示了「邏輯已使用」列，該列顯示了磁碟區的活動檔案系統所使用的組合邏輯容量和快照所使用的實體空間。
+
+
+
+== 2024年11月11日
+
+
+
+=== 增強報告生成
+
+現在，您可以使用Digital Advisor中的報告功能產生合併報告來查看Keystone資料的詳細資訊。要了解更多信息，請參閱link:./integrations/options.html#generate-consolidated-report-from-digital-advisor["產生合併報告"^]。
+
+
+
+== 2024年7月10日
+
+
+
+=== 標籤修改
+
+標籤 *Current Usage* 改為 *Current Consumption*，*Capacity Trend* 改為 *Consumption Trend*。
+
+
+
+=== 訂閱的搜尋欄
+
+* Keystone訂閱* 螢幕內所有選項卡上的 *訂閱* 下拉選單現在都包含一個搜尋列。您可以搜尋「*訂閱*」下拉式選單中列出的特定訂閱。
+
+
+
+== 2024年6月27日
+
+
+
+=== 訂閱的一致顯示
+
+* Keystone訂閱* 畫面已更新，以在所有分頁上顯示所選的訂閱號碼。
+
+* 當「* Keystone訂閱*」畫面中的任何標籤刷新時，螢幕會自動導航至「*訂閱*」選項卡，並將所有選項卡重設為「*訂閱*」下拉清單中列出的第一個訂閱。
+* 如果所選訂閱未訂閱效能指標，則「效能」標籤會在導覽時顯示「訂閱」下拉式功能表中列出的第一個訂閱。
+
+
+
+
+== 2024年5月29日
+
+
+
+=== 增強型突發指示器
+
+使用情況圖表索引中的 *Burst* 指示器得到增強，可以顯示突發限制百分比值。該值根據訂閱的約定突發限製而變化。您也可以將滑鼠懸停在「*訂閱*」標籤中的「*使用狀態*」欄位中的「*突發使用情況*」指示器上來查看突發限制值。
+
+
+
+=== 增加服務級別
+
+服務等級 *CVO Primary* 和 *CVO Secondary* 包括在內，以支援具有零承諾容量的費率計劃或配置了城域集群的訂閱的Cloud Volumes ONTAP 。
+
+* 您可以從 * Keystone Subscriptions* 小工具的舊儀表板和 *Capacity Trend* 標籤查看這些服務等級的容量使用圖表，也可以從 *Current Usage* 標籤查看詳細的使用情況資訊。
+* 在「訂閱」標籤中，這些服務等級顯示為 `CVO (v2)`在*使用類型*列中，允許根據這些服務等級識別計費。
+
+
+
+
+=== 短期爆發的放大功能
+
+*容量趨勢*標籤現在包含放大功能，可以查看使用圖表中短期爆發的詳細資訊。有關更多信息，請參閱link:./integrations/consumption-tab.html["容量趨勢選項卡"^] 。
+
+
+
+=== 增強訂閱顯示
+
+訂閱的預設顯示已增強，可依追蹤 ID 排序。  *訂閱*標籤中的訂閱（包括*訂閱*下拉選單和 CSV 報告中的訂閱）現在將根據追蹤 ID 的字母順序顯示，按照 a、A、b、B 等順序顯示。
+
+
+
+=== 增強累計爆發顯示
+
+當滑鼠懸停在「容量趨勢」標籤中的容量使用情況長條圖上時出現的工具提示現在會顯示基於承諾容量的累積突發類型。它區分臨時和已開票的累計突發，對於承諾容量費率計劃為零的訂閱顯示*臨時累計消耗*和*已開票累計消耗*，對於承諾容量非零的訂閱顯示*臨時累計突發*和*已開票累計突發*。
+
+
+
+== 2024年5月9日
+
+
+
+=== CSV 報告中的新列
+
+*容量趨勢*選項卡中的 CSV 報告現在包括*訂閱編號*和*帳戶名稱*列，以提供更詳細的資訊。
+
+
+
+=== 增強使用類型列
+
+*訂閱*標籤中的*使用類型*列已增強，可以以逗號分隔的值顯示涵蓋文件和物件服務等級的訂閱的邏輯和實體使用情況。
+
+
+
+=== 從“卷詳細信息”選項卡訪問對象存儲詳細信息
+
+*磁碟區和物件*標籤中的*磁碟區詳細資料*標籤現在提供物件儲存詳細資料以及包含檔案和物件服務等級的訂閱的磁碟區資訊。您可以點擊「卷宗詳情」標籤中的「物件儲存詳情」按鈕查看詳情。
+
+
+
+== 2024年3月28日
+
+
+
+=== 改進了「卷宗詳細資料」標籤中的 QoS 策略合規性顯示
+
+*捲和物件*標籤中的*卷詳細資料*標籤現在可以更好地查看服務品質 (QoS) 策略合規性。先前稱為 *AQoS* 的欄位重新命名為 *Compliant*，表示 QoS 策略是否符合要求。此外，還新增了一個新列*QoS 策略類型*，用於指定策略是固定的還是自適應的。如果兩者都不適用，則該列顯示「不可用」。有關更多信息，請參閱link:./integrations/volumes-objects-tab.html["體積和物件選項卡"^] 。
+
+
+
+=== 交易量摘要標籤中的新欄位和簡化的訂閱顯示
+
+* *Volumes & Objects* 選項卡中的 *Volume Summary* 選項卡現在包含一個名為 *Protected* 的新欄位。此列提供與您訂閱的服務等級相關的受保護磁碟區的數量。如果您按一下受保護磁碟區的數量，它將帶您進入「磁碟區詳細資料」標籤，您可以在其中查看受保護磁碟區的篩選清單。
+* 「*卷摘要*」標籤已更新，僅顯示基本訂閱，不包括附加服務。有關更多信息，請參閱link:./integrations/volumes-objects-tab.html["體積和物件選項卡"^] 。
+
+
+
+
+=== 容量趨勢標籤中累積突發詳細資訊的顯示發生變化
+
+將滑鼠懸停在「容量趨勢」標籤中的容量使用情況長條圖上時出現的工具提示將顯示當前月份累積突發的詳細資訊。前幾個月的詳細資訊將不會提供。
+
+
+
+=== 增強查看Keystone訂閱歷史資料的權限
+
+如果Keystone訂閱已修改或續訂，現在可以查看歷史資料。您可以將訂閱的開始日期設定為先前的日期以查看：
+
+* 來自「容量趨勢」標籤的消耗和累積突發使用資料。
+* 「效能」標籤中的ONTAP磁碟區的效能指標。
+
+
+數據根據所選的訂閱開始日期顯示。
+
+
+
+== 2024年2月29日
+
+
+
+=== 新增資產選項卡
+
+* Keystone Subscriptions* 畫面現在包括 *Assets* 選項卡。此新選項卡根據您的訂閱提供集群層級的資訊。有關更多信息，請參閱link:./integrations/assets-tab.html["資產選項卡"^] 。
+
+
+
+=== 體積和物件選項卡的改進
+
+為了更清楚地了解您的ONTAP系統卷，已在 *Volumes* 選項卡中添加了兩個新選項卡按鈕 *Volume Summary* 和 *Volume Details*。  *Volume Summary* 標籤提供與您訂閱的服務等級相關的磁碟區的總數，包括其 AQoS 合規狀態和容量資訊。 *卷詳細資料*選項卡列出了所有磁碟區及其具體資訊。有關更多信息，請參閱link:./integrations/volumes-objects-tab.html["體積和物件選項卡"^] 。
+
+
+
+=== 增強Digital Advisor的搜尋體驗
+
+*Digital Advisor* 螢幕上的搜尋參數現在包括Keystone訂閱號和為Keystone訂閱建立的關注清單。您可以輸入訂閱號或關注清單名稱的前三個字元。有關更多信息，請參閱link:./integrations/keystone-aiq.html["在Active IQ Digital Advisor上查看Keystone儀表板"^] 。
+
+
+
+=== 查看消費資料的時間戳
+
+您可以在 * Keystone Subscriptions* 小工具的舊儀表板上查看消費資料的時間戳記（以 UTC 為單位）。
+
+
+
+== 2024年2月13日
+
+
+
+=== 可以查看連結到主訂閱的訂閱
+
+您的一些主要訂閱可以具有連結的次要訂閱。如果是這種情況，主訂閱號碼將繼續顯示在「*訂閱號碼*」欄中，而連結的訂閱號碼將在「*訂閱*」標籤上的新欄位「*連結的訂閱*」中列出。只有當您已連結訂閱時，「*連結訂閱*」列才可用，並且您可以看到有關它們的通知訊息。
+
+
+
+== 2024年1月11日
+
+
+
+=== 已回傳累計突發的發票數據
+
+現在，*Capacity Trend* 選項卡中的 *Accrued Burst* 標籤已修改為 *Invoiced Accrued Burst*。選擇此選項，您可以查看已計費累積突發資料的每月圖表。有關更多信息，請參閱link:./integrations/consumption-tab.html#view-accrued-burst["查看已開票的累計突發"^] 。
+
+
+
+=== 特定費率方案的累積消費詳情
+
+如果您訂閱的費率方案中承諾容量為_零_，您可以在「容量趨勢」標籤中查看累積消費詳情。選擇「已開立發票累積消費」選項後，您可以查看已開立的累計消費資料月表。
+
+
+
+== 2023年12月15日
+
+
+
+=== 能夠按關注清單搜尋
+
+Digital Advisor中對監控清單的支援已擴展到包括Keystone系統。現在您可以透過使用關注清單搜尋來查看多個客戶的訂閱詳細資訊。有關Keystone STaaS 中監視列表使用的更多信息，請參閱link:./integrations/keystone-aiq.html#search-by-keystone-watchlists["按Keystone關注列表搜索"^]。
+
+
+
+=== 日期轉換為 UTC 時區
+
+Digital Advisor的 * Keystone Subscriptions* 螢幕標籤上傳回的資料以 UTC 時間（伺服器時區）顯示。當您輸入日期進行查詢時，它會自動被視為 UTC 時間。有關更多信息，請參閱link:./integrations/keystone-aiq.html["Keystone訂閱儀表板和報告"^] 。

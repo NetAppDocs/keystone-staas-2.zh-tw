@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-capacity.html 
+keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
+summary: 了解NetApp Keystone STaaS 服務版本 2 支援的儲存容量類型。 
+---
+= Keystone支援的儲存容量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS 服務支援多種類型的儲存容量。了解這些不同的容量術語可以幫助您使用Keystone。
+
+
+
+== 邏輯容量
+
+這是客戶放置在Keystone基礎架構上的資料。所有Keystone容量均指邏輯容量。例如，如果Keystone基礎架構上儲存了 1 TiB 的文件，則至少應購買 1 TiB 的容量。
+
+
+
+== 承諾產能
+
+訂閱期間每月計費的最小邏輯容量：
+
+* 容量分配給每個服務等級。
+* 承諾容量和額外的服務等級可以在期限內添加。
+
+
+
+
+=== 承諾產能的變化
+
+在訂閱期限內，您可以更改承諾的容量。但是，有一定的前提條件：
+
+* 根據特定條件，承諾容量可能會減少。有關信息，請參閱link:../concepts/capacity-requirements.html["產能削減"]。
+* 承諾容量不能在您的訂閱到期前 90 天增加，除非訂閱期限額外續約 12 個月。
+* 您可以透過BlueXP介面或Keystone Success Manager (KSM) 要求變更承諾容量。有關請求更改的信息，請參閱link:../concepts/gssc.html["NetApp Keystone支持"]。
+
+
+
+
+== 已消耗容量
+
+已消耗容量是指服務目前正在消耗的容量（以 TiB 儲存為單位）。它是以下各項的總和：
+
+* 用於儲存所有實例和使用者資料類型（如副本、鏡像副本和版本）的邏輯容量。
+* 用於儲存大於原始磁碟區大小 10% 的複製磁碟區的邏輯容量。
+* 用於儲存 Snapshot 副本的差異資料的實體容量。
+* 分配的物理容量。
+
+
+
+
+== 突發容量
+
+NetApp Keystone服務讓您能夠在服務等級承諾容量的基礎上使用額外容量。這被稱為突發容量使用。
+
+請注意以下幾點：
+
+* 突發容量是在Keystone協定中約定的。它通常設定為高於承諾容量的 20%，並按照與承諾容量相同的費率收費。
+* 突發容量可彈性消耗，並按日平均消耗量收費。
+
+
+
+
+== 計費容量
+
+每月費用 = (承諾容量 [TiB] * 承諾費率 [$/TiB]) + (每日平均預置突發容量 [TiB] * 突發費率 [$/TiB])。每月帳單包含基於承諾容量的最低費用。
+
+根據每日平均突發容量消耗，每月帳單會超出最低費用。

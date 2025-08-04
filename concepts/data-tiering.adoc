@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-tiering.html 
+keywords: add-on services, add-on, data tiering 
+summary: 資料分層附加服務可識別不常使用的資料並將其分層到支援的儲存中。 
+---
+= 了解資料分層
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 檔案和區塊儲存標準服務包括分層功能，可識別不常用的數據，並將其分層到Keystone STaaS 支援的NetApp冷儲存。如果您想要將冷資料分層到任何Keystone STaaS 支援的非NetApp存儲，則可以使用資料分層作為附加服務。
+
+有關標準和附加服務的信息，請參閱link:../concepts/supported-storage-services.html["Keystone STaaS 服務"]。有關性能服務等級的信息，請參閱link:../concepts/service-levels.html["Keystone中的效能服務級別"]。
+
+只有當資料分層到任何非NetApp儲存體（例如 Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP) 以及其他Keystone STaaS 支援、與 S3 相容的第三方物件儲存）時才需要分層附加服務。
+
+分層功能利用NetApp FabricPool技術，該技術能夠將不常存取的資料自動分層到內部和外部的物件儲存層。
+
+附加資料分層服務支援從 Extreme、Premium、Performance、Standard 和 Value 層到物件儲存目標的分層。分層的熱數據和冷數據的比例不是固定的，每個層級都是單獨計量和開立發票的。
+
+例如，如果冷藏層的目標是：
+
+* Keystone STaaS 價值層、 Keystone STaaS StorageGRID物件層或現有 SGWS 網格（客戶自有）- 無需額外付費；它是標準服務的一部分。
+* 公有雲（AWS、Azure、Google）或Keystone STaaS 支援的第三方物件儲存 - 對分層到冷儲存目標的資料容量需要額外收費。
+
+
+附加分層服務的費用適用於整個訂閱期限。
+
+
+NOTE: NetApp不提供Cloud Volumes ONTAP所需的基於超標量的運算、儲存和網路服務作為Keystone STaaS 訂閱的一部分；這些服務需要直接從超標量雲端服務供應商處採購。
+
+*相關資訊*
+
+link:https://kb.netapp.com/hybrid/Keystone/AIQ_Dashboard/How_to_approximate_Keystone_Consumption_with_Data_Tiering_(FabricPool)_through_the_ONTAP_cli["如何使用ONTAP CLI 透過資料分層 ( FabricPool ) 估算Keystone消耗量"^]

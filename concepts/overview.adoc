@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: concepts/overview.html 
+keywords: learn about keystone, keystone introduction, keystone, STaaS, service, offering, overview 
+summary: Keystone是一種按需付費、基於訂閱的服務模式，適合那些喜歡 OpEx 消費模式而非前期資本支出或租賃的企業。 
+---
+= 了解NetApp Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone是一種按使用量付費的基於訂閱的服務模式，為那些傾向於採用營運費用消費模式而非前期資本支出或租賃來滿足其資料儲存和保護需求的企業提供無縫的混合雲體驗。
+
+使用Keystone，您將受益於：
+
+* *成本效益*：只需為所需的儲存付費，並可靈活處理額外的容量。
+* *資本效率*：無需前期投資即可存取企業級儲存。
+* *可擴充性*：隨著業務的成長，輕鬆擴充儲存容量。
+* *客製化*：根據需要調整您的儲存計劃並轉移到雲端，從而優化您的整體成本。
+* *雲端整合*：在一個訂閱下結合本地服務和雲端服務。
+* *安全*：使用先進的安全措施保護您的資料並保證從威脅中恢復。
+
+
+image:keystone-benefit-1.png["Keystone優勢"]
+
+Keystone為檔案、區塊和物件儲存類型提供預先定義效能服務等級的儲存容量。該儲存可以部署在本地，並由NetApp、合作夥伴或客戶營運。  Keystone可以與NetApp雲端服務結合使用，例如可以部署在您選擇的超標量環境中的Cloud Volumes ONTAP 。
+
+
+
+== Keystone儲存即服務 (STaaS)
+
+儲存即服務 (STaaS) 產品旨在為儲存基礎架構的採購、部署和管理提供類似公有雲的模型。雖然許多企業仍在製定混合雲策略，但Keystone STaaS 提供了靈活性，可以從內部部署服務開始，並在適當的時候過渡到雲端。這可確保您能夠在不同的部署模型中保護您的承諾，根據需要重新分配您的支出，而不會增加您的每月帳單。
+
+*相關資訊*
+
+* link:../concepts/pricing.html["Keystone定價"]
+* link:../concepts/add-on.html["Keystone STaaS 中的附加服務"]
+* link:../concepts/service-levels.html["Keystone中的效能服務級別"]
+* link:../concepts/infra.html["Keystone基礎設施"]
+* link:../concepts/operational-models.html["Keystone中的營運模型"]
+

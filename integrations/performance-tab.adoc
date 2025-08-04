@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: integrations/performance-tab.html 
+keywords: keystone-aiq, digital advisor keystone, performance tab 
+summary: 若要監控系統的效能，您可以查看由Keystone訂閱管理的ONTAP磁碟區的效能指標。 
+---
+= 查看績效指標
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要監控系統的效能，您可以查看由Keystone訂閱管理的ONTAP磁碟區的效能指標。
+
+
+TIP: 您可以選擇在Digital Advisor中使用此選項卡。聯絡支援人員查看此標籤。它在BlueXP中不可用。
+
+若要在Digital Advisor中檢視此選項卡，請依照下列步驟操作：
+
+.步驟
+. 按一下“*常規> Keystone訂閱>效能*”。
+. 選擇訂閱號碼。預設選擇第一個訂閱號。
+. 從清單中選擇所需的磁碟區名稱。
++
+或者，您可以點擊image:aiq-ks-time-icon.png["圖形圖示"]按一下「*磁碟區*」標籤中ONTAP磁碟區對應的圖示即可導覽至此標籤。
+
+. 選擇查詢的日期範圍。日期範圍可以是月初或訂閱開始日期到目前日期或訂閱結束日期。您不能選擇未來的日期。
+
+
+檢索到的詳細資訊是基於每個效能服務等級的效能服務等級目標。例如，峰值 IOPS、最大吞吐量、目標延遲和其他指標由效能服務等級的單獨設定決定。有關設定的更多信息，請參閱link:../concepts/service-levels.html["Keystone中的效能服務級別"]。
+
+
+NOTE: 如果勾選「*SLO 參考線*」複選框，則會根據效能服務等級的效能服務等級目標呈現 IOPS、吞吐量和延遲圖表。否則，它們將以實際數字顯示。
+
+水平圖上顯示的效能資料是每五分鐘間隔的平均值，並依照查詢的日期範圍排列。您可以滾動圖表並將滑鼠懸停在特定數據點上以進一步深入了解收集的數據。
+
+您可以根據訂閱號碼、磁碟區名稱和所選日期範圍的組合，查看並比較以下部分中的效能指標。詳細資訊依照指派給磁碟區的效能服務等級顯示。可以看到群集名稱和磁碟區類型，也就是分配給該磁碟區的讀寫權限。也會顯示與該磁碟區相關的任何警告訊息。
+
+
+
+== 每秒輸入/輸出次數
+
+此部分根據查詢的日期範圍顯示磁碟區中工作負載的輸入輸出圖。顯示效能服務等級的峰值 IOPS 和目前 IOPS（過去五分鐘內，不基於查詢的日期範圍），以及時間範圍內的最小、最大和平均 IOPS（以 IOPS/Tib 為單位）。
+
+image:perf-iops.png["圖表的 IOPS 部分"]
+
+
+
+== 吞吐量
+
+此部分根據查詢的日期範圍顯示磁碟區中工作負載的吞吐量圖表。顯示效能服務等級的最大吞吐量（SLO Max）和目前吞吐量（過去五分鐘內，非查詢的日期範圍），以及時間範圍內的最小、最大和平均吞吐量（以 MBps/TiB 為單位）。
+
+image:perf-thr.png["吞吐量圖表"]
+
+
+
+== 延遲（毫秒）
+
+此部分根據查詢的日期範圍顯示磁碟區中工作負載的延遲圖。顯示效能服務等級（SLO 目標）的最大延遲和目前延遲（在過去五分鐘內，不基於查詢的日期範圍），以及時間範圍內的最小、最大和平均延遲（以毫秒為單位）。
+
+該圖具有以下顏色：
+
+* 淺藍色：_延遲_。這是實際延遲，其中包括Keystone服務以外的任何延遲。這可能包括額外的延遲，例如網路和客戶端之間發生的延遲。
+* 深藍色：_有效延遲_。有效延遲是僅適用於您的Keystone服務的、與您的 SLA 相關的延遲。
+
+
+image:perf-lat.png["性能圖表"]
+
+
+
+== 邏輯已用量 (TiB)
+
+此部分顯示磁碟區的已配置容量和邏輯已使用容量。目前邏輯使用容量（過去五分鐘內，不基於查詢的日期範圍）以及時間範圍內的最小、最大和平均使用量以 TiB 為單位顯示。在此圖表上，灰色區域表示已承諾的容量，黃色圖表表示邏輯使用。
+
+image:perf-log-usd.png["邏輯已用容量圖"]
+
+*相關資訊*
+
+* link:../integrations/dashboard-overview.html["了解Keystone儀表板"]
+* link:../integrations/subscriptions-tab.html["查看您的訂閱詳情"]
+* link:../integrations/current-usage-tab.html["查看您目前的消費詳情"]
+* link:../integrations/consumption-tab.html["查看消費趨勢"]
+* link:../integrations/subscription-timeline.html["查看您的訂閱時間表"]
+* link:../integrations/assets-tab.html["查看您的Keystone訂閱資產"]
+* link:../integrations/assets.html["查看Keystone訂閱中的資產"]
+* link:../integrations/volumes-objects-tab.html["查看捲和物件的詳細信息"]
+

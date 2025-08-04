@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: installation/installation-overview.html 
+keywords: installation, Keystone Collector 
+summary: Keystone Collector 是您安裝在網站的 VMware vSphere 或 Linux 主機上的NetApp軟體。它收集Keystone系統的使用資料。 
+---
+= 了解Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Keystone Collector_ 是NetApp軟體，您可以將其安裝在網站的 VMware vSphere 或 Linux 主機上以存取您的Keystone服務。它收集Keystone系統的使用資料。
+
+Keystone Collector 是Keystone計費平台的使用量擷取元件。它利用Active IQ Unified Manager和其他應用程式連接到ONTAP和StorageGRID系統，以收集Keystone訂閱的使用和效能計量所需的元資料。它為您提供監控系統健康狀況的能力，同時發送您的帳單資料以供報告。
+
+Keystone Collector 可以配置為不受連線限制的_標準_模式，也可以配置為專為具有連線限制的組織設計的_私有_模式。若要以標準模式安裝Keystone Collector，請參閱link:../installation/vapp-prereqs.html["設定和配置Keystone"]；有關私人模式，請參閱link:../dark-sites/overview.html["Keystone處於私人模式"]。
+
+Keystone Collector 代表了收集Keystone系統使用資料的標準方法。如果您的環境無法支援Keystone Collector，您可以尋求Keystone支援的授權，使用AutoSupport遙測機製作為替代方案。有關AutoSupport的信息，請參閱 https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^]。有關為Keystone配置AutoSupport 的信息，請參閱link:../installation/asup-config.html["為Keystone配置AutoSupport"]。
+
+此架構圖概述了典型Keystone環境中的組成元件及其連接性。
+
+image:collector-arch-1.png["收集器架構"]

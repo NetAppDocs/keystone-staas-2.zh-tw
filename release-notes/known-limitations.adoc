@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-limitations.html 
+keywords: limitations, known limitations in Keystone STaaS 
+summary: 已知限制標識了該產品的此版本不支援或無法與其正確互通的平台、裝置或功能。仔細審查這些限制。 
+---
+= Keystone STaaS 的已知限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+已知限制是指Keystone STaaS 服務或元件不支援或無法正確互通的平台、裝置或功能。仔細審查這些限制。
+
+
+
+== Keystone Collector 的限制
+
+
+
+=== 啟用StorageGRID SSO 後Keystone Collector 驗證失敗
+
+當StorageGRID系統啟用單一登入 (SSO) 時， Keystone Collector 不支援計量。日誌中顯示以下錯誤訊息：
+
+`panic: json: cannot unmarshal object into Go struct field AuthResponse.data of type string`
+
+請參閱知識庫文章link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_authenticate_with_StorageGRID_in_SSO_Mode["Keystone Collector 在 SSO 模式下無法透過StorageGRID進行驗證"^]以獲取資訊和解決方案。
+
+
+
+=== Keystone Collector 無法在 vSphere 8.0 Update 1 上啟動
+
+安裝了 VMware vSphere 8.0 Update 1 的Keystone Collector 虛擬機器 (VM) 無法啟動，並顯示下列錯誤訊息：
+
+`Property 'Gateway' must be configured for the VM to power on.`
+
+請參閱知識庫文章link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_start_on_vSphere_8.0_U1["Keystone Collector 無法在 vSphere 8.0 U1 上啟動"^]以獲取資訊和解決方案。
+
+
+
+=== 無法透過 Kerberos 產生支援包
+
+如果使用 Kerberos 透過 NFSv4 掛載Keystone Collector 主目錄，則不會產生支援包，並會顯示下列錯誤訊息：
+
+`subprocess.CalledProcessError: Command '['sosreport', '--batch', '-q', '--tmp-dir', '/home/<user>']' returned non-zero exit status 1.`
+
+請參閱知識庫文章 https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_generate_support_bundle_on_Kerberized_home_directory["Keystone Collector 無法在 Kerberized 主目錄上產生支援包"^]以獲取資訊和解決方案。
+
+
+
+=== Keystone Collector 無法與特定網路範圍內的主機通訊
+
+Keystone `ks-collector`服務正在運行。請參閱知識庫文章link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_container_conflict_with_customer_network["Keystone Collector 容器與客戶網路衝突"^]以獲取資訊和解決方案。
+
+
+
+=== Keystone Collector 無法驗證客戶根 SSL CA 憑證
+
+如果在檢查 SSL/TLS 流量的環境中在邊界防火牆上啟用了 SSL/TLS 檢查， Keystone Collector 將無法建立 HTTPS 連接，因為客戶的根 CA 憑證不受信任。
+
+有關詳細資訊和解決方法，請參閱link:..//installation/configuration.html#trust-a-custom-root-ca["信任自訂根 CA"^]或知識庫文章link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_cannot_verify_Customer_Root_SSL_CA_certificate["Keystone Collector 無法驗證客戶根 SSL CA 憑證"^]。
