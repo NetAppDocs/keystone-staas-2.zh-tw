@@ -25,7 +25,13 @@ Keystone進階資料保護服務可以將資料同步鏡像到輔助站點。如
 
 有關如何查看MetroCluster配置中的消耗的信息，請參閱link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["進階資料保護參考圖表"]。
 
-附加費用適用於您的訂閱中的所有容量，包括來源資料、鏡像副本和非鏡像資料。
+
+
+== 了解定價
+
+進階資料保護附加服務的定價是基於每個站點的承諾容量。這有助於確定進階資料保護服務的實際成本（以 $/TiB 為單位）。附加費用適用於您的訂閱中的所有容量，包括來源資料、鏡像副本和非鏡像資料。
+
+對於MetroCluster配置，每個站點都需要自己的訂閱，並且您需要為每個站點的承諾容量單獨付費。要了解帳單信息，請參閱link:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["高級資料保護計費"]。
 
 請注意以下事項：
 

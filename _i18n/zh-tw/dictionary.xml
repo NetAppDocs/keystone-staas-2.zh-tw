@@ -87,7 +87,6 @@
   <block id="05640e646447c2361b1c4a86e40bde67" category="paragraph">Keystone進階資料保護服務可以將資料同步鏡像到輔助站點。如果主站點發生災難，輔助站點可以接管，而不會遺失任何資料。此功能利用<block ref="e34027f10b07a4258180f071293183bf" category="inline-link-macro-rx"></block>兩個站點之間的配置以實現資料保護。您只能將進階資料保護附加服務用於檔案和區塊儲存服務。作為此附加服務的一部分，<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block>效能服務等級已指派給您的訂閱。</block>
   <block id="ad18d1cc4c02be72a25ef833b2c8c734" category="inline-link-macro">進階資料保護參考圖表</block>
   <block id="fae22dda3b161bc9a9e770f8b7e7a634" category="paragraph">有關如何查看MetroCluster配置中的消耗的信息，請參閱<block ref="0e74b0f4cd2655beb5f463b480ef4016" category="inline-link-macro-rx"></block>。</block>
-  <block id="6930b0766962051b0320a4846c61e0d9" category="paragraph">附加費用適用於您的訂閱中的所有容量，包括來源資料、鏡像副本和非鏡像資料。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意以下事項：</block>
   <block id="07a4905cb08550d85832c59c39e6d61c" category="list-text">本服務使用關聯儲存上 100% 的承諾容量作為承諾容量。</block>
   <block id="35837aec92cf4ad38b86eaea542a0d30" category="list-text">費用適用於主站點和輔助站點，涵蓋來源叢集和目標叢集。</block>
@@ -291,14 +290,10 @@
   <block id="783e590ecfbaebc7caa0409a8cae6926" category="paragraph">Keystone STaaS 檔案和區塊儲存標準服務包括分層功能，可識別不常用的數據，並將其分層到Keystone STaaS 支援的NetApp冷儲存。如果您想要將冷資料分層到任何Keystone STaaS 支援的非NetApp存儲，則可以使用資料分層作為附加服務。</block>
   <block id="71976d25975f3d0bb66105dd111ab8be" category="inline-link-macro">Keystone中的效能服務級別</block>
   <block id="d4f29e3a940c48363ab7a3bcb13cf87f" category="paragraph">有關標準和附加服務的信息，請參閱<block ref="32999c765ee523f7718a7908120f4502" category="inline-link-macro-rx"></block>。有關性能服務等級的信息，請參閱<block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block>。</block>
-  <block id="29a37414986b666b1caba06ea110bc8c" category="paragraph">只有當資料分層到任何非NetApp儲存體（例如 Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP) 以及其他Keystone STaaS 支援、與 S3 相容的第三方物件儲存）時才需要分層附加服務。</block>
   <block id="d96faa9e821e8ffac65b118996a9a5e9" category="paragraph">分層功能利用NetApp FabricPool技術，該技術能夠將不常存取的資料自動分層到內部和外部的物件儲存層。</block>
-  <block id="e426aef809a36320814cef7dd1913cb5" category="paragraph">附加資料分層服務支援從 Extreme、Premium、Performance、Standard 和 Value 層到物件儲存目標的分層。分層的熱數據和冷數據的比例不是固定的，每個層級都是單獨計量和開立發票的。</block>
   <block id="71768d30a875fb63ecbab55da018a191" category="paragraph">例如，如果冷藏層的目標是：</block>
-  <block id="c9b73422281776827a4c8f78b386d48d" category="list-text">Keystone STaaS 價值層、 Keystone STaaS StorageGRID物件層或現有 SGWS 網格（客戶自有）- 無需額外付費；它是標準服務的一部分。</block>
   <block id="e73034c8c3d954eb2e6e052c00601420" category="list-text">公有雲（AWS、Azure、Google）或Keystone STaaS 支援的第三方物件儲存 - 對分層到冷儲存目標的資料容量需要額外收費。</block>
   <block id="c32944bc40d1accb43f1f8bfaf090dce" category="paragraph">附加分層服務的費用適用於整個訂閱期限。</block>
-  <block id="e72611e56e05f623af5dc7011928a294" category="admonition">NetApp不提供Cloud Volumes ONTAP所需的基於超標量的運算、儲存和網路服務作為Keystone STaaS 訂閱的一部分；這些服務需要直接從超標量雲端服務供應商處採購。</block>
   <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">*相關資訊*</block>
   <block id="3158f806d725e1ec78b0701704e3095e" category="inline-link-macro">如何使用ONTAP CLI 透過資料分層 ( FabricPool ) 估算Keystone消耗量</block>
   <block id="a61155b6c29c4a67dcebc112d4f1a0e6" category="paragraph"><block ref="a61155b6c29c4a67dcebc112d4f1a0e6" category="inline-link-macro-rx"></block></block>
@@ -351,13 +346,11 @@
   <block id="e38b5058398d45181914283e348c4f38" category="doc">Keystone中使用的指標和定義</block>
   <block id="96528977c8366dbda111370e25501602" category="paragraph">NetApp Keystone STaaS 服務使用多個術語來衡量指標。在使用Keystone時，您可能想要了解更多有關這些術語的資訊。</block>
   <block id="3a79a2a5d18c98a3e6880bfa3a826f9f" category="paragraph">Keystone STaaS 服務中使用以下術語和定義來衡量指標：</block>
-  <block id="083391d447b65d40416f359a5f144c70" category="list-text">容量測量單位：GiB、TiB 和 PiB</block>
   <block id="c7c1919c4fd61189792daac01aa326b5" category="list-text">IO 密度：IOPS/TiB：基於工作負載消耗的總空間，每秒處理的輸入/輸出操作數，以以太位元組為單位。</block>
   <block id="36e9a03898f9ae86972da464b865fd7e" category="list-text">服務可用性</block>
   <block id="f99112a4c6eaa146943fa5e2ddfd9879" category="list-text">準確資料存取的持久性</block>
   <block id="4e8c569f63eedc90f70f80e1008f201e" category="list-text">延遲和速度</block>
   <block id="0719eeba43039e5122ee28a4a45955e4" category="section-title">指標測量</block>
-  <block id="6ee89d6c0a15491675b7cc32e34a211d" category="list-text">*以吉比位元組 (GiB)、太比位元組 (TiB) 和皮比位元組 (PiB) 為單位的容量測量*：使用 1024 為基數測量資料儲存容量（1 GiB = 1024^3^ 位元組、1 TiB = 1024^4^ 位元組和 1PiB = 10245^ 字節）。</block>
   <block id="bb145603bcdc015d5b17c8a464ceb711" category="list-text">*IOPS/TiB 中的操作計數器圖表*：應用程式請求的每秒協定操作數除以工作負載使用的磁碟區大小。</block>
   <block id="2809966e22bd3439cbbfaae3d51268b2" category="list-text">*可用性*：以服務成功回應的 I/O 請求數除以向服務發出的 I/O 請求總數的百分比來衡量。這是在一個月的服務劃分時測量的，不包括計劃的服務停機時間或設施、網路或客戶提供的其他服務的不可用時間。</block>
   <block id="dda89d5ef0cb22d8ac7b37078e4ba438" category="list-text">*耐用性*：在不損失保真度的情況下存取的資料百分比，不包括客戶造成的刪除或損壞。</block>
@@ -395,7 +388,6 @@
   <block id="5db4fbedef3c3fe2cd69fb00f0149f1a" category="paragraph">進階資料保護使用NetApp MetroCluster在兩個實體上分離的叢集之間鏡像資料。對於MetroCluster鏡像聚合，資料寫入兩次，每個叢集一次。 Keystone服務對雙方的消費進行獨立計費，從而產生兩條相同的消費記錄。附加費用適用於訂閱中的所有容量，無論資料是在來源處，還是鏡像或非鏡像資料。</block>
   <block id="536a21a9808fc714076b198f94a4a506" category="paragraph">如果您透過ONTAP系統管理員（系統管理員）或Active IQ Unified Manager（統一管理器）監控集群，您可能會發現這些工具報告的消耗量與Keystone之間存在差異。系統管理員和統一管理器不會報告鏡像（遠端）叢集上的捲，因此，報告的消耗指標僅為Keystone服務報告的消耗指標的一半。</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph-title">範例：</block>
-  <block id="0c0de0453c5b0de437eb1976c3926361" category="paragraph">站點 A 和站點 B 採用MetroCluster配置進行設定。當使用者在網站 A 建立 10 TB 的磁碟區時，網站 B 中也會建立相同的 10 TB 磁碟區。 KeystoneKeystone每個站點的消耗量為 10 TB，總共增加 20 TB。系統管理員和統一管理器報告在站點 A 中建立的 10 TB 卷，但沒有報告在站點 B 中建立的 10 TB 卷。</block>
   <block id="a8bfd47f5b9fe7efcabf364ce6b11add" category="paragraph">此外，在具有進階資料保護的Keystone系統上建立的所有磁碟區都將計入進階資料保護的消耗，無論這些磁碟區是否鏡像。</block>
   <block id="ba4c22a98feebac558bbaac68b704e09" category="section-title">臨時卷計費</block>
   <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">有時， ONTAP在移動磁碟區時會建立臨時 (TMP) 磁碟區。這些臨時卷是短暫的，並且這些卷上的消耗不計入賬單。</block>
@@ -2437,4 +2429,17 @@
   <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">計費</block>
   <block id="fad1e832526fa7449bfff5b810826110" category="sidebar">透過Digital Advisor REST API 存取Keystone</block>
   <block id="087e52621b1299752b891e4115749950" category="sidebar">Keystone訂閱服務版本 1</block>
+  <block id="738272188927126099f39cbe7024dbf9" category="section-title">了解定價</block>
+  <block id="a9defa509a6012981ff7f002dd53d0e6" category="paragraph">進階資料保護附加服務的定價是基於每個站點的承諾容量。這有助於確定進階資料保護服務的實際成本（以 $/TiB 為單位）。附加費用適用於您的訂閱中的所有容量，包括來源資料、鏡像副本和非鏡像資料。</block>
+  <block id="e67211afdd996aa6baa5cb91a4ca596e" category="paragraph">對於MetroCluster配置，每個站點都需要自己的訂閱，並且您需要為每個站點的承諾容量單獨付費。要了解帳單信息，請參閱<block ref="1288f3338b647ebdd2ca057939f27a9c" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae4fed5779bc20e71bc742b9b20f3572" category="admonition">僅當資料分層到任何非NetApp儲存體（例如 Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP) 和其他Keystone STaaS 支援、與 S3 相容的第三方物件儲存）時才需要分層附加服務。</block>
+  <block id="5a7ddcb67d8774d8c3bdc821152d43f1" category="paragraph">附加資料分層服務支援從 Extreme、Premium、Performance、Standard 和 Value 層到物件儲存目標的分層。分層的熱數據和冷數據的比例不是固定的，每個層級都是單獨計量和開立發票的。</block>
+  <block id="f02c5e27d3f80e7755fdb672ca0a6235" category="list-text">Keystone STaaS 價值層、 Keystone STaaS StorageGRID物件層或現有StorageGRID Webscale (SGWS) 網格（客戶自有）- 無需額外付費；它是標準服務的一部分。</block>
+  <block id="8e4d26d9b322f38152cd72b8fdf2ed25" category="admonition">NetApp不提供Cloud Volumes ONTAP所需的基於超大規模的運算、儲存和網路服務作為Keystone STaaS 訂閱的一部分；這些服務需要直接從超大規模雲端服務供應商處採購。</block>
+  <block id="dc2f3454954797b5fb83b2868fdaf36f" category="list-text">容量：以 GiB、TiB 和 PiB 為單位。</block>
+  <block id="aefe5d691bbfd5f85d52918fd2b8748f" category="list-text">*以 GiB、TiB 和 PiB 為單位的容量測量*：使用 1024 為基數測量資料儲存容量（1 GiB = 1024^3^ 位元組、1 TiB = 1024^4^ 位元組和 1 PiB = 1024^5^ 位元組）。</block>
+  <block id="d4017514ab5a420c895a9fc731b4b395" category="paragraph">每個MetroCluster站點都有自己的訂閱和計費。對於MetroCluster配置，使用情況測量考慮了兩個站點之間的儲存利用。如果您的MetroCluster設定中每個站點有 100 TiB，則每個站點上只有 50 TiB 被主動使用，而每個站點上剩餘的 50 TiB 則用作鏡像備份。高級資料保護附加費用是根據這 100 TiB 的總活動使用量計算的，並透過各自的訂閱在兩個站點之間分攤，每個站點 50 TiB。</block>
+  <block id="541d21d5ff884f1d0b139f95e569de26" category="paragraph">站點 A 和站點 B 採用MetroCluster配置進行設定。當使用者在網站 A 建立 10 TB 的磁碟區時，網站 B 中也會建立相同的 10 TB 磁碟區。 KeystoneKeystone每個站點的消耗量為 10 TB，總共增加 20 TB。系統管理員和統一管理器報告在站點 A 中建立的 10 TB 卷，但沒有報告在站點 B 中建立的 10 TB 卷。</block>
+  <block id="079da252ccc5dbccc8de73980b3d636d" category="paragraph">顯示的消耗量 94.21 TiB 代表主要訂閱的使用。鑑於進階資料保護將消費分散到具有單獨訂閱的合作夥伴網站之間，因此該圖表僅顯示主要網站的使用情況。若要了解進階資料保護附加服務的定價，請參閱<block ref="e4b4611bcff3f9744cb4aede487c4fc5" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb80e5c63a486d3698858f87d747e461" category="paragraph">您可以聯絡Keystone支援團隊訂閱Keystone版本 3 (v3)。有關詳細信息，請參閱<block ref="ba5860e7066469b734064f44e703aa5c" category="inline-link-macro-rx"></block>。</block>
 </blocks>
