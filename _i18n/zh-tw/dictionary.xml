@@ -1074,7 +1074,6 @@
   <block id="0615b5bfa7b669de144331b512440192" category="inline-link">使用 SSH 訪問集群</block>
   <block id="75637cd8fe530b3ca0a91d01f7a154b3" category="list-text">以系統管理員使用者身份，使用 SSH 登入Keystone ONTAP叢集。有關信息，請參閱<block ref="72c78e462556b03d46e2f3029d4a0613" category="inline-link-rx"></block>。</block>
   <block id="001d654c5d010b25a953ace0dce0f14d" category="list-text">修改日誌內容。</block>
-  <block id="a35e5b3497716ca18010e0be265afb3b" category="list-text">執行此命令修改每日日誌內容：</block>
   <block id="9060a638913c522309cdbab6919eef2b" category="list-text">執行此命令來修改每週日誌內容：</block>
   <block id="20c41bcd9366cdbd961d6554489ea863" category="inline-link">系統節點自動支援觸發器修改</block>
   <block id="5f6d98c1ed4256fab45f6c20e637744e" category="paragraph">有關此命令的更多信息，請參見<block ref="700e80291e0b2dbcd3452a610925a1ef" category="inline-link-rx"></block>。</block>
@@ -2037,7 +2036,6 @@
   <block id="4d14bebdede2f7719e5f532aa0038aae" category="list-text">從Digital Advisor左側導覽窗格中，前往 *常規 &gt; Keystone訂閱 &gt; 卷 &gt; 卷詳細資訊*。</block>
   <block id="12405cc60d2ee8aa60f147c5c605b8f2" category="paragraph">您可以看到磁碟區的表格列表，例如容量使用情況、磁碟區類型、叢集、聚合和指派的Keystone效能服務等級。您可以將滑鼠懸停在列標題旁的資訊圖示上，捲動查看各列並了解更多資訊。您可以按列排序並過濾清單以查看特定資訊。</block>
   <block id="288b4e42b32faccce4a2d55e94593bd9" category="admonition">QoS 策略不適用於Keystone版本 3。</block>
-  <block id="1cedef25ccb6885eb8bfdc7660435962" category="paragraph">您可以使用*隱藏/顯示列*來新增或刪除表中顯示的列。預設情況下，除「*Department*」欄位之外的所有欄位均被選取。您可以選擇或取消選擇任何列，包括*部門*列，並且您的偏好設定將被儲存以供日後使用。下載 CSV 報告時，如果選擇「*部門*」列，則會包含該列的詳細信息，而其他列無論在表中的選擇狀態如何都會出現。</block>
   <block id="af16b731bd6e35896b00c75d9acfb1d5" category="admonition">對於進階資料保護附加服務，會出現一個附加資料列來指示該磁碟區是MetroCluster配置中的主磁碟區還是鏡像磁碟區。您可以透過點擊「複製節點序號」按鈕來複製單一節點序號。</block>
   <block id="6c419bfae17b57a1883f78150d7fbdce" category="inline-image-macro">卷詳細資料選項卡</block>
   <block id="56e2246e0f7e12674e62ac0311a5600a" category="paragraph"><block ref="56e2246e0f7e12674e62ac0311a5600a" category="inline-image-macro-rx" type="image"></block></block>
@@ -2442,4 +2440,15 @@
   <block id="541d21d5ff884f1d0b139f95e569de26" category="paragraph">站點 A 和站點 B 採用MetroCluster配置進行設定。當使用者在網站 A 建立 10 TB 的磁碟區時，網站 B 中也會建立相同的 10 TB 磁碟區。 KeystoneKeystone每個站點的消耗量為 10 TB，總共增加 20 TB。系統管理員和統一管理器報告在站點 A 中建立的 10 TB 卷，但沒有報告在站點 B 中建立的 10 TB 卷。</block>
   <block id="079da252ccc5dbccc8de73980b3d636d" category="paragraph">顯示的消耗量 94.21 TiB 代表主要訂閱的使用。鑑於進階資料保護將消費分散到具有單獨訂閱的合作夥伴網站之間，因此該圖表僅顯示主要網站的使用情況。若要了解進階資料保護附加服務的定價，請參閱<block ref="e4b4611bcff3f9744cb4aede487c4fc5" category="inline-link-macro-rx"></block>。</block>
   <block id="eb80e5c63a486d3698858f87d747e461" category="paragraph">您可以聯絡Keystone支援團隊訂閱Keystone版本 3 (v3)。有關詳細信息，請參閱<block ref="ba5860e7066469b734064f44e703aa5c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e8fe67b005603b496012796735f2d36" category="doc">使用新列增強邏輯使用情況跟踪</block>
+  <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">新增了新欄位“總佔用空間”，以增強對FabricPool磁碟區的Keystone消耗追蹤：</block>
+  <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXP中的Keystone儀表板 *：您可以在 *Assets* 標籤中的 *Volumes in clusters* 標籤中看到 *Total footprint* 列。</block>
+  <block id="61f4e69294ec080e5cb7bce32f2f8b99" category="list-text">*Digital Advisor*：您可以在 *磁碟區和物件* 標籤中的 *磁碟區詳細資料* 標籤中看到 *總足跡* 欄位。</block>
+  <block id="610355e82f0e7cf01bdfa1df13985f3f" category="paragraph">此列顯示使用FabricPool分層的磁碟區的總邏輯佔用空間，包括效能層和冷層的數據，因此您可以精確計算Keystone消耗。</block>
+  <block id="bff820430728f0b409c26641dc8ddd41" category="list-text">對於ONTAP 9.16.1 及更高版本，執行以下命令修改每日日誌內容：</block>
+  <block id="63af57ffe551ed93c0576ba741b36e47" category="list-text">對於早期版本的ONTAP ，執行以下命令來修改每日日誌內容：</block>
+  <block id="8e65b1fa60d467c8850acfb3f1d1b8b9" category="paragraph">您可以使用*隱藏/顯示列*來新增或刪除表中顯示的列。預設情況下，表格顯示您先前儲存的列首選項。新新增的欄位（例如「*部門*」或「*總足跡*」欄位）預設是隱藏的，應手動選擇才能顯示在表格中。您可以選擇或取消選擇任何列，並且您的偏好設定將被儲存以供日後使用。下載 CSV 報表時，無論您的顯示偏好為何，所有可用欄位都會包含在匯出中。</block>
+  <block id="56a9fe5a3d171069cb125956f6186c86" category="paragraph">Digital Advisor儀表板中配置了MetroCluster配置的訂閱的消費趨勢圖中缺少突發閾值線，顯示不正確的 *超出突發限制* 狀態。</block>
+  <block id="8d317448388884cae15b07e53f9c9fbc" category="paragraph">2025年8月28日</block>
+  <block id="b8d454c9414aa4b52ad019b0311711b5" category="section-title">2025年8月28日</block>
 </blocks>
