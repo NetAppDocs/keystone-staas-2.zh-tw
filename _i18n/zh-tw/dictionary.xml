@@ -2445,9 +2445,7 @@
   <block id="d540a0a7aa0f09414e542ffabc6300c6" category="list-text">查看和解決活動警報，包括系統產生的和使用者定義的容量使用情況和訂閱到期警報。</block>
   <block id="64d4cc394badd0b54b5b74f5080233c6" category="list-text">建立警報監視器來追蹤容量使用情況和訂閱到期事件。</block>
   <block id="fad96b4b3d3badf81c42f03f5e3e79f9" category="inline-link-macro">查看和管理警報和監視器</block>
-  <block id="cdd57c5e351290faba63a64f9aeaaa00" category="paragraph">要了解更多信息，請參閱<block ref="54a7920301641a95eb19ac46b9860916" category="inline-link-macro-rx"></block>。</block>
   <block id="bcf269fdba28fb16246a22e167483e0c" category="section-title">簡化的效能服務等級查看</block>
-  <block id="d5361f65bad1a0cefb26442a03e3f1a3" category="paragraph">您可以在“*訂閱*”選項卡中查看性能服務級別信息，現在該信息已從單獨的選項卡移至可擴展視圖。按一下「到期日」欄位旁的向下箭頭可查看每個訂閱的到期日。要了解更多信息，請參閱<block ref="c9175061cd37da451a004ee428397f08" category="inline-link-macro-rx"></block>。</block>
   <block id="1c560ebcd3a4417c966fc32410160aad" category="list-text"><block ref="1c560ebcd3a4417c966fc32410160aad" category="inline-link-macro-rx"></block></block>
   <block id="f1725014f45852c6d29865ed1732954a" category="paragraph">每個效能服務等級的歷史消耗資料會根據所選的時間範圍以折線圖顯示。如果修改或續訂了Keystone訂閱，您可以將開始日期設定為先前的日期以查看過去的消費資料。</block>
   <block id="59bf2678f53f6a44de56bb54540c62f2" category="summary">使用「監控」標籤檢視並建立Keystone訂閱的警報監控器。</block>
@@ -2524,4 +2522,6 @@
   <block id="18d49dfd26fc514adaab2c9799dd5201" category="paragraph">您會看到容量使用情況、訂閱到期狀態和未解決的警報等關鍵指標。您可以從表中看到以下詳細資訊：</block>
   <block id="49ee8cd124ac86a74b0e8df79ea84356" category="admonition">您可以按一下「到期日」列旁的向下箭頭來查看每個訂閱的效能服務等級資訊。這顯示了詳細的容量信息，包括當前使用情況、承諾容量、預先配置容量、突發容量和可用容量。</block>
   <block id="7438fabae28e88c43c70139fd85c992a" category="section-title">2025年9月22日</block>
+  <block id="6ec83b09ce0b5d8f0d9c7b17070806de" category="paragraph">要了解更多信息，請參閱<block ref="93800fd762d6a0a51a66ae4ac582dd31" category="inline-link-macro-rx"></block>。</block>
+  <block id="93399fd7eb4f5bbac36222146d63b57a" category="paragraph">您可以在“*訂閱*”選項卡中查看性能服務級別信息，現在該信息已從單獨的選項卡移至可擴展視圖。按一下「到期日」欄位旁的向下箭頭可查看每個訂閱的到期日。要了解更多信息，請參閱<block ref="98b73336a034e0a595056d3614a31660" category="inline-link-macro-rx"></block>。</block>
 </blocks>
