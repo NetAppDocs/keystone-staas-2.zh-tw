@@ -17,12 +17,12 @@ summary: 若要監控系統的效能，您可以查看由Keystone訂閱管理的
 若要監控系統的效能，您可以查看由Keystone訂閱管理的ONTAP磁碟區的效能指標。
 
 
-TIP: 您可以選擇在Digital Advisor中使用此選項卡。聯絡支援人員查看此標籤。它在BlueXP中不可用。
+TIP: 您可以選擇在Digital Advisor中使用此選項卡。聯絡支援人員查看此標籤。它在NetApp控制台中不可用。
 
 若要在Digital Advisor中檢視此選項卡，請依照下列步驟操作：
 
 .步驟
-. 按一下“*常規> Keystone訂閱>效能*”。
+. 選擇*常規> Keystone訂閱> 性能*。
 . 選擇訂閱號碼。預設選擇第一個訂閱號。
 . 從清單中選擇所需的磁碟區名稱。
 +

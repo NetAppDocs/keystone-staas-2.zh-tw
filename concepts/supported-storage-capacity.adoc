@@ -28,7 +28,7 @@ NetApp Keystone STaaS 服務支援多種類型的儲存容量。了解這些不�
 
 訂閱期間每月計費的最小邏輯容量：
 
-* 容量分配給每個服務等級。
+* 容量致力於每個效能服務等級。
 * 承諾容量和額外的服務等級可以在期限內添加。
 
 
@@ -40,7 +40,7 @@ NetApp Keystone STaaS 服務支援多種類型的儲存容量。了解這些不�
 
 * 根據特定條件，承諾容量可能會減少。有關信息，請參閱link:../concepts/capacity-requirements.html["產能削減"]。
 * 承諾容量不能在您的訂閱到期前 90 天增加，除非訂閱期限額外續約 12 個月。
-* 您可以透過BlueXP介面或Keystone Success Manager (KSM) 要求變更承諾容量。有關請求更改的信息，請參閱link:../concepts/gssc.html["NetApp Keystone支持"]。
+* 您可以透過控制台或Keystone Success Manager (KSM) 要求變更已承諾容量。有關請求更改的信息，請參閱link:../concepts/gssc.html["NetApp Keystone支持"]。
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/consumption-tab.html 
-keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp 
+keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp, NetApp Console, Console 
 summary: 若要了解您的訂閱使用情況，您可以查看承諾容量、已消耗容量、可用容量等。 
 ---
 = 查看Keystone訂閱的消費趨勢
@@ -16,14 +16,14 @@ summary: 若要了解您的訂閱使用情況，您可以查看承諾容量、�
 [role="lead"]
 您可以透過查看特定時間內的Keystone訂閱的歷史資料來監控您的訂閱使用情況。這使您可以深入了解您的使用模式。
 
-您可以透過BlueXP或Digital Advisor查看Keystone訂閱的歷史資料：
+您可以透過NetApp控制台或Digital Advisor查看Keystone訂閱的歷史資料：
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp控制台
 --
 .步驟
-. 從BlueXP左側導覽功能表中，選擇 *儲存 > Keystone > 訂閱*。
+. 從控制台左側導覽選單中，選擇*儲存> Keystone >訂閱*。
 . 在*訂閱號*欄中選擇訂閱號。
 +
 您將被重定向到“*當前消耗*”選項卡。
@@ -125,7 +125,7 @@ NOTE: 空白圖表表示在該資料收集點您的環境中沒有可用資料�
 
 == 查看累計突發事件
 
-您可以透過BlueXP或Digital Advisor查看累計突發資料使用情況。如果您從BlueXP的 *消費趨勢* 選項卡中的 *檢視* 下拉選單中選擇了 *累積突發*，或從Digital Advisor的 *消費趨勢* 選項卡中選擇了 *已開立發票突發* 選項，則您可以根據所選的計費週期，按月或按季度查看突發資料使用情況。這些資料適用於已計費的過去 12 個月，您可以按日期範圍查詢最多過去 30 個月的資料。長條圖顯示已開立發票數據，如果尚未對使用情況進行計費，則該期間將被標記為「待處理」。
+您可以透過控制台或Digital Advisor查看累積的突發資料使用情況。如果您從控制台中 *消費趨勢* 選項卡的 *查看* 下拉選單中選擇了 *累計突發*，或者從Digital Advisor中 *消費趨勢* 選項卡中選擇了 *已開票累計突發* 選項，則您可以根據所選的計費週期按月或按季度查看累計突發資料使用情況。這些資料適用於已計費的過去 12 個月，您可以按日期範圍查詢最多過去 30 個月的資料。長條圖顯示已開立發票數據，如果尚未對使用情況進行計費，則該期間將被標記為「待處理」。
 
 
 TIP: 發票累計突發使用量是按計費週期計算的，基於性能服務等級的承諾和消耗容量。
@@ -142,7 +142,7 @@ image:accr-burst-2.png["每季累計突發使用量"]
 
 == 查看每日累計突發資料使用量
 
-您可以透過BlueXP或Digital Advisor查看每月或每季計費期間每日累積的突發資料使用量。在BlueXP中，如果您從 *Consumption trend* 標籤中的 *View* 下拉選單中選擇 *Accrued burst*，則 *Accrued burst by days* 表提供詳細數據，包括時間戳、已提交、已消耗和累積突發容量。
+您可以透過控制台或Digital Advisor查看每月或每季計費期間的每日累積突發資料使用量。在控制台中，如果您從 *消費趨勢* 選項卡中的 *查看* 下拉選單中選擇 *累積突發*，則 *按天累計突發* 表將提供詳細數據，包括時間戳、已提交、已消耗和累積突發容量。
 
 image:bxp-accrued-burst-days.png["顯示按天累計突發量的螢幕截圖"]
 

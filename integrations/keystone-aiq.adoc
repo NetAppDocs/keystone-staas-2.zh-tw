@@ -66,7 +66,7 @@ image:watchlist.png["監視清單螢幕"]
 *相關資訊*
 
 * link:../integrations/dashboard-access.html["開始使用Keystone儀表板"]
-* link:../integrations/keystone-bluexp.html["BlueXP中的Keystone儀表板"]
+* link:../integrations/keystone-console.html["NetApp控制台中的Keystone儀表板"]
 * link:../integrations/subscriptions-tab.html["查看您的訂閱詳情"]
 * link:../integrations/current-usage-tab.html["查看您目前的消費詳情"]
 * link:../integrations/consumption-tab.html["查看消費趨勢"]

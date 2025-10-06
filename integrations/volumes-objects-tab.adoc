@@ -16,7 +16,7 @@ summary: 查看磁碟區或物件儲存層級的容量詳細資訊。
 [role="lead"]
 如果您想查看磁碟區或物件儲存層級的容量詳細信息，您可以導航至Digital Advisor中的「磁碟區和物件」標籤。對於StorageGRID，您可以使用此標籤讀取物件儲存環境中各個節點的使用情況。
 
-您可以參考BlueXP中的 *Assets* 標籤來查看這些詳細資訊。要查看特定Keystone STaaS 訂閱的詳細信息，請參閱link:../integrations/assets-tab.html["查看與Keystone訂閱相關的資產"]。如果您想查看多個Keystone訂閱的詳細信息，請參閱link:../integrations/assets.html["查看Keystone訂閱中的資產"]。
+您可以參考NetApp控制台中的「*資產*」頁面來查看這些詳細資訊。要查看特定Keystone STaaS 訂閱的詳細信息，請參閱link:../integrations/assets-tab.html["查看與Keystone訂閱相關的資產"]。如果您想查看多個Keystone訂閱的詳細信息，請參閱link:../integrations/assets.html["查看Keystone訂閱中的資產"]。
 
 
 NOTE: 此標籤的標題會根據網站部署的性質而變化。如果您同時擁有ONTAP和物件存儲，則選項卡的標題將顯示為 *磁碟區和物件*。僅對於ONTAP，名稱顯示為 *Volumes*。對於StorageGRID物件存儲，您可以看到 *物件* 選項卡。
@@ -37,7 +37,7 @@ NOTE: 此標籤的標題會根據網站部署的性質而變化。如果您同�
 對於選定的Keystone STaaS 訂閱，您可以查看磁碟區的總數、其 QoS 合規狀態、受保護磁碟區的數量以及所有這些磁碟區中的總已提交容量、已消耗容量和可用容量。如果您按一下不合規或受保護磁碟區的數量，它將帶您進入「磁碟區詳細資料」標籤，您可以在其中查看根據您的選擇顯示不合規磁碟區或受保護磁碟區的篩選清單。
 
 +
-image:volume-summary-2.png["卷摘要選項卡"]
+image:volume-summary-3.png["卷摘要選項卡"]
 
 
 
@@ -61,7 +61,7 @@ NOTE: QoS 策略不適用於Keystone版本 3。
 NOTE: 對於進階資料保護附加服務，會出現一個附加資料列來指示該磁碟區是MetroCluster配置中的主磁碟區還是鏡像磁碟區。您可以透過點擊「複製節點序號」按鈕來複製單一節點序號。
 
 +
-image:volume-details-3.png["卷詳細資料選項卡"]
+image:volume-details-4.png["卷詳細資料選項卡"]
 
 
 

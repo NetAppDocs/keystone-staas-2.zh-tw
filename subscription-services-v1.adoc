@@ -16,7 +16,7 @@ summary: Keystone STaaS 與Keystone Flex 訂閱服務
 [role="lead"]
 Keystone STaaS 之前是Keystone訂閱服務（以前稱為Keystone Flex 訂閱服務）。
 
-雖然兩款產品的導航功能在link:./integrations/keystone-bluexp.html["Keystone儀表板"^]， Keystone訂閱服務與Keystone STaaS 在組成效能服務等級、服務提供和計費原則方面有所不同。截至 2024 年 4 月， NetApp僅維護並發布Keystone STaaS 的文檔。如果您仍在使用Keystone訂閱服務，請聯絡您的 KSM 以獲得遷移到Keystone STaaS 的支援。如果需要，您可以在此處存取Keystone訂閱服務文件的 PDF 版本：
+雖然兩款產品的導航功能在link:./integrations/keystone-console.html["Keystone儀表板"^]， Keystone訂閱服務與Keystone STaaS 在組成效能服務等級、服務提供和計費原則方面有所不同。截至 2024 年 4 月， NetApp僅維護並發布Keystone STaaS 的文檔。如果您仍在使用Keystone訂閱服務，請聯絡您的 KSM 以獲得遷移到Keystone STaaS 的支援。如果需要，您可以在此處存取Keystone訂閱服務文件的 PDF 版本：
 
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["英語"^]
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["日本人"^]
