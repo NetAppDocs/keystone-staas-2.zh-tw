@@ -78,6 +78,10 @@ Keystone從Keystone ONTAP和Keystone StorageGRID訂閱收集配置、狀態和�
 ** 儲存類型
 ** 聚合名稱
 ** 聚合 UUID
+** 物理使用
+** 可用尺寸
+** 尺寸
+** 使用尺寸
 
 
 * 聚合物件存儲
@@ -174,6 +178,17 @@ Keystone從Keystone ONTAP和Keystone StorageGRID訂閱收集配置、狀態和�
 ** VolumeBlocksFootprintBin1
 
 
+* MetroCluster
++
+** 節點
+** 總計的
+** LIF
+** 配置複製
+** 連接
+** 叢集
+** 卷
+
+
 * MetroCluster集群
 +
 ** 集群UUID
@@ -182,6 +197,36 @@ Keystone從Keystone ONTAP和Keystone StorageGRID訂閱收集配置、狀態和�
 ** 遠端叢集使用者名稱
 ** 本地配置狀態
 ** 遠端配置狀態
+
+
+* MetroCluster節點
++
+** DR鏡像狀態
+** 集群間 LIF
+** 節點可達性
+** 災難復原夥伴節點
+** DR輔助合作夥伴節點
+** DR、DR Aux 和 HA 節點對稱關係
+** 自動排程外切換
+
+
+* MetroCluster配置複製
++
+** 遠端心跳
+** 上次發送的心跳
+** 最後一次收到的心跳
+** 虛擬伺服器流
+** 集群流
+** 儲存
+** 正在使用的儲存量
+
+
+* MetroCluster調解器
++
+** 調解員地址
+** 中介端口
+** 中介器已配置
+** 中介者可達
 ** 模式
 
 
@@ -243,6 +288,13 @@ Keystone從Keystone ONTAP和Keystone StorageGRID訂閱收集配置、狀態和�
 * QoS策略組延遲
 * 讀取MBps
 * QoS同步SnapMirror延遲
+* 系統級數據
++
+** 寫入/讀取/其他/總 IOPS
+** 寫入/讀取/其他/總吞吐量
+** 寫入/讀取/其他/總延遲
+
+
 * 寫入IOPS
 
 
@@ -298,6 +350,11 @@ Keystone從Keystone ONTAP和Keystone StorageGRID訂閱收集配置、狀態和�
 * 實例
 * StorageGRID儲存利用率位元組數
 * StorageGRID儲存利用率元資料位元組
+
+
+以下列表是 `Availability/Uptime Data`為StorageGRID收集：
+
+* SLA 正​​常運作時間百分比
 
 
 ====
