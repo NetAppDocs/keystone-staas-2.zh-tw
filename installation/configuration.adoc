@@ -104,6 +104,9 @@ NOTE: 支援的檔案副檔名是 `.pem`， `.crt` ， `.cert` 。確保證書�
 . 選擇*儲存*。配置已套用。
 
 
+
+NOTE: CA憑證被複製到 `/opt/netapp/ks-collector/ca.pem` 在Keystone Collector 伺服器上。
+
 image:kc-custom-ca.png["用於 CA 定制的 TUI 螢幕"]
 
 

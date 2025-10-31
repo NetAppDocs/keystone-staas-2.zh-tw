@@ -1445,10 +1445,6 @@
   <block id="4082fa09d81cb2bcef02087304b3c30e" category="paragraph">您可以使用 RPM 或 Debian 套件在 Linux 伺服器上安裝Keystone Collector 軟體。根據您的 Linux 發行版執行安裝步驟。</block>
   <block id="3fc1f45d72a49b590c944fab8aac1e82" category="open-title">使用 RPM</block>
   <block id="6b0c7fd3768c26e569ee5662bdcc2738" category="list-text">透過 SSH 連接到Keystone Collector 伺服器並提升至<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block>特權。</block>
-  <block id="fafcabb6e961377fe2b62d0f1d2e62be" category="list-text">導入Keystone公鑰簽章：<block ref="ccf45be91ebaeda977037b149762acbd" prefix=" " category="inline-code"></block></block>
-  <block id="b22fed8db0bb580ac39be331b010b1cd" category="list-text">透過檢查 RPM 資料庫中Keystone Billing Platform 的指紋，確保已匯入正確的公共憑證：<block ref="46ce6ee7c7afe96ac26dd093842fe062" prefix=" " category="inline-code"></block>正確的指紋如下圖所示：<block ref="821b59fa560f6b692841b490c9d51dfe" prefix=" " category="inline-code"></block></block>
-  <block id="1bcbd92a1182a8044032c0af47695d8a" category="list-text">下載<block ref="5bec9e04971ed49ee2b3c939afa7a801" prefix=" " category="inline-code"></block>文件：<block ref="d1ed07754d396f9745478bc6388ae23a" prefix=" " category="inline-code"></block></block>
-  <block id="5000c92898e0e1c2f66f175bc48765b6" category="list-text">驗證文件的真實性：<block ref="50a551e75e87c897a8ad2128c42de747" prefix=" " category="inline-code"></block>真實文件的簽名如下圖所示：<block ref="4fc602b120696aeae5ab8b4ebd2a36e8" prefix=" " category="inline-code"></block></block>
   <block id="eb1f328dadd504e03e367eafd0c1e18c" category="list-text">安裝 YUM 軟體儲存庫檔案：<block ref="90fdbfbbba2139b53a74cc0098f4e51e" prefix=" " category="inline-code"></block></block>
   <block id="1558b4aa57ff2d00a79d0bf66be16822" category="list-text">安裝Keystone repo 後，透過 YUM 套件管理器安裝 keystone-collector 套件：</block>
   <block id="c7282671bfd034cbc45a49f8a68f500a" category="paragraph"><block ref="94b62ee97dbb40aa61dd0d85daf3c424" prefix="" category="inline-code"></block></block>
@@ -1550,14 +1546,10 @@
   <block id="ed55999d50b7451fbe4281de85f01c45" category="example-title">vCenter 7.0u1 及更早版本：了解更多</block>
   <block id="8b6cfff06473c4cd5cde3fa4ab929f0a" category="paragraph">vCenter 驗證 OVA 檔案內容的完整性，並為 OVA 檔案中包含的檔案提供有效的程式碼簽署摘要。但是，它不能驗證程式碼簽署憑證的真實性。為了驗證完整性，您應該下載完整的簽章摘要證書，並根據Keystone發布的公共證書進行驗證。</block>
   <block id="41466009ab38ed0e1dbd7f2358fa3825" category="list-text">按一下「*發布者*」連結下載完整的簽章摘要證書。</block>
-  <block id="347aea822a41d615267a1a09f727c32d" category="list-text">從以下位置下載_Keystone Billing_公共證書<block ref="f8a06e82c439e6817414e7a6871c3ab6" category="inline-link-rx"></block>。</block>
-  <block id="250e025c960accde58851d9cba806aa4" category="list-text">使用 OpenSSL 驗證 OVA 簽章憑證與公用憑證的真實性：<block ref="d67907543fcf70f6dfbc7d1139240042" prefix=" " category="inline-code"></block></block>
   <block id="ae33212e0f96fd19173ab021f7909861" category="example-title">vCenter 7.0u2 及更高版本：了解更多</block>
   <block id="45c3e42547d79b15a504fc354a5ea227" category="paragraph">當提供有效的程式碼簽章摘要時，vCenter 7.0u2 及更高版本能夠驗證 OVA 檔案內容的完整性和程式碼簽署憑證的真實性。  vCenter 根信任庫僅包含 VMware 憑證。  NetApp使用 Entrust 作為認證機構，這些憑證需要加入到 vCenter 信任庫中。</block>
-  <block id="7761f250d7d1edab3e627d211af402ab" category="list-text">從 Entrust 下載代碼簽署 CA 憑證<block ref="d94e6f5bcf8381faff13e5c4999eb265" category="inline-link-rx"></block>。</block>
   <block id="f35abf22d965c5c506fba6f9273a2895" category="list-text">按照<block ref="b5a4b64b2aa505bd7c11f79b8a9f458d" prefix=" " category="inline-code"></block>此知識庫 (KB) 文章的部分內容：<block ref="2e578ca4f24dfc2cfe15357800b939d4" category="inline-link-rx"></block> 。</block>
   <block id="6db4d1fb4f168710dad43e921e4fec52" category="inline-image-macro">OVA UI 顯示已驗證的憑證</block>
-  <block id="ba20b958dd73f9247c3247dbef41c8d4" category="paragraph">當Keystone Collector OVA 的完整性和真實性得到驗證後，您將看到文本<block ref="2e5f0dac7b8d485649c8f829e8ba09da" prefix=" " category="inline-code"></block>與出版商。<block ref="de3bc771b0100381aa743c5ecbd3a7df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="09ecce71a847e29076b9c49beb846dae" category="list-text">在部署 OVF 範本精靈的步驟 5 中，指定儲存虛擬機器的位置。</block>
   <block id="3a1e055c606dddb7ffa7ea4aa739f762" category="list-text">在步驟 6 中，選擇虛擬機器要使用的目標網路。</block>
   <block id="8cd29cf88dddb3b6287a9351d1b4c067" category="list-text">在_步驟 7 自訂範本_中，指定管理員使用者帳戶的初始網路位址和密碼。</block>
@@ -2577,4 +2569,13 @@
   <block id="012cc690ee0f390b86e69b7ef941643e" category="list-text">*資源選擇*：選擇為特定訂閱或所有訂閱建立監視器。根據您選擇的監控類型，填寫出現的必填字段，例如容量使用監測器的訂閱號碼和效能服務級別，或訂閱到期監視器的訂閱號碼。</block>
   <block id="17eb308ea945cce061c4020365ec2ddf" category="paragraph"><block ref="17eb308ea945cce061c4020365ec2ddf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="44758d2951f923446ffff8310f8ac382" category="section-title">2025年10月13日</block>
+  <block id="3c7ee9f17fe9ee6e8de5156a0343b43e" category="admonition">CA憑證被複製到<block ref="fb50d256ab973f6e88410442129bc41d" prefix=" " category="inline-code"></block> 在Keystone Collector 伺服器上。</block>
+  <block id="2378fd86d8a87b85d36308d247018184" category="list-text">導入Keystone公共簽章：<block ref="41d547e10dc6d168f59af339b33be959" prefix=" " category="inline-code"></block></block>
+  <block id="b5e09b8913194b721a7e21626585dfc5" category="list-text">請透過檢查 RPM 資料庫中Keystone Billing Platform 的指紋，確保已匯入正確的公共憑證：<block ref="46ce6ee7c7afe96ac26dd093842fe062" prefix=" " category="inline-code"></block> 正確的指紋如下圖所示：<block ref="b91be68b3b67e632293886e3790eccc7" prefix=" " category="inline-code"></block></block>
+  <block id="f4baeef0e68eefa8ecbde2db1c9bb6af" category="list-text">下載<block ref="5bec9e04971ed49ee2b3c939afa7a801" prefix=" " category="inline-code"></block> 文件：<block ref="55192ff2cd286fc1b545da5fb86c86fb" prefix=" " category="inline-code"></block></block>
+  <block id="859d80b97dc3be93d17073cb53fd1183" category="list-text">驗證文件的真實性：<block ref="50a551e75e87c897a8ad2128c42de747" prefix=" " category="inline-code"></block> 正版文件的簽名如下所示：<block ref="ae3578a86bb737e9e2439ece85303ecb" prefix=" " category="inline-code"></block></block>
+  <block id="1eba34a29908de527656c195c6a4418a" category="list-text">從此處下載 Keystone Billing 公共證書<block ref="5520f333fe3958930d4ca351e896a12f" category="inline-link-rx"></block>。</block>
+  <block id="8dd9e9a8650be62b5350b1743ec0c25a" category="list-text">使用 OpenSSL 驗證 OVA 簽章憑證與公鑰憑證的真偽：<block ref="f41dec976ad8e65c3e38fceba0104101" prefix=" " category="inline-code"></block></block>
+  <block id="b96ad4ab266c25b5492620bb2563d5d0" category="list-text">從 Sectigo 下載代碼簽署 CA 證書<block ref="7342f89b7e38eb427d641531b8da4ba6" category="inline-link-rx"></block>。</block>
+  <block id="5107c2f981fc9d221af2aedb4d9c3f10" category="paragraph">當Keystone Collector OVA 的完整性和真實性得到驗證後，您就可以看到文字了。<block ref="2e5f0dac7b8d485649c8f829e8ba09da" prefix=" " category="inline-code"></block> 與出版商合作。 <block ref="4bb910ce06804868c88e19dd6ff9e83c" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
