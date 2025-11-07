@@ -33,11 +33,27 @@ summary: 配置AutoSupport以將Keystone資料納入ONTAP叢集發送的每日�
 ----
 autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
 ----
++
+如果叢集採用MetroCluster配置，請執行以下命令：
+
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,object_store_server,san,raid,snapmirror,metrocluster -troubleshooting-additional wafl
+----
 ** 對於早期版本的ONTAP ，執行以下命令來修改每日日誌內容：
 +
 [source]
 ----
 autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,platform,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+----
++
+如果叢集採用MetroCluster配置，請執行以下命令：
+
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,platform,object_store_server,san,raid,snapmirror,metrocluster -troubleshooting-additional wafl
 ----
 ** 執行此命令來修改每週日誌內容：
 +
