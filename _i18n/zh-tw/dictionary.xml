@@ -198,9 +198,7 @@
   <block id="b81687f75b28f9a0cfb73649c9cca458" category="section-title">部署選項</block>
   <block id="d246f9b425c150eb3d6e174fbc2525d0" category="paragraph">Keystone Collector 可以透過以下方式部署：</block>
   <block id="a100eabbc0de64e817f5268550f98e40" category="list-text">VMware OVA 範本（需要 VMware vCenter Server 6.7 或更高版本）</block>
-  <block id="7fe1234c016df317c9bb2796b94c80c3" category="list-text">客戶提供在以下作業系統之一上運行的 Linux 伺服器：Debian 12、Red Hat Enterprise Linux 8.6 或更高版本 8.x，或 CentOS 7（僅適用於現有環境）。  Keystone軟體的安裝使用<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block>或者<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block>包，取決於 Linux 發行版。</block>
   <block id="e928ba962ab987ce8326c040dd6a7083" category="paragraph">ITOM Collector 可以透過以下方式部署：</block>
-  <block id="96791c51d091db61be7d6912c6675765" category="list-text">客戶提供運行 Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023 或更新版本的 Linux 伺服器。</block>
   <block id="1c6db71abb5563b4658fbc63f51e8b24" category="list-text">客戶提供執行 Windows Server 2016 或更新版本的 Windows 伺服器。</block>
   <block id="1364c79d952bcd4745981c580d2edc5a" category="admonition">推薦的作業系統是 Debian 12、Windows Server 2016 或更新版本。</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">聯網</block>
@@ -316,7 +314,6 @@
   <block id="380091ff4f618bba4a7e7e4aa88a1ec1" category="paragraph">Keystone成功經理 (KSM) 與您密切合作，為您提供Keystone服務，並向您提供每週或每月的帳單和營運報告。您的NetApp Keystone協定中指定了這些責任。</block>
   <block id="2d0539451bff9f553647efc300f001de" category="section-title">產生服務請求</block>
   <block id="ec48441169568deaa659297bc5ea9f6c" category="paragraph">在入職期間，如果您獲得了存取和使用 Netapp Keystone ServiceNow 的憑證，您可以使用該入口網站針對與您的Keystone訂閱相關的問題產生服務要求：</block>
-  <block id="b2a258e6f0a0dc74fded47cb9cc5413c" category="paragraph"><block ref="b2a258e6f0a0dc74fded47cb9cc5413c" category="inline-link-rx"></block></block>
   <block id="4bb1ec7470540bdb0d6aeee19ef42670" category="paragraph">在提出服務請求之前，請確保您已準備好系統詳細資訊、日誌和相關資訊。當您提出服務請求時， Keystone支援團隊會收到支援票並存取資訊以進行故障排除。您可以關注您的 ServiceNow 票證以了解狀態和解決方案。</block>
   <block id="ce79b37185c18b2eba95931a0b15de7a" category="inline-link-macro">產生並收集支援包</block>
   <block id="d5bd195454f7264ad483f3ee67bec884" category="paragraph">有關添加支援包的信息，請參閱<block ref="bc06f0ccbc4013c0e8a3b640622ac4cb" category="inline-link-macro-rx"></block>。</block>
@@ -695,7 +692,6 @@
   <block id="892db0165f2238f40c3370386d79cac7" category="inline-image-macro">Excel 表格模板</block>
   <block id="f0fbc9cddebee973debd106e878bebdd" category="paragraph"><block ref="f0fbc9cddebee973debd106e878bebdd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cac189ace7fac11fbcff63b35adf8770" category="list-text">在NetApp Keystone支援確認違規行為後六週內，應發起服務信用請求。所有服務信用均須經NetApp承認並批准。</block>
-  <block id="193dec405e65293a13ce97bb2c01440c" category="list-text">服務信用額度可用於未來的發票。服務積分不適用於已過期的Keystone訂閱。要了解更多信息，請參閱<block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
   <block id="e89bdbf88ea78e787698305e26fb7442" category="summary">Keystone為每個效能服務等級提供基於延遲的 SLO，如Keystone訂單中所述，用於達到突發限制的消耗容量。</block>
   <block id="f0957db7a6996ab97df608582080c892" category="doc">性能 SLO</block>
   <block id="9f6ccc631816a7182a52d977c6827823" category="paragraph">NetApp Keystone根據以下列出的條款和條件，按照Keystone訂單中所述的每個效能服務等級提供基於延遲的 SLO，以達到突發限制所消耗的容量。</block>
@@ -936,7 +932,6 @@
   <block id="d8d50c12bd11a2109a7a384f43b0930a" category="inline-image-macro">產生支援包</block>
   <block id="7605fc3bbddce380c28f25b5327f5fab" category="paragraph"><block ref="7605fc3bbddce380c28f25b5327f5fab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="572eb7b481dd9edd4e8e79e98f5702e7" category="paragraph">這個過程創造了<block ref="db5570bf61464b46e2bde31ed61a7dc6" prefix=" " category="inline-code"></block>位於上述位置的軟體包可以與NetApp共享，以便解決問題。</block>
-  <block id="82690bb37c8fd3910939c0d1c07adbfb" category="list-text">下載檔案後，您可以將其附加到Keystone ServiceNow 支援票證。有關提出票證的信息，請參閱<block ref="a7ae718de79af41225531b7d4972e1ef" category="inline-link-macro-rx"></block>。</block>
   <block id="df607436cb358c9158c17df17c648c95" category="summary">Keystone提供一種_私有_部署模式（也稱為_暗站_），以滿足您的業務和安全需求。</block>
   <block id="89776fa991dc9a854be133c1980588a2" category="doc">了解Keystone （私人模式）</block>
   <block id="5580118283395cf4a34aae1cbd8449f9" category="paragraph">Keystone提供一種_私有_部署模式（也稱為_暗站_），以滿足您的業務和安全需求。此模式適用於連線受限的組織。</block>
@@ -963,14 +958,12 @@
   <block id="0a07fd95ca9bf6935ce5e61609730be6" category="list-text">記憶體：2 GB</block>
   <block id="54c62dd9045f6805a09d9d86b629862d" category="list-text">磁碟空間：20 GB vDisk</block>
   <block id="c53de6b17f1d8da5e4d60aca127be380" category="section-title">Linux 需求</block>
-  <block id="af1726e663445fca1780939dd8437580" category="list-text">作業系統：Debian 12、Red Hat Enterprise Linux (RHEL) 8.6 或 RHEL 8.x 系列中的更高版本</block>
   <block id="6adf0487ff5b4dadf30c70a5107314fc" category="list-text">核心：2 CPU</block>
   <block id="9b254436141f0faf599283567283dff9" category="list-text">記憶體：4 GB</block>
   <block id="6689c36f38716c4f3b09772966e38e5d" category="list-text">磁碟空間：50 GB vDisk</block>
   <block id="52bef7e9917e522c1436572ddc5a3a3f" category="list-text">至少 2 GB 可用空間<block ref="9854ed422bddbda845d9be18e5812dbc" prefix=" " category="inline-code"></block></block>
   <block id="3db3f2076eb3e58b05c6ae1e6accb36e" category="list-text">至少 48 GB 可用空間<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block></block>
   <block id="574288454beb0127b5c5892882343abf" category="paragraph">同一台伺服器也應該安裝以下第三方軟體包。如果透過儲存庫可用，這些套件將作為先決條件自動安裝：</block>
-  <block id="131e01e2ecbd7de2f9b3f16afa129bcd" category="list-text">RHEL8</block>
   <block id="9a1a91cd8e61e7975513444f1156020d" category="list-text">python3 &gt;=v3.6.8, python3 \&lt;=v3.9.13</block>
   <block id="abe31bcfb59f2265c2fb97dde407366c" category="list-text">podman</block>
   <block id="431e077067178a6dd061f1e2ab20209d" category="list-text">求救</block>
@@ -985,7 +978,6 @@
   <block id="f9017eb4d160c5625e2911de7136c2fe" category="list-text">Keystone Collector 伺服器應該可以透過連接埠 443 (HTTPS) 存取 Unified Manager 伺服器。</block>
   <block id="c55d18e0937cb0a3844d2da3ecbc7e82" category="list-text">應該為 Unified Manager 伺服器上的Keystone Collector 設定具有應用程式使用者權限的服務帳戶。</block>
   <block id="4be679fb0c05782454656e48556dab1d" category="list-text">不需要外部網路連線。</block>
-  <block id="70a7925bd880e8632a66c41a83d2a2e9" category="list-text">每個月從Keystone Collector 匯出一個文件並透過電子郵件發送給NetApp支援團隊。有關如何联系支援團隊的更多信息，請參閱<block ref="2dd3cb549793fb90ba3abaee885c98ff" category="inline-link-macro-rx"></block>。</block>
   <block id="9bb097552337391bef04a8384c5c2779" category="summary">在開始使用Keystone之前，您需要確保ONTAP叢集和StorageGRID系統符合一些要求。</block>
   <block id="9f06d116e9e0b83604b7fd60a2234a51" category="doc">ONTAP和StorageGRID的要求</block>
   <block id="6d29d2542a6a2e3e81746082b1d99b07" category="list-title">軟體版本</block>
@@ -1406,7 +1398,6 @@
   <block id="6cf5a787f8e9babecd7e3e62b472c0f1" category="summary">在安裝 ITOM Collector 之前，您的系統必須滿足幾個要求。</block>
   <block id="067857c91d7e95767cebced037df51fc" category="paragraph">在安裝 ITOM Collector 之前，請確保您的系統已準備好必要的軟體並滿足所有必要的先決條件。</block>
   <block id="382c090cdf20988adebc3da3af734475" category="list-title">ITOM Collector 伺服器 VM 的先決條件：</block>
-  <block id="f086ae2281105a95b9f676071bb5da54" category="list-text">支援的作業系統：Debian 12、Windows Server 2016、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023 或這些作業系統的較新版本。</block>
   <block id="756e04f777f1ed6cee954325099dfc00" category="list-text">資源需求：根據監控的NetApp節點數量，虛擬機器資源需求如下：</block>
   <block id="a008248e3966fc8b2c95be03552c4466" category="list-text">2-10 個節點：4 個 CPU、8 GB RAM、40 GB 磁碟</block>
   <block id="ab3a29aba303bfd353ff5e6fb0b2db96" category="list-text">12-20 個節點：8 個 CPU、16 GB RAM、40 GB 磁碟</block>
@@ -2332,7 +2323,6 @@
   <block id="d4017514ab5a420c895a9fc731b4b395" category="paragraph">每個MetroCluster站點都有自己的訂閱和計費。對於MetroCluster配置，使用情況測量考慮了兩個站點之間的儲存利用。如果您的MetroCluster設定中每個站點有 100 TiB，則每個站點上只有 50 TiB 被主動使用，而每個站點上剩餘的 50 TiB 則用作鏡像備份。高級資料保護附加費用是根據這 100 TiB 的總活動使用量計算的，並透過各自的訂閱在兩個站點之間分攤，每個站點 50 TiB。</block>
   <block id="541d21d5ff884f1d0b139f95e569de26" category="paragraph">站點 A 和站點 B 採用MetroCluster配置進行設定。當使用者在網站 A 建立 10 TB 的磁碟區時，網站 B 中也會建立相同的 10 TB 磁碟區。 KeystoneKeystone每個站點的消耗量為 10 TB，總共增加 20 TB。系統管理員和統一管理器報告在站點 A 中建立的 10 TB 卷，但沒有報告在站點 B 中建立的 10 TB 卷。</block>
   <block id="079da252ccc5dbccc8de73980b3d636d" category="paragraph">顯示的消耗量 94.21 TiB 代表主要訂閱的使用。鑑於進階資料保護將消費分散到具有單獨訂閱的合作夥伴網站之間，因此該圖表僅顯示主要網站的使用情況。若要了解進階資料保護附加服務的定價，請參閱<block ref="e4b4611bcff3f9744cb4aede487c4fc5" category="inline-link-macro-rx"></block>。</block>
-  <block id="eb80e5c63a486d3698858f87d747e461" category="paragraph">您可以聯絡Keystone支援團隊訂閱Keystone版本 3 (v3)。有關詳細信息，請參閱<block ref="ba5860e7066469b734064f44e703aa5c" category="inline-link-macro-rx"></block>。</block>
   <block id="7e8fe67b005603b496012796735f2d36" category="doc">使用新列增強邏輯使用情況跟踪</block>
   <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">新增了新欄位“總佔用空間”，以增強對FabricPool磁碟區的Keystone消耗追蹤：</block>
   <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXP中的Keystone儀表板 *：您可以在 *Assets* 標籤中的 *Volumes in clusters* 標籤中看到 *Total footprint* 列。</block>
@@ -2423,7 +2413,6 @@
   <block id="8a982cf9d4fce545e4c4210341623864" category="paragraph">您可以透過NetApp主機或Digital Advisor查看Keystone訂閱的訂閱和消費詳情。要了解有關Keystone報告的更多信息，請參閱<block ref="5a609c392d8730053e3d7fc9f1d0ffab" category="inline-link-macro-rx"></block>。</block>
   <block id="f2f2cd18152ba0cf90dc0a9137846037" category="list-text">您可以根據 IOPS 和延遲承諾容量付費，以滿足各種工作負載需求。不同的效能服務層級 - Extreme、Premium、Performance、Standard、Value 和 Object 可讓您根據購買的效能服務等級管理儲存。</block>
   <block id="ba17302e854fad784b3a0f21ef030b25" category="list-text">容量致力於每個效能服務等級。</block>
-  <block id="04b0e8727ad816eafd0891457121d0a1" category="list-text">您可以透過控制台或Keystone Success Manager (KSM) 要求變更已承諾容量。有關請求更改的信息，請參閱<block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
   <block id="876a76983fba3da801a1f6d2d41a5db3" category="paragraph">您可以使用Keystone Collector 管理 TUI 公用程式建立效能服務等級 (PSL)。透過 TUI 建立 PSL 會自動選擇為每個效能服務等級設定的預設值，從而減少透過Active IQ Unified Manager建立 PSL 時手動設定這些值時可能發生的錯誤的可能性。</block>
   <block id="084a50394b54545f96247d840d02d0cf" category="admonition">您可以反白Keystone訂閱服務版本 1 的 *KFS* 選項。Keystone訂閱服務與Keystone STaaS 在組成效能服務等級、服務產品和計費原則方面有所不同。要了解更多信息，請參閱<block ref="28860fa9118cfd783678772e54f9b578" category="inline-link-macro-rx"></block>。</block>
   <block id="8b8e55daf5c09f217fffc6d663a276de" category="list-text">所有支援的Keystone效能服務等級將顯示在指定Keystone版本的 *選擇Keystone服務等級* 選項中。從清單中啟用所需的效能服務等級。</block>
@@ -2603,4 +2592,25 @@
   <block id="0cfa773235daafece9ec96fac7a4ae83" category="list-text">*刪除*：確認刪除以移除顯示器。</block>
   <block id="9516b8db60240fe5a0c189f3a9d20181" category="paragraph">新增或刪除訂閱後，該監視器將從選項卡中移除。</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
+  <block id="0c359189f8e07afc4bf0a432b108a2f7" category="list-text">客戶需提供一台運行下列作業系統之一的 Linux 伺服器：Debian 12、Red Hat Enterprise Linux 8.6 或更高版本的 8.x 版本、Red Hat Enterprise Linux 9.0 或更高版本，或 CentOS 7（僅限現有環境）。Keystone軟體使用以下方式安裝：<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> 或者<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> 軟體包取決於 Linux 發行版。</block>
+  <block id="188a74af3438876c97ac7877f4af6cc9" category="list-text">客戶提供運行 Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Red Hat Enterprise Linux 9.0、Amazon Linux 2023 或更高版本的 Linux 伺服器。</block>
+  <block id="75269ad6e7abe01d12768761ab748b48" category="paragraph"><block ref="75269ad6e7abe01d12768761ab748b48" category="inline-link-rx"></block></block>
+  <block id="079d46d4e807d9ca797d92cd97e9c5ea" category="list-text">服務信用額度可用於未來的發票。服務積分不適用於已過期的Keystone訂閱。欲了解更多信息，請參閱 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
+  <block id="8e3e0d66dd46c331ec4b3a698a38a9e7" category="list-text">您可以透過控制台或向您的Keystone Success Manager (KSM) 要求變更已承諾的容量。有關申請更改的信息，請參閱 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
+  <block id="17766f6125f71fd7cf26ceef70d4e504" category="list-text">下載檔案後，您可以將其附加到Keystone ServiceNow 支援票證。有關提高票數的信息，請參閱 <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>。</block>
+  <block id="fd9138bbd3a6e55b24c6c044d67e4bc1" category="list-text">作業系統（選擇一項）：</block>
+  <block id="39132259812eb62420e77e39bfa951b1" category="list-text">Red Hat Enterprise Linux (RHEL) 8.6 或任何更高版本的 8.x 系列</block>
+  <block id="190f66f3a69d63ab64b7d9cda457f436" category="list-text">Red Hat Enterprise Linux 9.0 或更高版本</block>
+  <block id="d45f88dc67b3cefcfdd3a81030e2cbf1" category="list-text">RHEL 8.6+ (8.x)</block>
+  <block id="44af4ad3d3f80bafed789646fe5c626a" category="list-text">RHEL 9.0+</block>
+  <block id="a850306268da0ed5c6fe745ee51da519" category="list-text">python3 &gt;= v3.9.0, python3 \&lt;= v3.9.13</block>
+  <block id="115934cba510421d56a3dd602516354d" category="list-text">每個月從Keystone Collector 匯出一個文件並透過電子郵件發送給NetApp支援團隊。如需了解如何聯絡支援團隊的更多信息，請參閱 <block ref="da15ada5eca0cf6d8fba09a6cd49576b" category="inline-link-macro-rx"></block>。</block>
+  <block id="f12fc49b59dac87ec27be3c3468ee3e0" category="list-text">支援的作業系統：</block>
+  <block id="da18611ad540d93735421e810a550f76" category="list-text">Debian 12 或更高版本</block>
+  <block id="fa110b4c2ed42b9cbf528246b7eaa1aa" category="list-text">Windows Server 2016 或更高版本</block>
+  <block id="dba0efd3e66cff7ee87b2d0939257d1b" category="list-text">Ubuntu 20.04 LTS 或更高版本</block>
+  <block id="e38897ec357371b4429540873d7073e1" category="list-text">紅帽企業 Linux (RHEL) 8.x</block>
+  <block id="45d6736fdd879f91b2a538e05e0a3b12" category="list-text">Red Hat Enterprise Linux 9.0 或更高版本</block>
+  <block id="cc20f1cec12842b9bed0a2fb4b579509" category="list-text">Amazon Linux 2023 或更高版本</block>
+  <block id="f0fc80440f66cd06e8621cfb9578824b" category="paragraph">您可以聯絡Keystone支援團隊訂閱Keystone版本 3 (v3)。更多詳情請參閱 <block ref="90d872d2a90e66f6330f06f20805c0ef" category="inline-link-macro-rx"></block>。</block>
 </blocks>

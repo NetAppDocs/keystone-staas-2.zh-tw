@@ -23,6 +23,7 @@ summary: 在安裝Keystone Collector 之前，請先使用所需的軟體準備�
 +
 ** Debian 12
 ** Red Hat Enterprise Linux 8.6 或更高版本 8.x
+** Red Hat Enterprise Linux 9.0 或更高版本
 ** CentOS 7（僅適用於現有環境）
 
 

@@ -1,6 +1,6 @@
 ---
 permalink: integrations/keystone-cm.html 
-redirect: keystone-staas/integrations/dashboard-overview.html 
+redirect: keystone-staas-2/integrations/dashboard-overview.html 
 ---
 = 
 :allow-uri-read: 

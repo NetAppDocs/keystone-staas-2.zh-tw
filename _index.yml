@@ -55,7 +55,7 @@ indexpage:
   - title: 使用Keystone服務做更多事情
     links:
     - title: 了解您的支援團隊
-      url: "/concepts/gssc.html"
+      url: "/concepts/support-services.html"
     - title: 我該如何處理冷數據或較少使用的數據？
       url: "/concepts/data-tiering.html"
     - title: 我如何保護我的Keystone資料？

@@ -1,6 +1,6 @@
 ---
 permalink: concepts/equinix.html 
-redirect: keystone-staas/concepts/overview.html 
+redirect: keystone-staas-2/concepts/overview.html 
 ---
 = 
 :allow-uri-read: 

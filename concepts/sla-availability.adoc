@@ -148,7 +148,7 @@ image:sla-breach.png["Excel 表格模板"]
 [NOTE]
 ====
 * 在NetApp Keystone支援確認違規行為後六週內，應發起服務信用請求。所有服務信用均須經NetApp承認並批准。
-* 服務信用額度可用於未來的發票。服務積分不適用於已過期的Keystone訂閱。要了解更多信息，請參閱link:../concepts/gssc.html["NetApp Keystone支持"]。
+* 服務信用額度可用於未來的發票。服務積分不適用於已過期的Keystone訂閱。欲了解更多信息，請參閱 link:../concepts/support-services.html["NetApp Keystone支持"]。
 
 
 ====

@@ -1,6 +1,6 @@
 ---
 permalink: integrations/aiq-keystone-details.html 
-redirect: keystone-staas/integrations/keystone-aiq.html 
+redirect: keystone-staas-2/integrations/keystone-aiq.html 
 ---
 = 
 :allow-uri-read: 

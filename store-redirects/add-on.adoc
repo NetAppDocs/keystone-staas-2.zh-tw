@@ -1,6 +1,6 @@
 ---
 permalink: concepts/add-on.html 
-redirect: keystone-staas/concepts/metrics.html 
+redirect: keystone-staas-2/concepts/metrics.html 
 ---
 = 
 :allow-uri-read: 

@@ -17,10 +17,19 @@ summary: 在安裝 ITOM Collector 之前，您的系統必須滿足幾個要求�
 在安裝 ITOM Collector 之前，請確保您的系統已準備好必要的軟體並滿足所有必要的先決條件。
 
 .ITOM Collector 伺服器 VM 的先決條件：
-* 支援的作業系統：Debian 12、Windows Server 2016、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023 或這些作業系統的較新版本。
+* 支援的作業系統：
++
+** Debian 12 或更高版本
+** Windows Server 2016 或更高版本
+** Ubuntu 20.04 LTS 或更高版本
+** 紅帽企業 Linux (RHEL) 8.x
+** Red Hat Enterprise Linux 9.0 或更高版本
+** Amazon Linux 2023 或更高版本
 +
 
 NOTE: 推薦的作業系統是 Debian 12、Windows Server 2016 或更新版本。
+
+
 
 * 資源需求：根據監控的NetApp節點數量，虛擬機器資源需求如下：
 +

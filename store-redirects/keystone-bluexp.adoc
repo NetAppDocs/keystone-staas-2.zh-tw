@@ -1,6 +1,6 @@
 ---
 permalink: integrations/keystone-bluexp.html 
-redirect: keystone-staas/integrations/keystone-console.html 
+redirect: keystone-staas-2/integrations/keystone-console.html 
 ---
 = 
 :allow-uri-read: 
