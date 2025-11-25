@@ -57,4 +57,4 @@ image:alert-aiq-3.png["警報"]
 
 有關 AQoS 策略的信息，請參閱link:../concepts/qos.html["自適應QoS"]。
 
-有關這些訊息的更多信息，請聯繫NetApp Keystone支援。有關提出服務請求的信息，請參閱link:../concepts/gssc.html#generating-service-requests["產生服務請求"]。
+有關這些訊息的更多信息，請聯繫NetApp Keystone支援。有關提交服務請求的信息，請參閱 link:../concepts/support-services.html#generating-service-requests["產生服務請求"]。
