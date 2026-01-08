@@ -1461,7 +1461,6 @@
   <block id="8dff4f66fbdc44d35cadc9cf566cab06" category="paragraph">同一伺服器還應該具有以下第三方包：</block>
   <block id="8a43eb05c3b74f093be84dcedec105e4" category="list-text">podman（POD管理器）</block>
   <block id="e284374909d82a81c5150b7908e00147" category="list-text">慢性</block>
-  <block id="3c048c264642c17c1d0bbd50b9e23bfe" category="list-text">Python 3（3.6.8 至 3.9.13）</block>
   <block id="9ce62eb0f672e21ccd91e690812cac59" category="list-title">Keystone Collector 伺服器虛擬機器：</block>
   <block id="3cd8ee624224889231554d68f6c0f471" category="list-text">核心：2 個 CPU</block>
   <block id="729c0bdf36ec5a81531eff6e6786c89d" category="list-text">記憶體：4 GB</block>
@@ -2620,4 +2619,5 @@
   <block id="7a29351a5aff62fec009044b13aad77f" category="paragraph">儘管實際使用量在允許的突發流量限制之內，Digital Advisor控制面板中訂閱的顯示狀態錯誤地顯示為「超出突發流量限制」。</block>
   <block id="81899b5a6230dd4cf7e0bff4dbc71dfb" category="paragraph">2025年12月08日</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
+  <block id="ee53a2d144b153a8ad44855abe0429a8" category="list-text">Python 3（3.9.14 至 3.11.8）</block>
 </blocks>
