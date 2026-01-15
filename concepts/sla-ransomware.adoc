@@ -4,7 +4,7 @@ permalink: concepts/sla-ransomware.html
 keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
 summary: NetApp透過勒索軟體復原保證計劃，保證在發生勒索軟體攻擊時從SnapLock Compliance卷中恢復 Snapshot 數據 
 ---
-= 勒索軟體恢復保證
+= Keystone勒索軟體恢復保證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

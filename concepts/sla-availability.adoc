@@ -4,7 +4,7 @@ permalink: concepts/sla-availability.html
 keywords: availability, sla, service level agreement, slo, service level objectives 
 summary: '可用性 SLO 的目標是，對於交付Keystone訂單而部署的所有NetApp ONTAP快閃儲存陣列，在計費期間內正常運作時間達到 99.999%。' 
 ---
-= 可用性 SLO
+= Keystone的可用性 SLO
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

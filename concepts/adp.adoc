@@ -4,7 +4,7 @@ permalink: concepts/adp.html
 keywords: data protection advanced 
 summary: 使用進階資料保護附加服務，確保對關鍵任務工作負載進行有效的資料保護。 
 ---
-= 了解進階資料保護
+= Keystone的高階資料保護插件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

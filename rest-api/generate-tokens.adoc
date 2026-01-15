@@ -4,7 +4,7 @@ permalink: rest-api/generate-tokens.html
 keywords: Refresh token, Digital Advisor portal,access 
 summary: 產生刷新令牌以取得新的存取令牌。它驗證 API 請求並保持有效一周或直到被替換為止。您可以透過控制台或 API 呼叫取得存取令牌。 
 ---
-= 產生刷新和存取令牌
+= 為Keystone產生刷新令牌和存取令牌
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

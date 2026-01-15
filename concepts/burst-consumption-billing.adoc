@@ -4,7 +4,7 @@ permalink: concepts/burst-consumption-billing.html
 keywords: burst consumption billing 
 summary: Keystone STaaS 計費是基於突發容量，也就是您在訂閱的承諾容量之上消耗的容量。 
 ---
-= 根據突發消費計費
+= 了解Keystone突發流量計費方式
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

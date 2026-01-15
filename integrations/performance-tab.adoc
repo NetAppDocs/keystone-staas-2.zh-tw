@@ -4,7 +4,7 @@ permalink: integrations/performance-tab.html
 keywords: keystone-aiq, digital advisor keystone, performance tab 
 summary: 若要監控系統的效能，您可以查看由Keystone訂閱管理的ONTAP磁碟區的效能指標。 
 ---
-= 查看績效指標
+= 查看Keystone訂閱的效能指標
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

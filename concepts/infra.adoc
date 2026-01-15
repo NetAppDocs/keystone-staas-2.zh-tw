@@ -4,7 +4,7 @@ permalink: concepts/infra.html
 keywords: keystone infrastructure, infra 
 summary: Keystone基礎設施、設計、技術選擇和組件產品均完全由NetApp負責。 
 ---
-= Keystone基礎設施
+= 了解Keystone基礎設施
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
