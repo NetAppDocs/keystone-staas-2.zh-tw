@@ -2638,4 +2638,11 @@
   <block id="1c0706b323b25df07171d935dadca63d" category="sidebar">了解Keystone STaaS SLO</block>
   <block id="4996475aff4a957b37439e45da70e7da" category="sidebar">了解計費方式</block>
   <block id="d7343c0d20dd2babfa5f38e0b87a6939" category="sidebar">針對特定容量配置的計費</block>
+  <block id="0fa78e8d7c7b076da1f9e1d3fa517845" category="doc">訂閱修改功能不可用</block>
+  <block id="6c8dd41ea59e163d8fa923e1f93882e6" category="paragraph">NetApp Console中Keystone控制面板的更新：</block>
+  <block id="ccaf34b2cf2472652ed113639a7f687c" category="paragraph">目前無法修改Keystone訂閱的承諾容量。此功能將在未來的版本中重新推出。</block>
+  <block id="252561ea020b2dfb8598526a78a88036" category="inline-link-macro">NetApp Console中的Keystone存取角色</block>
+  <block id="99a171058669ac189901e0c53c44ed13" category="admonition">您必須被指派到 * Keystone管理員 * 角色才能建立和管理警報監控器。欲了解更多信息，請參閱 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
+  <block id="53a22728b83fc16fec4e96baf9b85af7" category="admonition">編輯警報需要 * Keystone管理員 * 角色。* Keystone檢視器 * 角色只能查看警報詳情。欲了解更多信息，請參閱 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
+  <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
 </blocks>
