@@ -117,6 +117,8 @@ sidebar:
         url: "/integrations/consumption-tab.html"
       - title: 查看您的訂閱時間表
         url: "/integrations/subscription-timeline.html"
+      - title: 查看 MetroCluster 訂閱消費狀況和健康狀況
+        url: "/integrations/adp-tab.html"
     - title: 查看資產
       entries:
       - title: 查看與訂閱相關的資產
@@ -129,8 +131,6 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: 查看和建立警報監視器
         url: "/integrations/monitoring-alert-monitors.html"
-    - title: 修改您的訂閱
-      url: "/integrations/modify-subscription.html"
     - title: 查看您的服務請求
       url: "/integrations/administration-tab.html"
     - title: 查看捲和物件儲存詳細信息

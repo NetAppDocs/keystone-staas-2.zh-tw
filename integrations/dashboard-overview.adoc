@@ -47,8 +47,7 @@ NetApp控制台可在企業範圍內跨本機和雲端環境集中管理NetApp�
 
 請注意以下事項：
 
-* 雖然控制台和數Digital Advisor提供了一些獨特的功能，但控制台為Keystone提供了管理功能，讓您可以管理訂閱並進行必要的調整。
-* 您必須被指派 * Keystone admin* 角色才能修改訂閱。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解NetApp控制台存取角色"^]。
+* 雖然 Console 和 Digital Advisor 提供了一些獨特的功能，但 Console 提供 Keystone 的管理功能，可讓您管理訂閱並進行必要的調整。要了解更多信息，請參閱 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["NetApp Console中的Keystone存取角色"^]。
 * Digital Advisor與控制台集成，可讓您直接從控制台存取所有Digital Advisor功能，包括Keystone儀表板。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-console.html#netapp-console["Digital Advisor與NetApp Console 集成"^]。
 
 
@@ -93,11 +92,6 @@ link:../integrations/monitoring-alerts.html["查看和管理警報和監視器"]
 
 
  a| 
-link:../integrations/modify-subscription.html["修改您的訂閱"]（限Keystone管理員）
-| 是的 | 不 
-
-
- a| 
 link:../integrations/options.html#generate-reports-from-netapp-console-or-digital-advisor["產生報告"]
 | 是的 | 是的 
 
@@ -105,6 +99,11 @@ link:../integrations/options.html#generate-reports-from-netapp-console-or-digita
  a| 
 link:../integrations/volumes-objects-tab.html["查看捲和對象詳細信息"]
 | 是的 | 是的 
+
+
+ a| 
+link:../integrations/adp-tab.html["檢視 MetroCluster 使用量與健全狀況"]
+| 是（包括健全狀況、拓撲檢視和同步監控） | 是（僅限使用量資料） 
 
 
  a| 

@@ -1,0 +1,8 @@
+---
+permalink: integrations/modify-subscription.html 
+redirect: keystone-staas-2/integrations/dashboard-overview.html 
+---
+= 
+:allow-uri-read: 
+
+
