@@ -18,11 +18,13 @@ NetAppData Infrastructure Insights(DII，以前稱為Cloud Insights) 是Keystone
 
 要了解有關Data Infrastructure Insights的更多信息，請參閱link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insights文檔"^]。
 
-DII 適用於新訂閱和現有訂閱。它可以作為承諾容量的附加元件整合到Keystone訂閱中。當 DII 整合到Keystone訂閱中時，它將為訂閱中的每個基本效能服務等級提供相應的效能服務等級。例如，Extreme 映射到 DII Extreme，Premium 映射到 DII Premium，Performance 映射到 DII Performance。這些對應可確保 DII 效能服務等級與您的Keystone訂閱的基本效能服務等級保持一致。
 
-Digital Advisor儀表板上的 * Keystone Subscriptions* 小工具內 DII 效能服務等級視圖：
 
-image:keystone-widget-dii.png["顯示 DII 服務等級的Keystone Subscriptions 小工具的螢幕截圖"]
+== 關於 Keystone 訂閱的 DII
+
+Data Infrastructure Insights 適用於新訂閱和現有訂閱。它可以作為已承諾容量的附加元件整合到 Keystone 訂閱中。
+
+當 Data Infrastructure Insights 整合到 Keystone 訂閱中時，它將為訂閱中的每個基礎效能服務等級提供一個對應的效能服務等級。例如、Extreme 對應 Data Infrastructure Insights Extreme、Premium 對應 Data Infrastructure Insights Premium、Performance 對應 Data Infrastructure Insights Performance。這些對應可確保 Data Infrastructure Insights 效能服務等級與您 Keystone 訂閱的基礎效能服務等級一致。
 
 
 
@@ -60,14 +62,31 @@ NOTE: 雖然 DII 為已部署的硬體提供了廣泛的監控功能，但它不
 
 
 
+== 查看 DII 消費狀況
+
+您可以透過 NetApp Console 或 Digital Advisor 檢視 DII 附加服務的使用量。DII 效能服務等級（例如 DII Extreme、DII Premium 和 DII Performance）的使用量資料會與您的基本效能服務等級一起顯示在目前使用量和使用量趨勢檢視中。
+
+以下範例顯示了 Console 中 *Current consumption* 標籤中的 DII 效能服務等級：
+
+image:console-current-consumption-dii.png["目前消耗選項卡的螢幕截圖，顯示 Data Infrastructure Insights 服務級別"]
+
+以下範例顯示 Digital Advisor 中 *Keystone Subscriptions* 小工具的 DII 效能服務層級：
+
+image:keystone-widget-dii.png["Keystone Subscriptions 小工具顯示 DII 服務等級的螢幕擷取畫面"]
+
+如需檢視使用量的詳細資訊、請參閱：
+
+* link:../integrations/current-usage-tab.html["查看Keystone訂閱的目前消耗量"]
+* link:../integrations/consumption-tab.html["查看Keystone訂閱的消費趨勢"]
+
+
+
+
 == 計費和計量
 
 以下概述了 DII 附加服務的計費和計量細節：
 
 * 此服務的衡量方式與您的主要訂閱相同。例如，如果您的主要訂閱包括 100 TiB 的 Extreme 服務和 100 TiB 的 Premium 服務，兩者均按邏輯使用量進行衡量，則附加服務 DII Extreme 100 TiB 和 DII Premium 100 TiB 也是按邏輯使用量進行衡量。如果您的主要訂閱是按配置來衡量的，那麼附加服務也會以相同的方式以相同的容量進行衡量。附加服務將遵循與您的主訂閱相同的測量方法。
-+
-image:current-consumption-dii.png["顯示服務等級計量的目前消耗標籤的螢幕截圖"]
-
 * 本服務與您的Keystone訂閱一起衡量並開立同一張發票。如果您在啟動Keystone訂閱之前為Keystone設定 DII，則計費仍從Keystone訂閱啟用日期或現有訂閱的修改日期開始。
 * 除標準Keystone發票外，此服務還根據 DII 效能服務等級的承諾容量和突發使用情況進行計量和開立發票。此附加服務的計量遵循與底層Keystone訂閱效能服務等級相同的方法，可以是邏輯的、配置的或實體的。
 * 該服務隨與其連結的Keystone訂閱而結束。續費時，您可以選擇是否續費附加服務。如果您不續訂Keystone訂閱，受監控的硬體將會退役，並且附加服務將自動終止。

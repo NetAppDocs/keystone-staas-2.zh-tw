@@ -40,6 +40,10 @@ image:console-current-consumption-graph.png["圖形格式的電流消耗詳情"]
 +
 image:console-current-consumption-table.png["表格形式的電流消耗詳情"]
 
++
+
+NOTE: 如果您訂閱了進階資料保護（ADP）或 Data Infrastructure Insights（DII）等附加服務、這些服務的目前資源消耗量將與您的基本效能服務等級一起顯示在圖形和表格檢視中。若要深入瞭解附加服務、請參閱 link:../concepts/adp.html["了解附加服務"]。
+
 
 
 --

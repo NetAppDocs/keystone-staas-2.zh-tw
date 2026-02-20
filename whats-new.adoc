@@ -18,6 +18,18 @@ summary: NetApp在Keystone STaaS 服務的每個版本中都為您提供了新�
 
 
 
+== 2026 年 2 月 16 日
+
+NetApp Console中Keystone儀表板的新增強功能：
+
+
+
+=== Data Infrastructure Insights 附加消耗顯示器
+
+Data Infrastructure Insights （ DII ） 附加元件使用量現在會顯示在 *目前使用量* 和 *使用量趨勢* 標籤中。若要深入瞭解、請參閱 link:./concepts/data-infra-insights.html#view-dii-consumption["查看 DII 消費狀況"]。
+
+
+
 == 2026 年 2 月 02 日
 
 NetApp Console中Keystone儀表板的新增強功能：
