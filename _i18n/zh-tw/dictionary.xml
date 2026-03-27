@@ -1608,7 +1608,6 @@
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">選擇您想要查看其詳細資訊的所需訂閱。預設選擇您帳戶名稱中的第一個訂閱。</block>
   <block id="cf9f1bd8f983088dfce001e6e73d8b32" category="list-text">如果您想查看歷史資料並分析容量使用趨勢，請選擇*消耗趨勢*。</block>
   <block id="033251cc6647cf14147fe08683c5db5c" category="admonition">如果您想查看已產生發票的歷史突發使用數據，您可以選擇*已開立發票的應計突發*。您可以使用此數據來分析發票中反映的計費使用情況。要了解更多信息，請參閱<block ref="7f44df2b1aebfeb61dadb6bb658158eb" category="inline-link-macro-rx"></block>。</block>
-  <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">從*起始日期*和*結束日期*欄位中的日曆圖示中選擇時間範圍。選擇查詢的日期範圍。日期範圍可以是月初或訂閱開始日期到目前日期或訂閱結束日期。您不能選擇未來的日期。</block>
   <block id="7be5abac822defa8ec27d754113b604f" category="admonition">為了獲得最佳效能和使用者體驗，請將查詢的日期範圍限制為三個月。</block>
   <block id="f5f016cc229596fc9a18ad3fe70b66dd" category="list-text">按一下“查看詳細資料”。根據所選的時間範圍，展示該訂閱各個效能服務等級的歷史消費資料。</block>
   <block id="c194747f3a506641453fdf3030d612f8" category="paragraph">長條圖顯示效能服務等級名稱以及該日期範圍內該效能服務等級所消耗的容量。收集的日期和時間顯示在圖表的底部。根據查詢的日期範圍，使用情況圖表顯示在 30 個資料收集點的範圍內。您可以將滑鼠遊標停留在圖表上，以查看該資料收集點的已提交、已消耗、突發和超出突發限制資料的使用情況明細。</block>
@@ -2704,4 +2703,6 @@
   <block id="f069bdb9199fd723b309497a4681eaa7" category="list-text">*新增備註*：開啟一個彈出視窗，用於為警示新增備註。</block>
   <block id="70d995c2419f7d9aa988641d4312954f" category="list-text">*View*：開啟與選擇警報 ID 相同的詳細檢視。</block>
   <block id="8b06cde2817c964f7431fdcb3ffcf3f2" category="section-title">2026 年 3 月 2 日</block>
+  <block id="c4a7223f29b332fc54d3573ee04a51a1" category="list-text">從 *From Date* 和 *To Date* 欄位中的日曆圖示選擇時間範圍。預設情況下，日期範圍為從今天起的過去 30 天。您可以變更此範圍，但不能選擇未來的日期。</block>
+  <block id="9b6f9894a20aba8f70839ec910a9bee6" category="admonition">如果選擇的日期範圍少於 30 天，圖表將只顯示所選日期範圍內每天的一個資料收集點。例如，4 天的範圍將顯示 4 個資料收集點，而不是 30 個。對於任何選定的範圍，圖表底部僅顯示日期。只有當您使用下文所述的放大功能放大圖表時，時間戳才會顯示。</block>
 </blocks>
