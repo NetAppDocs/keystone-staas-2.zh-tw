@@ -2487,7 +2487,6 @@
   <block id="a91bb8801531bd0f94f5726293b87485" category="paragraph"><block ref="a91bb8801531bd0f94f5726293b87485" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa37f1bdab27c9577ff178edf4ff4fef" category="admonition">Keystone訂閱用戶目前無法使用「報告」標籤。</block>
   <block id="2193640916b96caede95ed8f42c339e8" category="paragraph"><block ref="2193640916b96caede95ed8f42c339e8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bfad9751c60f0a457fcc252ae1a203b7" category="paragraph">有關這些訊息的更多信息，請聯繫NetApp Keystone支援。有關提交服務請求的信息，請參閱 <block ref="f97d063259ee0af881752dffb06b5bc4" category="inline-link-macro-rx"></block>。</block>
   <block id="3a51c5c35df88316b8d012c010e340f7" category="section-title">2025年11月24日</block>
   <block id="236430e108e8394ac19913076b10fb55" category="doc">更名為「累積突發容量」標籤</block>
   <block id="73ba7647571e18c30e8b5b930b7d7ffb" category="paragraph">標籤「累計突發容量」更名為「累計突發」。</block>
@@ -2737,4 +2736,5 @@
   <block id="9678bc25baa5d4e1d8060e89e70f72fc" category="list-text"><block ref="9678bc25baa5d4e1d8060e89e70f72fc" category="inline-link-macro-rx"></block></block>
   <block id="843e615119fedf23ac503dbdf746f02a" category="inline-link-macro">建立 StorageGRID 技術支援案例時應該使用哪個序號</block>
   <block id="ce9d93de629e2074412aaee90a3a8db2" category="list-text"><block ref="ce9d93de629e2074412aaee90a3a8db2" category="inline-link-macro-rx"></block></block>
+  <block id="4923c6e833cc1911c8344d01efacf0cd" category="paragraph">請聯絡 NetApp Keystone 支援以取得這些訊息的更多資訊。如需提交服務請求的相關資訊，請參閱<block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>。</block>
 </blocks>
