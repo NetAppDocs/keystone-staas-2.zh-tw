@@ -5,15 +5,13 @@ keywords: pricing, billing introduction, Keystone billing
 summary: Keystone提供按需付費模式，滿足您靈活且可擴展的消費需求。 
 ---
 = 了解 Keystone 計費方式
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
-
-'''
-sidebar: sidebar permalink: concepts/pricing.html keywords: pricing, Keystone 計費、承諾容量、已使用容量、突發消耗、計費計畫 summary: 使用 NetApp Keystone STaaS，您只需為承諾的容量付費，超出部分只需額外付費。本頁面解釋了按需付費模式的運作方式——從儲存承諾的定價方式，到容量的計量和計費方式，再到何時產生帳單。---
-
-
-
-= 了解 Keystone 計費方式
 
 [role="lead"]
 使用 NetApp Keystone STaaS，您只需為承諾的儲存容量付費，超出部分才需額外付費。本頁將詳細介紹按需付費模式的運作方式，包括儲存承諾的定價方式、容量的計量和計費方式，以及何時產生帳單。
