@@ -44,14 +44,14 @@ indexpage:
     links:
     - title: 了解Keystone定價
       url: "/concepts/pricing.html"
-    - title: 我的帳單明細
-      url: "/concepts/billing-schedules.html"
-    - title: 根據承諾容量計費
-      url: "/concepts/committed-capacity-billing.html"
-    - title: 根據消耗容量進行計量
-      url: "/concepts/consumed-capacity-billing.html"
-    - title: 如果我消耗的容量超過了承諾的容量，會發生什麼事？
-      url: "/concepts/burst-consumption-billing.html"
+    - title: Keystone 如何衡量容量？
+      url: "/concepts/pricing.html#how-keystone-measures-capacity"
+    - title: 什麼是承諾容量？
+      url: "/concepts/pricing.html#committed-capacity"
+    - title: 當我超出承諾容量時會發生什麼事？
+      url: "/concepts/pricing.html#burst-consumption"
+    - title: 何時產生發票？
+      url: "/concepts/pricing.html#billing-schedules"
   - title: 使用Keystone服務做更多事情
     links:
     - title: 了解您的支援團隊
