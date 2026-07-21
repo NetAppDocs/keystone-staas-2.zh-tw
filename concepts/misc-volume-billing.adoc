@@ -18,6 +18,7 @@ summary: 了解特定配置的Keystone計費，包括克隆卷、進階資料保
 
 
 
+[[billing-for-cloned-volumes]]
 == 克隆卷的計費
 
 如果在ONTAP中克隆了磁碟區並且您使用它們來備份和恢復數據，則您可以繼續使用這些克隆，而無需支付任何額外費用。但是，長期用於業務中任何其他目的的克隆卷都需要付費。
@@ -31,6 +32,7 @@ summary: 了解特定配置的Keystone計費，包括克隆卷、進階資料保
 
 
 
+[[billing-for-advanced-data-protection]]
 == 高級資料保護計費
 
 進階資料保護使用NetApp MetroCluster在兩個實體上分離的叢集之間鏡像資料。對於MetroCluster鏡像聚合，資料寫入兩次，每個叢集一次。 Keystone服務對雙方的消費進行獨立計費，從而產生兩條相同的消費記錄。附加費用適用於訂閱中的所有容量，無論資料是在來源處，還是鏡像或非鏡像資料。
@@ -46,24 +48,28 @@ summary: 了解特定配置的Keystone計費，包括克隆卷、進階資料保
 
 
 
+[[billing-for-temporary-volumes]]
 == 臨時卷計費
 
 有時， ONTAP在移動磁碟區時會建立臨時 (TMP) 磁碟區。這些臨時卷是短暫的，並且這些卷上的消耗不計入賬單。
 
 
 
+[[billing-and-adaptive-qos-policies]]
 == 計費和自適應 QoS 策略
 
 Keystone根據服務水準來衡量消費。每個服務等級都與特定的自適應服務品質 (QoS) 策略相關聯。在部署期間，您將被告知所訂閱的Keystone服務的每個自適應 QoS 策略的詳細資訊。在儲存管理作業期間，請確保您的磁碟區根據您訂閱的服務等級分配了適當的自適應 QoS 策略，以避免意外計費。有關ONTAP中自適應 QoS 策略的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["透過QoS概述保證吞吐量"^]。
 
 
 
+[[billing-for-snapmirror-destinations]]
 == SnapMirror目標計費
 
 SnapMirror目標磁碟區的定價由來源上指派的服務等級的自適應 QoS 原則控制。但是，如果來源沒有關聯的自適應 QoS 策略，則目的地將根據最低可用服務等級進行計費。
 
 
 
+[[billing-for-luns]]
 == LUN 計費
 
 對於 LUN，遵循與自適應 QoS 策略管理的磁碟區相同的計費模式。如果在 LUN 上設定了單獨的自適應 QoS 策略，則：
@@ -74,6 +80,7 @@ SnapMirror目標磁碟區的定價由來源上指派的服務等級的自適應 
 
 
 
+[[system-and-root-volumes]]
 == 系統捲和根卷
 
 系統捲和根磁碟區作為Keystone服務整體監控的一部分進行監控，但不計算或計費。這些卷的消耗無需計費。

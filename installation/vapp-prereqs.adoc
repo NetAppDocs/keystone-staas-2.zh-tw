@@ -25,12 +25,14 @@ summary: 在安裝Keystone Collector 之前，您的 VMware vSphere 系統必須
 
 
 
+[[other-requirements]]
 == 其他要求
 
 確保滿足以下通用要求：
 
 
 
+[[networking-requirements]]
 === 組網需求
 
 Keystone Collector 的群組網路需求如下表所示。
@@ -198,6 +200,7 @@ NOTE: 在全新安裝 Unified Manager 期間，MySQL 的預設連接埠 3306 僅
 
 
 
+[[url-access]]
 === URL 訪問
 
 Keystone Collector 需要存取以下網際網路主機：

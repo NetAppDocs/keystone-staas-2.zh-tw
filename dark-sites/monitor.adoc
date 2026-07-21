@@ -38,6 +38,7 @@ image:cidr-list.png["允許的網路cidrs"]
 
 
 
+[[generate-and-collect-support-bundles]]
 == 產生並收集支援包
 
 要解決Keystone Collector 的問題，您可以與NetApp支援人員合作，他們可能會要求 _.tar_ 檔案。您可以透過Keystone Collector 管理 TUI 公用程式產生此文件。

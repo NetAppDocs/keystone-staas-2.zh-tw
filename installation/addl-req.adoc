@@ -22,7 +22,7 @@ summary: 在開始使用Keystone之前，您需要確保ONTAP叢集和StorageGRI
 --
 .軟體版本
 . ONTAP 9.8 或更高版本
-. Active IQ Unified Manager （Unified Manager）9.10 或更高版本
+. Active IQ Unified Manager （Unified Manager）版本高於 9.10 且低於 9.16P2
 
 
 .開始之前
@@ -54,7 +54,7 @@ summary: 在開始使用Keystone之前，您需要確保ONTAP叢集和StorageGRI
 
 如果您打算透過Active IQ Unified Manager收集使用情況數據，請符合以下要求：
 
-. 確保已設定 Unified Manager 9.10 或更高版本。有關安裝 Unified Manager 的信息，請參閱以下連結：
+. 請確保已設定高於 9.10 且低於 9.16P2 的 Unified Manager。有關安裝 Unified Manager 的資訊，請參閱以下連結：
 +
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在 VMware vSphere 系統上安裝 Unified Manager"^]
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["在 Linux 系統上安裝 Unified Manager"^]

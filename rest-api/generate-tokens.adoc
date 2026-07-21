@@ -38,6 +38,7 @@ image:rest-api-token-types.png["代幣類型"]
 
 
 
+[[generate-access-token-using-the-digital-advisor-rest-api]]
 == 使用Digital Advisor REST API 產生存取令牌
 
 存取令牌用於驗證Digital Advisor API 請求。它可以直接透過控制台與刷新令牌一起生成，或使用以下 API 呼叫：
@@ -89,6 +90,7 @@ curl -X 'POST' \ 'https://api.activeiq.netapp.com/v1/tokens/accessToken' \ -H 'a
 ----
 
 
+[[execute-the-api-call]]
 == 執行 API 呼叫
 
 成功產生存取權杖後，可以執行授權的Digital AdvisorAPI 呼叫以取得所需資訊。

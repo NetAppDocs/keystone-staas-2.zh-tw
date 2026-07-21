@@ -20,6 +20,7 @@ summary: 完成幾個步驟即可在沒有網路存取的環境中安裝Keystone
 
 
 
+[[deploy-on-vmware-vsphere]]
 == 在 VMware vSphere 上部署
 
 請依照以下步驟操作：
@@ -30,6 +31,7 @@ summary: 完成幾個步驟即可在沒有網路存取的環境中安裝Keystone
 
 
 
+[[install-on-linux]]
 == 在 Linux 上安裝
 
 根據 Linux 發行版， Keystone Collector 軟體使用提供的 .deb 或 .rpm 檔案安裝在 Linux 伺服器上。

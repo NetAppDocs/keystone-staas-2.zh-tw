@@ -18,6 +18,7 @@ summary: 可用性 SLO 目標是在一個計費期間內，所有部署用於交
 
 
 
+[[metrics]]
 == 指標
 
 * *每月正常運作時間百分比* = [(每月合格秒數 - 當月為交付Keystone訂單而部署的所有AFF儲存陣列的平均停機秒數) / 每月合格秒數] x 100%
@@ -27,12 +28,14 @@ summary: 可用性 SLO 目標是在一個計費期間內，所有部署用於交
 
 
 
+[[performance-service-levels]]
 == 績效服務水準
 
 ONTAP快閃記憶體儲存陣列支援的所有效能服務等級均符合可用性 SLO 的條件。要了解更多信息，請參閱link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystone中的效能服務級別"]。
 
 
 
+[[service-credits]]
 == 服務積分
 
 
@@ -73,6 +76,7 @@ NOTE: SLA 和擔保可根據提名提供。
 |===
 
 
+[[service-credit-calculation]]
 === 服務信用計算
 
 服務積分採用以下公式決定：
@@ -125,6 +129,7 @@ NOTE: SLA 和擔保可根據提名提供。
 
 
 
+[[service-credit-request]]
 === 服務信用請求
 
 如果偵測到違反 SLA，請向NetApp Keystone支援部門開立優先順序 3 (P3) 支援單。

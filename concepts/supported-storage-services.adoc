@@ -26,6 +26,7 @@ Keystone STaaS服務可以同時使用。例如，雲端儲存訂閱可以具有
 
 
 
+[[services-for-file-block-and-object-storage]]
 == 文件、區塊和物件儲存服務
 
 適用於ONTAP檔案和區塊儲存以及StorageGRID物件儲存的Keystone STaaS 服務支援多種功能和協議，如下表所述：
@@ -96,6 +97,7 @@ NOTE: ^1^ 有關ONTAP中的勒索軟體防護的信息，請參閱 https://docs.
 
 
 
+[[services-for-cloud-storage]]
 == 雲端儲存服務
 
 Keystone STaaS 提供雲端儲存服務。  Keystone STaaS 支援 Amazon Web Services (AWS)、Microsoft Azure 和 Google Cloud Platform 上的Cloud Volumes ONTAP資料管理功能。

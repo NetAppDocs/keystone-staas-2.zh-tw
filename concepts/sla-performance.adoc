@@ -18,6 +18,7 @@ NetApp Keystone根據以下列出的條款和條件，按照Keystone訂單中所
 
 
 
+[[metrics]]
 == 指標
 
 * *效能下降*：每次事件中未達到第 90 個百分位延遲目標的時間量（以分鐘為單位）。
@@ -39,6 +40,7 @@ NetApp Keystone根據以下列出的條款和條件，按照Keystone訂單中所
 
 
 
+[[performance-service-levels]]
 == 績效服務水準
 
 ONTAP快閃記憶體儲存陣列支援的所有效能服務等級均符合效能 SLO 要求，並保證滿足以下目標延遲：
@@ -57,6 +59,7 @@ ONTAP快閃記憶體儲存陣列支援的所有效能服務等級均符合效能
 
 
 
+[[service-credits]]
 == 服務積分
 
 
@@ -76,6 +79,7 @@ NetApp針對效能下降發放服務積分：
 |===
 
 
+[[service-credit-calculation]]
 === 服務信用計算
 
 服務積分採用以下公式決定：
@@ -111,6 +115,7 @@ NetApp針對效能下降發放服務積分：
 
 
 
+[[service-credit-request]]
 === 服務信用請求
 
 如果偵測到違反 SLA，請向NetApp Keystone支援部門開立優先順序 3 (P3) 支援單。
