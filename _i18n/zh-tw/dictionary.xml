@@ -691,7 +691,6 @@
   <block id="1c8da55ed1bb51aa2c1e766474b9b2bc" category="summary">了解NetApp Keystone STaaS 服務版本 2 支援的儲存容量類型。</block>
   <block id="e561d7dfcd6620325c8edbb7b2c1d749" category="paragraph">NetApp Keystone STaaS 服務支援多種類型的儲存容量。了解這些不同的容量術語可以幫助您使用Keystone。</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">邏輯容量</block>
-  <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">這是客戶放置在Keystone基礎架構上的資料。所有Keystone容量均指邏輯容量。例如，如果Keystone基礎架構上儲存了 1 TiB 的文件，則至少應購買 1 TiB 的容量。</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">承諾產能</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">訂閱期間每月計費的最小邏輯容量：</block>
   <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">承諾容量和額外的服務等級可以在期限內添加。</block>
@@ -2791,4 +2790,5 @@
   <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*灰色*：訂閱已過期。</block>
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">對於已開啟自動續訂的訂閱，會顯示自動續訂圖示，表示訂閱將在目前期限結束時自動續訂。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
+  <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">這是在應用儲存陣列提供的任何資料效率之前，儲存使用者資料所需的儲存容量。</block>
 </blocks>
