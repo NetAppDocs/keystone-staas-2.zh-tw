@@ -4,7 +4,7 @@ permalink: rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html
 keywords: Keystone, Active IQ, Digital Advisor, APIs, programmatic interface 
 summary: Digital Advisor API 提供了一個用於取得Keystone服務詳細資訊和指標的程式介面。 
 ---
-= 開始使用Digital Advisor REST API 檢索Keystone數據
+= 使用 Digital Advisor REST API 擷取 Keystone 資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

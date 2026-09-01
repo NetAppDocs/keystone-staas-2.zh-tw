@@ -80,4 +80,4 @@ NetApp Keystone STaaS 提供兩種服務交付營運模式：合作夥伴營運�
 
 | image:check.png["複選標記"] | 沒有任何 
 |===
-有關部署的更多信息，請參閱link:../concepts/infra.html["Keystone基礎設施"]和link:..//concepts/components.html["部署元件"]。
+有關 部署 的詳細資訊，請參閱 link:../concepts/infra.html["了解 Keystone 基礎架構"] 和 link:..//concepts/components.html["Keystone服務所需的元件"]。

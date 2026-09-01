@@ -4,7 +4,7 @@ permalink: installation/monitor-health.html
 keywords: monitoring system health 
 summary: 為了確保資料可用，您可以使用任何支援 HTTP 請求的監控系統來監控Keystone Collector 的健康狀況。 
 ---
-= 監控Keystone Collector 的健康狀況
+= Keystone Collector 的健康監控
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
