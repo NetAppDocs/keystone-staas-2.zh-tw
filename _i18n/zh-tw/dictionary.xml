@@ -2799,4 +2799,56 @@
   <block id="d23d8e4208389cdbfa05c473cb8410ad" category="sidebar">取得 Keystone 客戶清單</block>
   <block id="7544c020cb246587d47ad73d1598a7e4" category="sidebar">取得 Keystone 客戶訂閱</block>
   <block id="0fb6871a30d0a0891c81661a4c790079" category="sidebar">取得 Keystone 客戶的消費詳情</block>
+  <block id="73c20ad627e7f815932cb8837d70e1e8" category="doc">為 Keystone 訂閱產生健全狀況洞察</block>
+  <block id="ae638b3203053916360a0f228b8b54d7" category="paragraph">此 Keystone STaaS 版本在 NetApp Console 的 Keystone 儀表板中包含以下更新。</block>
+  <block id="a0c062a66e58943547f514904ae51daa" category="inline-link">產生並安排 Keystone 訂閱的健全狀況報告</block>
+  <block id="6da38bfefa907461e0fc0e4cbf32c236" category="paragraph">您可以從 NetApp Console 的 *Storage &gt; Keystone &gt; Monitoring &gt; Health reports* 下載隨需 PowerPoint 報告，或排程一次性、每週、每月或每季的傳送。每份報告整合了所選訂閱的訂閱使用量、運作健全狀況、風險及漏洞，協助您識別問題並與收件者共享可行的見解。如需深入瞭解，請參閱<block ref="d2f756b41ddff582298cd4e997cfe66a" category="inline-link-rx"></block>。</block>
+  <block id="d9488e4902ac8163ee538f8e5bfe01c8" category="inline-link-macro">產生並排程健全狀況報告</block>
+  <block id="ea034e7c3ada4fd5285144ae8a2f1ec3" category="list-text"><block ref="ea034e7c3ada4fd5285144ae8a2f1ec3" category="inline-link-macro-rx"></block></block>
+  <block id="6cceac6cd41854fc33cca3191e462847" category="list-text">*產生健全狀況報告*：建立隨需或定期健全狀況評估報告，以審查訂閱使用情況、營運健全狀況、風險和漏洞。</block>
+  <block id="bcd6194438a86161f86a66b169dcae08" category="summary">在 NetApp Console 中使用 Keystone 健全狀況評估報告來檢視訂閱詳情、評估健全狀況、分析使用趨勢，並識別一個或多個訂閱中的風險和漏洞。您可以隨需產生報告或排程產生報告，以便與利害關係人共享準確的營運和法規遵循資訊。</block>
+  <block id="43c438a5f171a0070565c9a3ce412632" category="paragraph">從 NetApp Console 的 Keystone 儀表板中，產生或排程一個或多個 Keystone 訂閱的健全狀況報告。這些報告提供訂閱使用情況、運作健全狀況、風險和漏洞的整合檢視，您可以與指定的接收者共享。此功能在 Digital Advisor 中無法使用。</block>
+  <block id="ed90fab979b1c2338f266823f485f606" category="paragraph">健全狀況報告可讓您檢視所選訂閱的使用情況、運作健全狀況以及已識別的風險。在 *新報告* 頁面上，使用 *報告組態* 面板定義報告的範圍和選項。在產生或排程報告之前，請使用預覽區域審查投影片順序和版面配置。預覽僅顯示報告結構，不顯示實際的訂閱資料。</block>
+  <block id="805e040836078c98207014459ce00fe4" category="paragraph">請按照以下步驟產生報告以供立即下載，或安排一次性或定期報告以供稍後發送：</block>
+  <block id="8b033bd96006a357396469d2d12002ff" category="list-text">從控制台左側導覽功能表中，選擇 *儲存 &gt; Keystone &gt; 監控 &gt; 報告*。</block>
+  <block id="bc32ee3dafd98cfab55839d1a1ad173d" category="list-text">選擇 *新增報告*。</block>
+  <block id="db73c44d8bba03212ad21e123d47d5dd" category="list-text">在 *報告組態面板* 中，在 *報告名稱* 欄位中輸入名稱。</block>
+  <block id="d99d4ce092a8b9f4aff4e17d7603bfe2" category="list-text">從 *時間範圍* 下拉式選單中選擇時間範圍。</block>
+  <block id="6a03b07232e58a0d22244bd78e9ee309" category="paragraph">選擇預設範圍，例如 *過去 60 天*，或選擇 *自訂* 來輸入您自己的日期。所選範圍決定了 *消費趨勢* 區段和其他時間型區段中顯示的歷史資料。如果您選擇 *自訂*，則無法排程報告。</block>
+  <block id="b9b414179e1f9c10b9cf39dc76d45554" category="inline-image-macro">健全狀況報告組態顯示選擇自訂日期範圍時排程已停用</block>
+  <block id="e84931d18314142b08f9bd586d2d273d" category="paragraph"><block ref="e84931d18314142b08f9bd586d2d273d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="55c22e502f5cfc9d2f8d74e22b0c8e98" category="list-text">從「訂閱」下拉式選單中選擇一個或多個訂閱。</block>
+  <block id="de710d1f96079b8408fcc93a084d21ca" category="admonition">NetApp 合作夥伴可以跨其代管的一個或多個 Keystone 客戶帳戶選擇訂閱。</block>
+  <block id="2494369c3bace34f8d03d3b0f6b35714" category="list-text">在「報告章節」下，選擇您要包含的章節。</block>
+  <block id="a23a396c1ad877d36ea36ff279bab746" category="paragraph">您選擇的每個部分都會顯示在預覽區域中，並包含在產生的報告中。例如，您可以包含訂閱總結、目前容量使用、消耗趨勢、實體容量、系統健全狀況以及風險和漏洞。對於 *消耗趨勢*，您可以包含歷史消耗圖表，也可以選擇包含未來消耗預測。</block>
+  <block id="73edafd21beaaf25a3c4b463e7301486" category="list-text">選擇簡報主題。</block>
+  <block id="e79541eac81a9b39cbfa8f8f8515ac14" category="list-text">請審查預覽區域中顯示的各個部分，以確認它們與您的選擇相符。</block>
+  <block id="c33cd459680d55a97ffee84381838d90" category="list-text">選擇您希望如何建立報告。</block>
+  <block id="7fb99d2c520fc85b9123d1d2daf9e796" category="list-text">*產生報告*</block>
+  <block id="d3cd467451f595793563586a695d9c1c" category="paragraph">選擇 *產生報告* 即可立即下載報告。</block>
+  <block id="8ab8d739fddb8825d819131cf0c36e7a" category="paragraph">報告已提交產生，您將返回 *報告* 標籤。報告顯示的狀態為 *執行中*。</block>
+  <block id="9dabac9e7f2d642811e0cf62d3e18002" category="paragraph">當狀態變更為 *已產生* 後，選取報告列末尾的省略號圖示，然後選取 *下載*。</block>
+  <block id="00555bd07173f7d9c242e377dc1e4afe" category="list-text">*排程報告*</block>
+  <block id="6cebac50d1a7bff739e4a52a8cedaa57" category="paragraph">選擇 *排程* 以建立一次性或定期報告，並完成下列步驟：</block>
+  <block id="8b7ea71302f67c6f0966ac6f0f8efc8f" category="list-text">選擇頻率：*一次性*、*每週*、*每月*或*每季*。</block>
+  <block id="83fb650baf1f2bfaabf37d0b01f8b198" category="list-text">請選擇 *開始日期*。</block>
+  <block id="86b7782bce140b306301378eb75d320f" category="inline-image-macro">排程報告對話方塊顯示已選取每週頻率、空白的開始日期與結束日期欄位、收件者欄位，以及已選取 PPT 格式</block>
+  <block id="65de2e1080fef3c60cec4997218e5994" category="paragraph"><block ref="65de2e1080fef3c60cec4997218e5994" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a65d24447c848fed1b1282d04274bcc" category="paragraph">開始日期決定報告首次執行的時間。對於重複頻率，報告會根據所選的每週、每月或每季排程再次執行。</block>
+  <block id="a4f1fd8e2247116044a0a9ef4e9401ae" category="list-text">（可選）選擇*結束日期*。</block>
+  <block id="a0e32eed5feb418713b52f7739a1f7de" category="paragraph">如果您未選擇結束日期，排程將持續進行，直到您變更為止。</block>
+  <block id="45fdcaf864d7e16c4c277f710fe9214c" category="list-text">選擇 *排程報告*。</block>
+  <block id="dda29f572e1f01fb24ef9fbb9567dcae" category="paragraph">排程已建立，報告會顯示在 *報告* 索引標籤上，執行類型為 *排程執行*。使用 *上次執行*、*下次執行* 和 *狀態* 欄來追蹤每次執行。</block>
+  <block id="04091b33f99194409a3e638fb720ccd7" category="paragraph">若要編輯每週、每月或每季的排程，請選取報告列末尾的省略符號圖示，然後選取 *編輯排程*。無論狀態為 *已排程* 還是 *已產生*，您都可以執行此操作。在報告產生後，您無法編輯 *一次性* 排程。</block>
+  <block id="3d8502ba652cf0b8dda71ea1d23775d9" category="paragraph">狀態變更為 *已產生* 後，選取報告旁的省略符號圖示，然後選取 *下載*。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="cf3e1ddb292882536f57277035f7ccdf" category="paragraph">產生的報告將以 PowerPoint 簡報的形式下載。您可以從省略號選單中選擇 *再次產生*，以建立具有相同組態的新報告。</block>
+  <block id="74a2518355991b0460124194339aa262" category="inline-link-macro">檢視目前使用情況</block>
+  <block id="05a9cc32ea53864df9d04304930c39b2" category="list-text"><block ref="05a9cc32ea53864df9d04304930c39b2" category="inline-link-macro-rx"></block></block>
+  <block id="ff0355703598e77f5d53ad567098e540" category="inline-link-macro">檢視與您的訂閱相關的資產</block>
+  <block id="122bb916bdbca193871c1c238a8ad494" category="list-text"><block ref="122bb916bdbca193871c1c238a8ad494" category="inline-link-macro-rx"></block></block>
+  <block id="e9585bf2660bfde75b6f0a2b54b179ac" category="section-title">從 NetApp Console 產生健全狀況報告</block>
+  <block id="d2fc234fa58b5424fb66e69d6f37ea37" category="paragraph">使用 NetApp Console 產生或排程一個或多個訂閱的健全狀況報告。這些 PowerPoint 報告整合了訂閱使用情況、運作健全狀況、風險和漏洞。Digital Advisor 不支援健全狀況評估報告的產生或排程。</block>
+  <block id="0557e64d44b59ed5a4145771c544da91" category="paragraph">若要深入瞭解，請參閱 <block ref="1f95c525270767ec0581ce04383996f5" category="inline-link-macro-rx"></block>。</block>
+  <block id="e019cb225a4644922cdd06575b099710" category="section-title">2026年10月12日</block>
 </blocks>
