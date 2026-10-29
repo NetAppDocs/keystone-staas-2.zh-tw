@@ -4,7 +4,7 @@ permalink: concepts/supported-storage-services.html
 keywords: storage, service, service definition, keystone STaaS services, 
 summary: Keystone STaaS 服務支援ONTAP和StorageGRID。 
 ---
-= Keystone支援的存儲
+= Keystone STaaS 支援的儲存設備服務
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: concepts/data-infra-insights.html
 keywords: add-on services, add-on, data infrastructure insights, DII, deployment of DII 
 summary: Data Infrastructure Insights透過監控、故障排除和最佳化公有雲和私有資料中心的儲存來提高Keystone STaaS 的效率。 
 ---
-= Keystone的Data Infrastructure Insights插件
+= Keystone STaaS 的 Data Infrastructure Insights 附加元件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Data Infrastructure Insights透過監控、故障排除和最佳化公�
 
 
 [role="lead"]
-NetAppData Infrastructure Insights(DII，以前稱為Cloud Insights) 是Keystone STaaS 的附加產品。該服務與Keystone STaaS 的整合增強了 Keystone 提供的跨公有雲和私有資料中心的儲存資源的監控、故障排除和最佳化能力。
+NetApp Data Infrastructure Insights（DII，前身為 Cloud Insights）是 Keystone STaaS 的一項附加服務。該服務與 Keystone STaaS 的整合增強了對 Keystone 提供的跨公有雲和私有資料中心的儲存資源的監控、疑難排解和最佳化能力。
 
 要了解有關Data Infrastructure Insights的更多信息，請參閱link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insights文檔"^]。
 

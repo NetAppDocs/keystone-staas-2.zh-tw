@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: installation/data-collection.html 
 keywords: type of data collected by Keystone collector 
-summary: Keystone收集ONTAP和StorageGRID訂閱的設定、狀態和使用資訊。它還可以收集ONTAP性能數據。 
+summary: Keystone Collector 從與 Keystone STaaS 訂閱關聯的 ONTAP 和 StorageGRID 系統中收集組態、狀態和使用量資料。它還會從代管 Keystone Collector 的虛擬機器收集遙測資料，並可選擇性地收集 ONTAP 效能資料。 
 ---
-= Keystone收集的用戶資料類型
+= Keystone Collector 收集的資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone收集ONTAP和StorageGRID訂閱的設定、狀態和使用資�
 
 
 [role="lead"]
-Keystone從Keystone ONTAP和Keystone StorageGRID訂閱收集配置、狀態和使用信息，以及從託管Keystone Collector 的虛擬機器 (VM) 收集遙測資料。如果在Keystone Collector 中啟用此選項，它只能收集ONTAP的效能資料。
+Keystone Collector 會收集與 Keystone STaaS 訂閱關聯的 ONTAP 和 StorageGRID 系統的組態、狀態和使用情況資料，以及託管 Keystone Collector 的虛擬機器（VM）的遙測資料。此外，啟用此功能後，Keystone Collector 還可以收集 ONTAP 效能資料。
 
 
 

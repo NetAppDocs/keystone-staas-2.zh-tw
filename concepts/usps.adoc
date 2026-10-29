@@ -4,7 +4,7 @@ permalink: concepts/usps.html
 keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
 summary: 美國保護支援是一項附加服務，為美國公民在美國領土上提供持續的Keystone服務並提供相關支援。 
 ---
-= Keystone的 USPS 附加元件
+= Keystone STaaS 的美國受保護支援附加元件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 美國保護支援是一項附加服務，為美國公民在美國領�
 
 
 [role="lead"]
-美國保護支援 (USPS) 是NetApp Keystone訂閱的附加產品。它使您有權在美國領土上獲得美國公民提供的持續Keystone服務及其支援。
+美國受保護支援（USPS）是 NetApp Keystone STaaS 訂閱的一項附加服務。它使您有權獲得由美國公民在美國本土提供的後續 Keystone 服務交付與支援。
 
 請閱讀以下部分，以了解您的訂閱中的哪些元素受此附加服務的約束，並根據NetApp Keystone協議的條款提供。註腳：免責聲明1[此處所述的服務和產品均受完全執行的Keystone協定的限制、限制和管轄。 ]
 

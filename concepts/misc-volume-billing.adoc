@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
 keywords: Billing and miscellaneous scenarios 
-summary: 了解特定配置的Keystone計費，包括克隆卷、進階資料保護等。 
+summary: Keystone STaaS 的計費規則因某些 Volume 組態而異。本頁說明複製的 Volume、SnapMirror 目的地、LUN、暫存 Volume 及系統 Volume 的計費方式。 
 ---
-= Keystone 針對特定磁碟區類型的計費
+= Keystone STaaS 針對特定 Volume 類型的計費
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 了解特定配置的Keystone計費，包括克隆卷、進階資料保
 
 
 [role="lead"]
-了解特定配置的Keystone計費可以幫助您最佳化服務使用並管理成本。配置包括複製磁碟區、進階資料保護、臨時磁碟區、QoS 策略、 SnapMirror目標、LUN 和系統/根磁碟區。
+Keystone STaaS 的計費規則因某些 Volume 組態而異。了解這些例外情況有助於您在使用複製的 Volume、SnapMirror 目的地、LUN 或暫時儲存設備時，避免產生意外費用。
 
 
 
@@ -29,22 +29,6 @@ summary: 了解特定配置的Keystone計費，包括克隆卷、進階資料保
 * 克隆卷沒有 24 小時的寬限期。僅考慮克隆的大小。
 * 一旦克隆卷超過父卷物理大小的 10%，克隆卷就會被視為標準卷（邏輯使用容量）。
 
-
-
-
-[[billing-for-advanced-data-protection]]
-== 高級資料保護計費
-
-進階資料保護使用NetApp MetroCluster在兩個實體上分離的叢集之間鏡像資料。對於MetroCluster鏡像聚合，資料寫入兩次，每個叢集一次。 Keystone服務對雙方的消費進行獨立計費，從而產生兩條相同的消費記錄。附加費用適用於訂閱中的所有容量，無論資料是在來源處，還是鏡像或非鏡像資料。
-
-每個MetroCluster站點都有自己的訂閱和計費。對於MetroCluster配置，使用情況測量考慮了兩個站點之間的儲存利用。如果您的MetroCluster設定中每個站點有 100 TiB，則每個站點上只有 50 TiB 被主動使用，而每個站點上剩餘的 50 TiB 則用作鏡像備份。高級資料保護附加費用是根據這 100 TiB 的總活動使用量計算的，並透過各自的訂閱在兩個站點之間分攤，每個站點 50 TiB。
-
-如果您透過ONTAP系統管理員（系統管理員）或Active IQ Unified Manager（統一管理器）監控集群，您可能會發現這些工具報告的消耗量與Keystone之間存在差異。系統管理員和統一管理器不會報告鏡像（遠端）叢集上的捲，因此，報告的消耗指標僅為Keystone服務報告的消耗指標的一半。
-
-.範例：
-站點 A 和站點 B 採用MetroCluster配置進行設定。當使用者在網站 A 建立 10 TB 的磁碟區時，網站 B 中也會建立相同的 10 TB 磁碟區。 KeystoneKeystone每個站點的消耗量為 10 TB，總共增加 20 TB。系統管理員和統一管理器報告在站點 A 中建立的 10 TB 卷，但沒有報告在站點 B 中建立的 10 TB 卷。
-
-此外，在具有進階資料保護的Keystone系統上建立的所有磁碟區都將計入進階資料保護的消耗，無論這些磁碟區是否鏡像。
 
 
 

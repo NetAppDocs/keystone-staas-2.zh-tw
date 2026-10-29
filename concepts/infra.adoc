@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/infra.html 
 keywords: keystone infrastructure, infra 
-summary: Keystone基礎設施、設計、技術選擇和組件產品均完全由NetApp負責。 
+summary: Keystone STaaS 基礎架構、設計、技術選擇和元件產品完全位於 NetApp。 
 ---
-= 了解 Keystone 基礎架構
+= 了解 Keystone STaaS 基礎架構
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone基礎設施、設計、技術選擇和組件產品均完全由
 
 
 [role="lead"]
-NetApp全權負責Keystone的基礎設施、設計、技術選擇和元件，適用於NetApp和客戶營運的環境。
+NetApp 全權負責 Keystone STaaS 的基礎架構、設計、技術選擇與組件，這適用於 NetApp 與客戶營運的環境。
 
 NetApp保留採取以下措施的權利：
 
